@@ -1,0 +1,30 @@
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.exe
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.deps.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.runtimeconfig.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.AssemblyInfoInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.AssemblyInfo.cs
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.csproj.CoreCompileInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.sourcelink.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\refint\Ciklusos.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.genruntimeconfig.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\ref\Ciklusos.dll
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.exe
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.deps.json
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.dll
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\bin\Debug\net8.0\Ciklusos.pdb
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.dll
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\refint\Ciklusos.dll
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.pdb
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\Ciklusos.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Ciklusok\Ciklusos\obj\Debug\net8.0\ref\Ciklusos.dll
