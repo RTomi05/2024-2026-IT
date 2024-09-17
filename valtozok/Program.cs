@@ -39,6 +39,10 @@
             Console.WriteLine(c);
             c++;
             Console.WriteLine(c);
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.Beep();
+            Console.Clear();
+            //Console.WriteLine(c);
         }
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Programozás\\C# 2024-25\\Programming\\valtozok\\valtozok.csproj",
+      "projectUniqueName": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\valtozok\\valtozok.csproj",
       "projectName": "valtozok",
-      "projectPath": "H:\\Programozás\\C# 2024-25\\Programming\\valtozok\\valtozok.csproj",
+      "projectPath": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\valtozok\\valtozok.csproj",
       "packagesPath": "C:\\Users\\rengelt22\\.nuget\\packages\\",
-      "outputPath": "H:\\Programozás\\C# 2024-25\\Programming\\valtozok\\obj\\",
+      "outputPath": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\valtozok\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rengelt22\\AppData\\Roaming\\NuGet\\NuGet.Config",
