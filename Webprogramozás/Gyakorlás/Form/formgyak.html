@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "hu">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Form gyakorlás</title>
+</head>
+<body>
+    <form method="get">
+		<label for="nev">Név:</label>
+		<input type="text" name="nev" id="nev" autofocus maxlength="50">
+		<br>
+		<label for="jelszo">Jelszó:</label>
+		<input type="password" name="jelszo" id="jelszo">
+		<br>
+
+		<label for="valasztas">Válassz:</label>
+		<select name="valasztas" id="valasztas">
+			<option value="f">Férfi</option>
+			<option value="n">Nő</option>
+			<option value="nb">Nem bináris</option>
+			<option value="a" selected>Apache helikopter</option>
+		</select>
+		<input type="submit">
+	</form>
+</body>
+</html>
