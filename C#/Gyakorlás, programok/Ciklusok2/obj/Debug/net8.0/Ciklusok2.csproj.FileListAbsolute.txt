@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\bin\Debug\net8.0\Ciklusok2.exe
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\bin\Debug\net8.0\Ciklusok2.deps.json
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\bin\Debug\net8.0\Ciklusok2.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\bin\Debug\net8.0\Ciklusok2.dll
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\bin\Debug\net8.0\Ciklusok2.pdb
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\Ciklusok2.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\Ciklusok2.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\Ciklusok2.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\Ciklusok2.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\Ciklusok2.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\Ciklusok2.dll
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\refint\Ciklusok2.dll
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\Ciklusok2.pdb
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\Ciklusok2.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\C#\2024-2025-IT\C#\Gyakorlás, programok\Ciklusok2\obj\Debug\net8.0\ref\Ciklusok2.dll

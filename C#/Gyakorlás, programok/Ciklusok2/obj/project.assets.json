@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\C#\\Ciklusok2\\Ciklusok2.csproj",
+      "projectUniqueName": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\C#\\Gyakorlás, programok\\Ciklusok2\\Ciklusok2.csproj",
       "projectName": "Ciklusok2",
-      "projectPath": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\C#\\Ciklusok2\\Ciklusok2.csproj",
+      "projectPath": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\C#\\Gyakorlás, programok\\Ciklusok2\\Ciklusok2.csproj",
       "packagesPath": "C:\\Users\\rengelt22\\.nuget\\packages\\",
-      "outputPath": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\C#\\Ciklusok2\\obj\\",
+      "outputPath": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\C#\\Gyakorlás, programok\\Ciklusok2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rengelt22\\AppData\\Roaming\\NuGet\\NuGet.Config",
