@@ -1,0 +1,15 @@
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\3mal osztas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\3mal osztas.AssemblyInfoInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\3mal osztas.AssemblyInfo.cs
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\3mal osztas.csproj.CoreCompileInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\3mal osztas.sourcelink.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\bin\Debug\net8.0\3mal osztas.exe
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\bin\Debug\net8.0\3mal osztas.deps.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\bin\Debug\net8.0\3mal osztas.runtimeconfig.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\bin\Debug\net8.0\3mal osztas.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\bin\Debug\net8.0\3mal osztas.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\3mal osztas.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\refint\3mal osztas.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\3mal osztas.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\3mal osztas.genruntimeconfig.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\Házi\3mal oszthato\3mal osztas\obj\Debug\net8.0\ref\3mal osztas.dll
