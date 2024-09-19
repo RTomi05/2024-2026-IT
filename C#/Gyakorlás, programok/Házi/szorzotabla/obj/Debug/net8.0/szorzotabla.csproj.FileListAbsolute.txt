@@ -1,0 +1,15 @@
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\szorzotabla.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\szorzotabla.AssemblyInfoInputs.cache
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\szorzotabla.AssemblyInfo.cs
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\szorzotabla.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\szorzotabla.sourcelink.json
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\bin\Debug\net8.0\szorzotabla.exe
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\bin\Debug\net8.0\szorzotabla.deps.json
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\bin\Debug\net8.0\szorzotabla.runtimeconfig.json
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\bin\Debug\net8.0\szorzotabla.dll
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\bin\Debug\net8.0\szorzotabla.pdb
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\szorzotabla.dll
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\refint\szorzotabla.dll
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\szorzotabla.pdb
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\szorzotabla.genruntimeconfig.cache
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Házi\szorzotabla\obj\Debug\net8.0\ref\szorzotabla.dll
