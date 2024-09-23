@@ -46,5 +46,88 @@
 <button type="button" onclick="displayTime()">Idő kiírása</button>
 
 
+
+<h1>Változók</h1>
+
+<script>
+    // Szám típusú változók (var lehet const vagy let)
+    var a;
+    var a = 3;
+    let b = 4;
+
+    // Értékadó kifejezések
+    var osszeg = a+b;
+    let c = Math.sqrt(a*a+b*b);
+
+    // Szöveg típusú változó
+    var s = "Derékszögű háromszög oldalai:";
+</script>
+
+<h1>JavaScript változók használata</h1>
+<script>
+document.write(a + " + " + b + " = " + osszeg + "<br />")
+document.write("<h2>"+s+"</h2>")
+document.write("Befogók: "+a + ", " + b + " => Átfogó: " + c + "<br/>")
+</script>
+
+<script>
+    // Tömb definiálása (Az indexelés mindig 0-tól kezdődik!)
+    var autok = new Array();
+    autok[0]="Mercedes";
+    autok[1]="Lexus";
+    autok[2]="Nissan";
+    var jegyek = new Array(3,4,5,4,2,5);
+</script>
+
+<h1>JavaScript tömb használata</h1>
+<script>
+    document.write("Autók: "+autok[0] + ", " + autok[1] + ", " + autok[2] +
+    "<br />");
+    </script>
+    <h1>JavaScript tömbelemek feldolgozása</h1>
+    <p>Bővebben a vezérlőszerkezeteknél...</p>
+    <script>
+    var osszeg=0;
+    for(i=0;i<jegyek.length;i++) {
+    document.write(jegyek[i] + ", ");
+    osszeg+=jegyek[i];
+    }
+    document.write("<h2>Átlag:"+(osszeg/jegyek.length).toFixed(2)+"</h2>");
+</script>
+<br>
+<br>
+
+<h1>Deklarálás gyakorlása</h1>
+
+<h3 id="auto"></h3>
+
+<script>
+    let carName = "Volvo";
+    document.getElementById("auto").innerHTML = carName
+</script>
+
+<!-- Több változót is megadhatunk egy sorban, vesszővel kell elválasztani, pontos vesszővel kell lezárni-->
+<!-- pl: let person = "John Cena", carName = "Mercedes Benz", price = 200; -->
+
+<h1>Szám és szöveg kezelése</h1>
+<p id="egySzamTeszt">Ennek a helyére jön a számítás.</p>
+<p>Két számot összead ( 2 + 3 = 5), majd a szöveget hozzáfűzi.</p>
+<script>
+	function egySzamos()
+	{
+		let egySzam = 2 + 3 + "5";
+		document.getElementById("egySzamTeszt").innerHTML = egySzam;
+	}
+	
+</script>
+
+<button type="button" onclick="egySzamos()">Számítás!</button>
+
+
+
+
+
+    
+
 </body>
 </html>
