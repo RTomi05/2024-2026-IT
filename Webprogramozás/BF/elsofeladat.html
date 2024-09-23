@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Az első</title>
+<meta charset="UTF-8">
+<script>
+    function displayDate() {
+    alert("Hello...\n\nMost a böngésző értelmezi a JavaScript kódot.");
+    var d=new Date();
+    document.getElementById("demo").innerHTML=d.toLocaleDateString();
+    }
+    </script>
+</head>
+<body>
+<h1>J. Lovers</h1>
+<p>Tagok:</p>
+<ul>
+<li>Boti Lóránt</li>
+<li>Rengel Tamás</li>
+<li>Titkos Mikkentyű</li>
+</ul>
+<p>Hivatkozás:<br />
+<a href="https://www.wwe.com" target="blank" >Ugrás valahova... :D</a>
+</p>
+<p>Kép:<br /><br />
+<img id="kaméleon" src="./cameleon2.png"  alt="Kaméleonok" width="150" height="100"/>
+<img id="kaméleon2" src="./cameleon.jpg" alt="Kaméleonok" width="150" height="100"/>
+</p>
+
+
+<h1>Első JavaScript kódom</h1>
+<p id="demo">Ebbe a bekezdésbe kerül a dátum, ha a "Dátum kiírása" gombra kattintasz.</p>
+<button type="button" onclick="displayDate()">Dátum kiírása</button>
+
+<p id="idokiiras">Ebbe a bekezdésbe kerül az idő, ha az "Idő kiírása" gombra kattintasz.</p>
+
+<script>
+    function displayTime()
+    {
+    const z = new Date();
+    document.getElementById("idokiiras").innerHTML = z.toLocaleTimeString();
+    }
+    
+</script>
+
+<button type="button" onclick="displayTime()">Idő kiírása</button>
+
+
+</body>
+</html>
