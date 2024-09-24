@@ -3,6 +3,7 @@
 <head>
 <title>Az első</title>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="./styles.css">
 <script>
     function displayDate() {
     alert("Hello...\n\nMost a böngésző értelmezi a JavaScript kódot.");
@@ -88,16 +89,18 @@ document.write("Befogók: "+a + ", " + b + " => Átfogó: " + c + "<br/>")
     <p>Bővebben a vezérlőszerkezeteknél...</p>
     <script>
     var osszeg=0;
-    for(i=0;i<jegyek.length;i++) {
-    document.write(jegyek[i] + ", ");
-    osszeg+=jegyek[i];
+
+    for (i = 0; i < jegyek.length; i++)
+    {
+        document.write(jegyek[i] + ", ");
+        osszeg += jegyek[i];
     }
     document.write("<h2>Átlag:"+(osszeg/jegyek.length).toFixed(2)+"</h2>");
 </script>
 <br>
 <br>
 
-<h1>Deklarálás gyakorlása</h1>
+<h1>Deklarálás, tömbelemek kezelésének gyakorlása</h1>
 
 <h3 id="auto"></h3>
 
@@ -123,6 +126,50 @@ document.write("Befogók: "+a + ", " + b + " => Átfogó: " + c + "<br/>")
 
 <button type="button" onclick="egySzamos()">Számítás!</button>
 
+<br>
+<br>
+<br>
+
+<h1>Bekérés (prompt) gyakorlása</h1>
+
+<script>
+    function nevbekeres()
+    {
+        var nev;
+        var person=prompt("Kérem írja be a nevét!", "Roman Reigns");
+        if (person != null)
+    {
+        nev ="Hello " + person + "! Hogy vagy?";
+        document.getElementById("nevkell").innerHTML = nev;
+    }
+    }
+</script>
+
+<button type="button" onclick="nevbekeres()">Adatbekérés</button>
+
+<p id="nevkell"></p>
+
+
+
+<!--
+Készítsetek egy programot, amely bekér 5 egész értéket, és egy tömbben tárolja őket.
+A program ezután jelenítse mindegyik elem négyzetét.
+-->
+
+<script>
+    function szamNegyzet()
+    {
+        var arr = [ egy = prompt("Adja meg az első számot!"), ketto = prompt("Adja meg az második számot!"), harom = prompt("Adja meg a harmadik számot!"), negy = prompt("Adja meg a negyedik számot!"), ot = [prompt("Adja meg az ötödik számot!")]];
+        for(let l = 0; l < arr.length; l++)
+        {
+            sq = arr[i]
+            console.log(sq)
+        }
+    }
+
+</script>
+
+<button type="button" onclick="szamNegyzet()"><h1>Számok békérése</h1></button>
 
 
 
