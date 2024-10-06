@@ -156,20 +156,77 @@ Készítsetek egy programot, amely bekér 5 egész értéket, és egy tömbben t
 A program ezután jelenítse mindegyik elem négyzetét.
 -->
 
+<p id="alapSzam"></p>
+<p id="negyzet"></p>
+<button onclick="negyzetre()">Négyzetre emelés</button>
+
 <script>
-    function szamNegyzet()
+    function negyzetre(){
+    var mennyivan = 0
+    var szamok = []
+    while (mennyivan != 5)
     {
-        var arr = [ egy = prompt("Adja meg az első számot!"), ketto = prompt("Adja meg az második számot!"), harom = prompt("Adja meg a harmadik számot!"), negy = prompt("Adja meg a negyedik számot!"), ot = [prompt("Adja meg az ötödik számot!")]];
-        for(let l = 0; l < arr.length; l++)
-        {
-            sq = arr[i]
-            console.log(sq)
-        }
+        var szam = prompt("Kérek egy egész számot!")
+        szamok.push(szam)
+        mennyivan += 1
     }
+    document.getElementById("alapSzam").innerHTML = "A megadott számok: " + szamok
+    
+    let negyzetek = []
+    console.log(szamok)
+    for (let egySzam in szamok)
+    {
+        console.log(szamok[egySzam]*szamok[egySzam])
+        negyzetek.push(szamok[egySzam]*szamok[egySzam])
+    }
+    document.getElementById("negyzet").innerHTML = "A megadott számok négyzetei: " + negyzetek
+}
 
 </script>
 
-<button type="button" onclick="szamNegyzet()"><h1>Számok békérése</h1></button>
+<h1>Öt szám sorba rendezése</h1>
+<p id="otrendezett"></p>
+<button onclick="otSzamos()">Öt szám sorba rendezése</button>
+
+<script>
+    function otSzamos()
+    {
+        var szamlalo = 0
+        var szamLista = []
+        while(szamlalo != 5)
+        {
+            var szam = prompt("Kérek egy számot! ")
+            szamlalo += 1
+            szamLista.push(Number(szam))
+        }
+
+        szamLista.sort((function(a, b){return a-b}))
+
+        const legkisebb = szamLista[0]
+        console.log(legkisebb)
+        document.getElementById("otrendezett").innerHTML = "A legkisebb szám: " + legkisebb;
+    }
+</script>
+
+<script>
+    function hattalOszthato()
+    {
+    var bekert = prompt("Kérek egy számot!")
+    if (bekert %6 == 0)
+    {
+        darab += 1
+        
+    }
+    document.getElementById("hattal").innerHTML= "A hattal osztható számok száma: " + darab
+    }
+
+    //MIÉRT NEM ISMÉTLŐDIK
+
+</script>
+
+<h1>Hattal osztható szám-e?</h1>
+<p id="hattal"></p>
+<button onclick="hattalOszthato()">Hattal osztható?</button>
 
 
 
