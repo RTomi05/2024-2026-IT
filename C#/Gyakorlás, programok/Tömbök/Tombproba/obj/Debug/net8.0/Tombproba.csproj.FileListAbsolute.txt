@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\bin\Debug\net8.0\Tombproba.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\bin\Debug\net8.0\Tombproba.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\bin\Debug\net8.0\Tombproba.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\bin\Debug\net8.0\Tombproba.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\bin\Debug\net8.0\Tombproba.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\Tombproba.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\Tombproba.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\Tombproba.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\Tombproba.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\Tombproba.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\Tombproba.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\refint\Tombproba.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\Tombproba.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\Tombproba.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Tömbök\Tombproba\obj\Debug\net8.0\ref\Tombproba.dll
