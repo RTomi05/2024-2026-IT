@@ -17,7 +17,18 @@
             {
                 Console.Write(i + ", ");
             }
-            
+
+            Console.WriteLine();
+
+            Console.Write("Adj meg egy számot: ");
+            int egyik = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Adj meg egy számot: ");
+            int masik = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(egyik + masik);
+
+            //int[,] ujTomb = { {}, { } };
+
         }
     }
 }

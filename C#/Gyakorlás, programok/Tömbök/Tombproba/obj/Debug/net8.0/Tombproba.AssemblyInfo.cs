@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tombproba")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05a88e0370b41d90b8b29195938a055b69279f5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+301538a33604f55dcbe9857c06135095587b3285")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tombproba")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tombproba")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

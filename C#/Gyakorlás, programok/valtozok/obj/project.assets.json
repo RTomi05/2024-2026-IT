@@ -13,19 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD:valtozok/obj/project.assets.json
-      "projectUniqueName": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\valtozok\\valtozok.csproj",
+      "projectUniqueName": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\valtozok\\valtozok.csproj",
       "projectName": "valtozok",
-      "projectPath": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\valtozok\\valtozok.csproj",
+      "projectPath": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\valtozok\\valtozok.csproj",
       "packagesPath": "C:\\Users\\rengelt22\\.nuget\\packages\\",
-      "outputPath": "D:\\munkakönyvtár\\Rengel Tamás\\C#\\2024-2025-IT\\valtozok\\obj\\",
-=======
-      "projectUniqueName": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\valtozok\\valtozok.csproj",
-      "projectName": "valtozok",
-      "projectPath": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\valtozok\\valtozok.csproj",
-      "packagesPath": "C:\\Users\\rengelt22\\.nuget\\packages\\",
-      "outputPath": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\valtozok\\obj\\",
->>>>>>> d0ef7473830c5fad61c6b42d6f1ab5e9d06cae2b:C#/valtozok/obj/project.assets.json
+      "outputPath": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\valtozok\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rengelt22\\AppData\\Roaming\\NuGet\\NuGet.Config",
