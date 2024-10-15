@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\bin\Debug\net8.0\fuggvenygyak.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\bin\Debug\net8.0\fuggvenygyak.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\bin\Debug\net8.0\fuggvenygyak.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\bin\Debug\net8.0\fuggvenygyak.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\bin\Debug\net8.0\fuggvenygyak.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\fuggvenygyak.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\fuggvenygyak.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\fuggvenygyak.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\fuggvenygyak.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\fuggvenygyak.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\fuggvenygyak.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\refint\fuggvenygyak.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\fuggvenygyak.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\fuggvenygyak.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Függvények\Függvények1\fuggvenygyak\obj\Debug\net8.0\ref\fuggvenygyak.dll
