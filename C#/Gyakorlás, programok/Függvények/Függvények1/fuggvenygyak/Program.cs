@@ -1,4 +1,6 @@
-﻿namespace fuggvenygyak
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace fuggvenygyak
 {
     internal class Program
     {
@@ -49,6 +51,39 @@
             Console.WriteLine(eloszt(2, 2));
             Console.WriteLine(eloszt(2, 4));
             Console.WriteLine(eloszt(2.5, 1.2));
+            Console.WriteLine(kiiras(5));
+
+
+
+
         }
+        //függvény, ami kap egy egyjegyű pozitív számot, majd szövegesen visszaadja annak a számnak a nevét
+        // ha negatív a szám, írja ki, hogy túl kicsi, ha 9-nél nagyobb, írja ki, hogy túl nagy
+
+        static int kiiras(int egyJegyu)
+        {
+            egyJegyu = 0;
+            Console.Write("Adj meg egy számot: ");
+            egyJegyu = Convert.ToInt32(Console.ReadLine());
+
+            if (egyJegyu < 0)
+                Console.WriteLine("Kisebb, mint 0.");
+
+            else if (egyJegyu > 9)
+                Console.WriteLine("Nagyobb, mint 9.");
+                    
+            return egyJegyu;
+        }
+
+        
+
+
+
+
+
+        //függvény, ami a paraméterként kapott egyjegyű pozitív egész számot szövegesen kiírja a konzolba
+
+
+
     }
 }
