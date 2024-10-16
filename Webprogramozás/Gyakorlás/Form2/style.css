@@ -1,0 +1,48 @@
+
+body{
+    background-image: url("cameleon2.png");
+}
+
+form{
+    text-align: center;
+}
+
+label
+{
+    font-size: 15px;
+}
+
+input{
+    margin: 10px;
+    font-size:40px;
+}
+
+input:hover{
+    font-size: 40px;
+    background-color: aqua;
+}
+
+.Kuldes:hover
+{
+    font-weight: bold;
+}
+
+h1{
+    margin-bottom:-20px;
+}
+
+legend{
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+
+input[name = "nev"]
+{
+    font-size: 40px;
+}
+
+input[name = "emailcim"]
+{
+    font-size: 40px;
+}
