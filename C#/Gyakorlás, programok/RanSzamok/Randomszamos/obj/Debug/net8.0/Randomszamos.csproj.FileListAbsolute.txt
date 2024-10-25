@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\bin\Debug\net8.0\Randomszamos.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\bin\Debug\net8.0\Randomszamos.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\bin\Debug\net8.0\Randomszamos.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\bin\Debug\net8.0\Randomszamos.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\bin\Debug\net8.0\Randomszamos.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\Randomszamos.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\Randomszamos.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\Randomszamos.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\Randomszamos.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\Randomszamos.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\Randomszamos.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\refint\Randomszamos.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\Randomszamos.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\Randomszamos.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Randomszamos\obj\Debug\net8.0\ref\Randomszamos.dll
