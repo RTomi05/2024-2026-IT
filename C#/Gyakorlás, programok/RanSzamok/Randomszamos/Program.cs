@@ -48,7 +48,7 @@
             Console.Write("Mennyi legyen a lista elemszáma? ");
             int darabszam = Convert.ToInt32(Console.ReadLine());
 
-            int[] masodikLista= new int[darabszam];
+            int[] masodikLista = new int[darabszam];
 
             for (int i = 0; i < masodikLista.Length; i++)
             {
