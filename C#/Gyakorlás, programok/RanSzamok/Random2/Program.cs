@@ -29,17 +29,30 @@
             return vissza;
         }
 
-        static int[] randomSzam(int szamjegy, int oszto)
+        static int RandomSzam(int szamjegy, int oszto)
         {
             //return rand.Next(50, 500) * 2;
-            return rand.Next()
+            /*
+            Console.Write("Add meg hány számjegyű számokat kérsz: ");
+            szamjegy = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("Add meg mennyivel legyenek oszthatók a számok: ");
+            oszto = Convert.ToInt32(Console.ReadLine());*/
+
+            int also = (int)Math.Pow(10, szamjegy - 1) / oszto;
+            int felso = (int)Math.Pow(10, szamjegy) / oszto;
+            
+            return rand.Next(also, felso) * oszto;
+            
         }
+        
 
 
 
         static void Main(string[] args)
         {
             tombKiir(RandomSzamok(67));
+            
         }
 
     }
