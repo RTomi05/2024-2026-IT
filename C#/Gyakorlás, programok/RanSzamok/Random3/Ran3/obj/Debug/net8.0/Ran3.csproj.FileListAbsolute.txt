@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\refint\Ran3.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\ref\Ran3.dll
