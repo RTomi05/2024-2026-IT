@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ciklusok2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+570ae06c59a974db9975a9adc791c084024ae094")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+781a07bf0a2e93258b1d3a215f51008c50e3af13")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ciklusok2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ciklusok2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

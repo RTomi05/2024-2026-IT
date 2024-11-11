@@ -1,0 +1,30 @@
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\bin\Debug\net8.0\Vanda.exe
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\bin\Debug\net8.0\Vanda.deps.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\bin\Debug\net8.0\Vanda.runtimeconfig.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\bin\Debug\net8.0\Vanda.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\bin\Debug\net8.0\Vanda.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\Vanda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\Vanda.AssemblyInfoInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\Vanda.AssemblyInfo.cs
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\Vanda.csproj.CoreCompileInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\Vanda.sourcelink.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\Vanda.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\refint\Vanda.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\Vanda.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\Vanda.genruntimeconfig.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Vanda\obj\Debug\net8.0\ref\Vanda.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\bin\Debug\net8.0\Vanda.exe
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\bin\Debug\net8.0\Vanda.deps.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\bin\Debug\net8.0\Vanda.runtimeconfig.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\bin\Debug\net8.0\Vanda.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\bin\Debug\net8.0\Vanda.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\Vanda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\Vanda.AssemblyInfoInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\Vanda.AssemblyInfo.cs
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\Vanda.csproj.CoreCompileInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\Vanda.sourcelink.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\Vanda.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\refint\Vanda.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\Vanda.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\Vanda.genruntimeconfig.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\helping\Remélem segít\obj\Debug\net8.0\ref\Vanda.dll

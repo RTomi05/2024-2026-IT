@@ -1,49 +1,44 @@
 ﻿using System;
-class LottoSorsolo
+
+class LottoSorsolas
 {
     static void Main()
     {
-        // Lottó számok generálása
-        List<int> lottoszamok = GenerálLottóSzámokat(6, 1, 90);
+        Random rand = new Random();
+        int[] lottoSzamok = new int[5];
+        int szamIndex = 0;
 
-        // Kiírás
-        Console.WriteLine("A húzott lottószámok:");
-        foreach (int szam in lottoszamok)
+        // A sorsolás
+        while (szamIndex < 5)
         {
-            Console.WriteLine(szam);
-        }
-    }
+            int ujSzam = rand.Next(1, 91);  // Véletlenszerű szám 1 és 90 között
+            bool isUnique = true;
 
-    // Metódus, ami véletlenszerű lottószámokat generál, ismétlés nélkül
-    static List<int> GenerálLottóSzámokat(int darab, int min, int max)
-    {
-        Random random = new Random();
+            // Ellenőrizzük, hogy az új szám már szerepel-e a tömbben
+            for (int i = 0; i < szamIndex; i++)
+            {
+                if (lottoSzamok[i] == ujSzam)
+                {
+                    isUnique = false;
+                    break;  // Ha ismétlődik, kilépünk az ellenőrzésből
+                }
+            }
 
-        // Az összes lehetséges számot betesszük egy listába
-        List<int> lehetségesSzámok = new List<int>();
-        for (int i = min; i <= max; i++)
-        {
-            lehetségesSzámok.Add(i);
-        }
-
-        List<int> kiválasztottSzámok = new List<int>();
-
-        // Kiválasztjuk a szükséges számokat
-        for (int i = 0; i < darab; i++)
-        {
-            // Véletlenszerű szám kiválasztása a listából
-            int index = random.Next(lehetségesSzámok.Count);
-            int kiválasztottSzám = lehetségesSzámok[index];
-
-            // A kiválasztott számot eltávolítjuk a listából, hogy ne választhassuk újra
-            lehetségesSzámok.RemoveAt(index);
-
-            // A kiválasztott számot hozzáadjuk az eredményhez
-            kiválasztottSzámok.Add(kiválasztottSzám);
+            // Ha egyedi számot találtunk, hozzáadjuk a tömbhöz
+            if (isUnique)
+            {
+                lottoSzamok[szamIndex] = ujSzam;
+                szamIndex++;
+            }
         }
 
-        // A számokat rendezzük növekvő sorrendbe
-        kiválasztottSzámok.Sort();
-        return kiválasztottSzámok;
+        // A sorsolt számok kiírása
+        Console.WriteLine("Sorsolt számok:");
+        foreach (int szam in lottoSzamok)
+        {
+            Console.Write(szam + ", ");
+        }
+
+        Console.WriteLine();  // Új sor a végén
     }
 }

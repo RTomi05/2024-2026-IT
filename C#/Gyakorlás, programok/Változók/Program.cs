@@ -10,7 +10,7 @@ namespace valtozok
 
 			int egeszSzam = 2;
 			float lebegoPontos;
-			double d1, d2;
+			double d1;
 
 			Console.WriteLine(egeszSzam + 10);
 			egeszSzam += 10;
@@ -24,9 +24,8 @@ namespace valtozok
 			lebegoPontos /= 5;
 			Console.WriteLine("lebegő: " + lebegoPontos);
 
-
 			d1 = 1;
-			d2 = 2;
+			
 
 			d1 += 1.1;
 			Console.WriteLine(d1);

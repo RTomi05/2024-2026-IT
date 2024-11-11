@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ciklusos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7246a3fa46c43c3de31690c46d819d4ebf4353b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+781a07bf0a2e93258b1d3a215f51008c50e3af13")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ciklusos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ciklusos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

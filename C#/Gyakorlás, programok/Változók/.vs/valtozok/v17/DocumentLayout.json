@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\valtozok\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Felhasznalo\\Documents\\Tomi\\Repo-k\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\V\u00E1ltoz\u00F3k\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEBB8AE7-9721-415D-BB41-877B7670865A}|valtozok.csproj|c:\\users\\felhasznalo\\documents\\tomi\\repo-k\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\v\u00E1ltoz\u00F3k\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AEBB8AE7-9721-415D-BB41-877B7670865A}|valtozok.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Felhasznalo\\Documents\\Tomi\\Repo-k\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\V\u00E1ltoz\u00F3k\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Felhasznalo\\Documents\\Tomi\\Repo-k\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\V\u00E1ltoz\u00F3k\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T15:05:58.625Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

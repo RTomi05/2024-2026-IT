@@ -13,3 +13,18 @@ D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.pdb
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.genruntimeconfig.cache
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\ref\Ran3.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.exe
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.deps.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.runtimeconfig.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\bin\Debug\net8.0\Ran3.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.AssemblyInfoInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.AssemblyInfo.cs
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.csproj.CoreCompileInputs.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.sourcelink.json
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\refint\Ran3.dll
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.pdb
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\Ran3.genruntimeconfig.cache
+C:\Users\Felhasznalo\Documents\Tomi\Repo-k\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random3\Ran3\obj\Debug\net8.0\ref\Ran3.dll
