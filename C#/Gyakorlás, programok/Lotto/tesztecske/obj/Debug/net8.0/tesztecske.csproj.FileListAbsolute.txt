@@ -1,0 +1,15 @@
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\bin\Debug\net8.0\tesztecske.exe
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\bin\Debug\net8.0\tesztecske.deps.json
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\bin\Debug\net8.0\tesztecske.runtimeconfig.json
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\bin\Debug\net8.0\tesztecske.dll
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\bin\Debug\net8.0\tesztecske.pdb
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\tesztecske.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\tesztecske.AssemblyInfoInputs.cache
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\tesztecske.AssemblyInfo.cs
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\tesztecske.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\tesztecske.sourcelink.json
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\tesztecske.dll
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\refint\tesztecske.dll
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\tesztecske.pdb
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\tesztecske.genruntimeconfig.cache
+D:\munkakönyvtár\RTomi05\2024-2025-IT\C#\Gyakorlás, programok\Lotto\tesztecske\obj\Debug\net8.0\ref\tesztecske.dll
