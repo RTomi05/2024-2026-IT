@@ -1,0 +1,33 @@
+
+input[type = "text"]
+{
+    box-shadow: 20px 10px;
+    margin: 20px;
+}
+
+input[type = "password"]
+{
+    box-shadow: 20px 10px;
+    margin: 20px;
+}
+fieldset
+{
+    box-shadow: 10px 10px gray;
+}
+legend
+{
+    margin:auto;
+}
+
+input:hover
+{
+    background-color: lime;
+}
+input[type = "submit"]
+{
+    display: block;
+    margin: auto;
+    font-size: 25px;
+}
+
+

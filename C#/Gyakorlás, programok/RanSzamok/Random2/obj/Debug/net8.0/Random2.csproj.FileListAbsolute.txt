@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\Random2.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\Random2.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\Random2.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\Random2.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\Random2.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\bin\Debug\net8.0\Random2.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\bin\Debug\net8.0\Random2.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\bin\Debug\net8.0\Random2.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\bin\Debug\net8.0\Random2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\bin\Debug\net8.0\Random2.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\Random2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\refint\Random2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\Random2.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\Random2.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\RanSzamok\Random2\obj\Debug\net8.0\ref\Random2.dll

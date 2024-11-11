@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\bin\Debug\net8.0\gyakorlas2.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\bin\Debug\net8.0\gyakorlas2.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\bin\Debug\net8.0\gyakorlas2.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\bin\Debug\net8.0\gyakorlas2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\bin\Debug\net8.0\gyakorlas2.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\gyakorlas2.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\gyakorlas2.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\gyakorlas2.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\gyakorlas2.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\gyakorlas2.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\gyakorlas2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\refint\gyakorlas2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\gyakorlas2.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\gyakorlas2.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas2.0\gyakorlas2\obj\Debug\net8.0\ref\gyakorlas2.dll
