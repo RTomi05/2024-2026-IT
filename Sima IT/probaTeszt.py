@@ -1,70 +1,77 @@
 
-"""
+import random
 
-
-# Mentés funkció
-def save_data(filename, data):
-    with open(filename, 'w') as file:
-        file.write(data)
-
-# Betöltés funkció
-def load_data(filename):
-    with open(filename, 'r') as file:
-        return file.read()
-
-# Tesztelés
-save_data("data.txt", "Ez egy minta adat.")
-print(load_data("data.txt"))
-
-# Betöltés egy szövegrész alapján
-def load_line_by_keyword(filename, keyword):
-    with open(filename, 'r') as file:
-        for line in file:
-            if keyword in line:  # Ha a kulcsszó szerepel a sorban
-                return line.strip()  # Visszaadja azt a sort
-    return "A keresett kifejezés nem található."
-
-# Tesztelés
-save_data("data.txt", "Ez egy teszt szöveg.")
-ezkell = load_line_by_keyword("data.txt", "hoppá")  # Kiválasztja az első sort, ha "teszt" szerepel benne
-print(ezkell)
-
-"""
-
-def saving(filename, var1, var2, var3):
+def saving(filename, var1, var2):
     with open(filename, 'w') as file:
         # Az értékeket egy sorba írjuk, vesszővel elválasztva
-        file.write(f"{var1},{var2},{var3}\n")
+        file.write(f"{var1},{var2}\n")
 
 def loading(filename):
     with open(filename, 'r') as file:
         # Beolvassuk az egyetlen sort és szétválasztjuk a változókat
         line = file.readline()
-        var1, var2, var3 = line.strip().split(',')
-        # Visszaadjuk a három változót megfelelő típusban
-        return var1, var2, var3
+        var1, var2 = line.strip().split(',')
+        # Visszaadjuk a kettő változót megfelelő típusban
+        return var1, var2
 
 def startUp():
-    loaded_a = 0
-    loaded_b = 0
-    loaded_c = 0
+    
+    global mp
+    global ov
+    mp = 50
+    ov = 50
 
     print("Üdvözlünk a játékban!")
     ujvagynem = int(input("Új játékot kezdesz?""\n""1: Igen!\n2: Nem, a savedata betöltése!\n"))
     ujvagynemEldontott = False
     while ujvagynemEldontott != True:
         if ujvagynem == 1:
-            print(loaded_a, loaded_b, loaded_c)
+            print("Magyar Péter támogatottsága: ", mp, "\n" + "Orbán Viktor támogatottsága: ", ov)
             break
             
         else:
-            loaded_a, loaded_b, loaded_c = loading("savedata.txt")
-            print(loaded_a, loaded_b, loaded_c)
+            mp, ov = loading("savedata.txt")
+            print("Magyar Péter támogatottsága: ", mp, "\n" + "Orbán Viktor támogatottsága: ", ov)
             break
+            
+
+def Szavazas():
+    
+
+    szavazatok = {
+        "Magyar Péter": mp,
+        "Orbán Viktor": ov
+    }
+
+    # Összes szavazat számítása
+    osszes_szavazat = sum(szavazatok.values())
+
+    # Százalékos eredmények kiszámítása
+    szazalekok = {}
+    for fel, szavazat in szavazatok.items():
+        szazalekok[fel] = (szavazat / osszes_szavazat) * 100
+
+    # Ha szükséges, korrekciós faktor alkalmazása, hogy pontosan 100%-ot kapjunk
+    ossz_szazalek = sum(szazalekok.values())
+    if ossz_szazalek != 100:
+        korrekcio = 100 / ossz_szazalek
+        for fel in szazalekok:
+            szazalekok[fel] *= korrekcio
+
+    # Eredmények kiíratása
+    for fel, szazalek in szazalekok.items():
+        print(f"{fel}: {szazalek:.2f}%")
+
 
 
 startUp()
 print("Elért a végére a program.")
+input()
+
+
+print("\n")
+#Szavazas()
+saving("savedata.txt", mp, ov)
 
 
 
@@ -90,12 +97,13 @@ print("Elért a végére a program.")
 
 
 
-# Tesztelés
-"""
-a = 10
-b = 20.5
-c = "Hello"
-"""
+
+
+
+
+
+#Tippek
+
 
 
 # Mentés
