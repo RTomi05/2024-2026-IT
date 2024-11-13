@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\bin\Debug\net8.0\Ciklusoktarhaza.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\bin\Debug\net8.0\Ciklusoktarhaza.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\bin\Debug\net8.0\Ciklusoktarhaza.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\bin\Debug\net8.0\Ciklusoktarhaza.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\bin\Debug\net8.0\Ciklusoktarhaza.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\Ciklusoktarhaza.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\Ciklusoktarhaza.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\Ciklusoktarhaza.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\Ciklusoktarhaza.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\Ciklusoktarhaza.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\Ciklusoktarhaza.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\refint\Ciklusoktarhaza.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\Ciklusoktarhaza.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\Ciklusoktarhaza.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlas3.0\Ciklusoktarhaza\obj\Debug\net8.0\ref\Ciklusoktarhaza.dll

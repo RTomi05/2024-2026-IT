@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\DatumGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\DatumGenerator.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\DatumGenerator.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\DatumGenerator.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\DatumGenerator.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\bin\Debug\net8.0\DatumGenerator.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\bin\Debug\net8.0\DatumGenerator.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\bin\Debug\net8.0\DatumGenerator.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\bin\Debug\net8.0\DatumGenerator.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\bin\Debug\net8.0\DatumGenerator.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\DatumGenerator.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\refint\DatumGenerator.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\DatumGenerator.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\DatumGenerator.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\doga\DatumGenerator\obj\Debug\net8.0\ref\DatumGenerator.dll
