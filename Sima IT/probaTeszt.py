@@ -44,19 +44,66 @@ def loading(filename):
         # Visszaadjuk a három változót megfelelő típusban
         return var1, var2, var3
 
+def startUp():
+    loaded_a = 0
+    loaded_b = 0
+    loaded_c = 0
+
+    print("Üdvözlünk a játékban!")
+    ujvagynem = int(input("Új játékot kezdesz?""\n""1: Igen!\n2: Nem, a savedata betöltése!\n"))
+    ujvagynemEldontott = False
+    while ujvagynemEldontott != True:
+        if ujvagynem == 1:
+            print(loaded_a, loaded_b, loaded_c)
+            break
+            
+        else:
+            loaded_a, loaded_b, loaded_c = loading("savedata.txt")
+            print(loaded_a, loaded_b, loaded_c)
+            break
+
+
+startUp()
+print("Elért a végére a program.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Tesztelés
+"""
 a = 10
 b = 20.5
 c = "Hello"
+"""
+
 
 # Mentés
-saving("variables.txt", a, b, c)
+#saving("savedata.txt", a, b, c)
 
 # Betöltés
-loaded_a, loaded_b, loaded_c = loading("variables.txt")
-print(loaded_a, loaded_b, loaded_c)
+#loaded_a, loaded_b, loaded_c = loading("savedata.txt")
+#print(loaded_a, loaded_b, loaded_c)
 
-proba = (loaded_a)
-print(proba)
-
-print("JÓ!")
+#proba = (loaded_a)
+#print(proba)
