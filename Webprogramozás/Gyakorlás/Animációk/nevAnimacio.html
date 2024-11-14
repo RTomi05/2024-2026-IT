@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Név Animáció</title>
+    <style>
+        h1{
+            margin: 80px;
+            font-size: 200px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div{
+            text-align: center;
+        }
+
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            
+        }
+
+        #t{
+            color: brown;
+            background-color: blue;
+            animation-name: T;
+            animation-duration: 5s;
+        }
+
+        #o{
+            color: blue;
+            background-color: green;
+            animation-name: O;
+            animation-duration: 5s;
+        }
+
+        #m{
+            color: green;
+            background-color: orange;
+        }
+
+        #i{
+            color: orange;
+            background-color: brown;
+        }
+
+
+        @keyframes T
+        {
+            from {background-color: brown;}
+            to {background-color: blue;}
+        }
+
+        @keyframes O
+        {
+            from {background-color: green;}
+            to {background-color: orange;}
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="grid-container">
+    <div id="t"><h1>T</h1></div>
+    <div id="o"><h1>O</h1></div>
+    <div id="m"><h1>M</h1></div>
+    <div id="i"><h1>I</h1></div>
+    </div>
+</body>
+</html>
