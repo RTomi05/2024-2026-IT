@@ -24,7 +24,61 @@
             }
 
             Console.WriteLine($"3. feladat: Bejegyzések száma: {nevek.Length} darab");
+            //VAGY  
             Console.WriteLine("3. feladat: Bejegyzések száma: {0} darab", nevek.Length);
+
+            Console.WriteLine();
+
+
+            Console.Write("4. feladat: ");
+
+            bool voltIlyen = false;
+
+            for (int i = 0; i < adasok.Length; i++)
+            {
+                if (adasok[i] == 4)
+                {
+                    voltIlyen = true;
+                    break;
+                }
+            }
+
+            //VAGY
+
+            voltIlyen = false;
+            for (int i = 0; i < adasok.Length && !voltIlyen; i++)
+            {
+                voltIlyen |= adasok[i] == 4;
+            }
+
+
+
+
+            if (voltIlyen)
+            {
+                Console.WriteLine("Volt négy adást indító sofőr.");
+            }
+            else
+            {
+                Console.WriteLine("Nem volt négy adást indító sofőr.");
+            }
+
+            Console.Write("5. feladat: Kérek egy nevet: ");
+            string nev = Console.ReadLine();
+
+            int hivasDb = 0;
+            for (int i = 0;i < nevek.Length;i++)
+            {
+                if (nevek[i] == nev)
+                {
+                    hivasDb += adasok[i];
+                }
+            }
+
+            if (hivasDb > 0)
+            {
+                Console.WriteLine("");
+            }
         }
     }
 }
