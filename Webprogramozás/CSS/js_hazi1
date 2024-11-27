@@ -12,3 +12,35 @@ console.log(typeof d)
 console.log(typeof e)
 console.log(typeof f)
 
+
+<script>
+let a = 12;
+console.log(a);
+
+a = "12";
+
+console.log(a, typeof a);
+
+console.log(a == 12);
+
+console.log(a === 12);
+
+let b = 13;
+b = b / 2;
+console.log("A b értéke:", b);
+
+b = b / 11;
+console.log("A b értéke:", b);
+
+b = b / 3;
+console.log("A b értéke:", b);
+
+b = 20;
+b**= 2;
+console.log("A b értéke:", b);
+
+console.log(a > b, a, b);
+</script>
+
+Hf.: utolsó 3 matek házi feladatból megcsinálni
+
