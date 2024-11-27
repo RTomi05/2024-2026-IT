@@ -1,0 +1,7 @@
+id	nev	felveheto	minimum
+1	francia	16	140
+2	angol	30	150
+3	matematika	16	160
+4	informatika	16	150
+5	környezetvédelmi	16	130
+6	közgazdasági	30	130
