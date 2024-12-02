@@ -13,7 +13,7 @@ console.log(typeof e)
 console.log(typeof f)
 
 
-<script>
+
 let a = 12;
 console.log(a);
 
@@ -40,7 +40,6 @@ b**= 2;
 console.log("A b értéke:", b);
 
 console.log(a > b, a, b);
-</script>
 
-Hf.: utolsó 3 matek házi feladatból megcsinálni
+//Hf.: utolsó 3 matek házi feladatból megcsinálni
 
