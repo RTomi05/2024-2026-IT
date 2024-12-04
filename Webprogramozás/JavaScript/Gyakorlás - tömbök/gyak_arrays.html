@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const gyumolcs = ["alma", "banán", "citrom", "dinnye", "eper"];
+
+		console.log("-----------Első próba----------");
+
+        console.log(gyumolcs);
+        console.log(gyumolcs.toString());
+
+		console.log("\n-----------Második próba----------");
+
+        for(let i = 0; i < gyumolcs.length; i++)
+            {
+                console.log(gyumolcs[i]);
+            }
+
+		console.log("\n-----------Harmadik próba----------");
+
+		for(let elem of gyumolcs)
+		{
+			console.log(elem);
+		}
+
+		gyumolcs[gyumolcs.length] = "füge";
+
+		console.log("\n------------Negyedik próba-------------");
+
+		console.log(gyumolcs.toString());
+
+		gyumolcs[20] = "mananász";
+
+		console.log("\n-------------Ötödik próba (undefined)-------------");
+
+		for(let elem of gyumolcs)
+		{
+			console.log(elem);
+		}
+
+
+		//Hf.: tömb, ami a két számjegyű számokat tartalmazza, számkiíratás (először végig, aztán huszasával, majd minden másodikat, illetve 12-vel oszthatóakat, végül visszafele)
+    </script>
+</body>
+</html>
