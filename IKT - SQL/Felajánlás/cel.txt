@@ -1,8 +1,0 @@
-az	megnevezes	civil
-1	járdaépítés	0
-2	sérült gyerekek támogatása	1
-3	lakótelepi játszótér felújítása	0
-4	faültetés a főtéren	0
-5	állatmenhely korszerűsétése	1
-6	parkosítás az iskola körül	0
-7	daganatos betegek gondozása	1
