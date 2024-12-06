@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\bin\Debug\net8.0\osztalyos.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\bin\Debug\net8.0\osztalyos.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\bin\Debug\net8.0\osztalyos.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\bin\Debug\net8.0\osztalyos.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\bin\Debug\net8.0\osztalyos.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\osztalyos.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\osztalyos.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\osztalyos.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\osztalyos.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\osztalyos.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\osztalyos.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\refint\osztalyos.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\osztalyos.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\osztalyos.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\osztalyos\obj\Debug\net8.0\ref\osztalyos.dll
