@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s oszt\u00E1lyok, konstruktorok\\osztalyos\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FA5ECAA8-115D-430D-8C2C-B9A458825F19}|osztalyos.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\gyakorl\u00E1s oszt\u00E1lyok, konstruktorok\\osztalyos\\macska.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA5ECAA8-115D-430D-8C2C-B9A458825F19}|osztalyos.csproj|solutionrelative:macska.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA5ECAA8-115D-430D-8C2C-B9A458825F19}|osztalyos.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\gyakorl\u00E1s oszt\u00E1lyok, konstruktorok\\osztalyos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA5ECAA8-115D-430D-8C2C-B9A458825F19}|osztalyos.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "macska.cs",
+              "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s oszt\u00E1lyok, konstruktorok\\osztalyos\\macska.cs",
+              "RelativeDocumentMoniker": "macska.cs",
+              "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s oszt\u00E1lyok, konstruktorok\\osztalyos\\macska.cs",
+              "RelativeToolTip": "macska.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:08:37.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s oszt\u00E1lyok, konstruktorok\\osztalyos\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s oszt\u00E1lyok, konstruktorok\\osztalyos\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:01:36.619Z",
+              "EditorCaption": ""
             }
           ]
         }

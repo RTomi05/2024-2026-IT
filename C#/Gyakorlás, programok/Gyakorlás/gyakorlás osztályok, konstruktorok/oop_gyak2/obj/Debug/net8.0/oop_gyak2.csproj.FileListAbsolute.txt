@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\oop_gyak2.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\oop_gyak2.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\oop_gyak2.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\oop_gyak2.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\oop_gyak2.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\bin\Debug\net8.0\oop_gyak2.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\bin\Debug\net8.0\oop_gyak2.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\bin\Debug\net8.0\oop_gyak2.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\bin\Debug\net8.0\oop_gyak2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\bin\Debug\net8.0\oop_gyak2.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\oop_gyak2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\refint\oop_gyak2.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\oop_gyak2.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\oop_gyak2.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\gyakorlás osztályok, konstruktorok\oop_gyak2\obj\Debug\net8.0\ref\oop_gyak2.dll
