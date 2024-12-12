@@ -22,7 +22,12 @@ namespace adatokClassGyakorlas
             vegIdo[4] = Convert.ToInt32(vag[4]);
             vegIdo[5] = Convert.ToInt32(vag[5]);
         }
-
+        /// <summary>
+        /// Ez a kezdési időt adja vissza másodpercben
+        /// újabb sor<br/>
+        /// hehe
+        /// </summary>
+        /// <returns>A nap másodperce</returns>
         public int idoMasodpercbenKezd()
         {
             return kezdIdo[0] * 60 * 60 + kezdIdo[1] * 60 + kezdIdo[2];
