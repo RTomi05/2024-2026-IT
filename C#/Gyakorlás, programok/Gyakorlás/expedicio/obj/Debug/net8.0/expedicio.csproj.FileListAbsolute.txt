@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\bin\Debug\net8.0\expedicio.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\bin\Debug\net8.0\expedicio.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\bin\Debug\net8.0\expedicio.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\bin\Debug\net8.0\expedicio.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\bin\Debug\net8.0\expedicio.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\expedicio.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\expedicio.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\expedicio.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\expedicio.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\expedicio.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\expedicio.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\refint\expedicio.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\expedicio.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\expedicio.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\expedicio\obj\Debug\net8.0\ref\expedicio.dll
