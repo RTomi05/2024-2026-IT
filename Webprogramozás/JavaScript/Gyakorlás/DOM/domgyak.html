@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Gyakorlás</title>
+</head>
+<body onload="init();">
+    <div id="elso">Első div</div>
+	<div id="masodik">Második div</div>
+
+    <script>
+
+		function init()
+		{
+			console.log(document.getElementById("elso"));
+			console.log(document.getElementById("masodik"));
+
+			let m2 = document.getElementById("masodik");
+			m2.innerHTML = "Valami <b>más</b>";
+			console.log(m2);
+		}
+        
+    </script>
+
+
+</body>
+</html>
