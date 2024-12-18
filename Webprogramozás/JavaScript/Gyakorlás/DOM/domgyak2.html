@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Gyakorlás - 2</title>
+</head>
+<body>
+    <input type="text" id="elso"><br>
+	<input type="text" id="masodik"><br>
+	<button onclick="csere()">Csere</button>
+
+	<div id="doboz">Muhahahahhaha</div>
+	<label for = "szelesseg">Szélesség: </label><input type="number" id="szelesseg">
+	<label for = "magassag">Magasság: </label><input type="number" id="magassag">
+	<label for = "szin">Szín: </label><input type="color" id="szin">
+	<button onclick="meret()">Beállítás</button>
+
+	
+
+	<script>
+		function csere()
+		{
+			const harmadik = document.getElementById("elso").value;
+			document.getElementById("elso").value = document.getElementById("masodik").value;
+			document.getElementById("masodik").value = harmadik;
+
+			document.getElementById("elso").style.backgroundColor = "green";
+			document.getElementById("elso").style.fontSize = "90px";
+			document.getElementById("elso").style.color = "#FF0000"; 
+		}
+
+		function meret()
+		{
+			const w = document.getElementById("szelesseg").value;
+			const h = document.getElementById("magassag").value;
+
+			const doboz = document.getElementById("doboz")
+			doboz.style.width = w + "px";
+			doboz.style.height = h + "px";
+
+			const szin = document.getElementById("szin").value;
+			doboz.style.backgroundColor = szin;
+			
+		}
+	</script>
+
+</body>
+</html>
