@@ -1,55 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Counter in Square</title>
+  <title>Doga - négyzet</title>
+
   <style>
-    body {
+    #negyzet{
+      margin: auto;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
+      background-color:red;
+      color: white;
     }
 
-    #counterSquare {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #007bff;
-      color: white;
-      font-size: 2rem;
-      width: 100px;
-      height: 100px;
-      border-radius: 10px;
-      transition: all 0.2s ease;
-    }
   </style>
 </head>
 <body>
 
-  <div id="counterSquare">0</div>
+  <div id="negyzet">0</div>
 
   <script>
-    const counterSquare = document.getElementById('counterSquare');
-    let count = 0;
+    const negyzet = document.getElementById('negyzet');
+    let szamlalo = 0;
+    let novekedj = true;
 
-    function updateCounter() {
-      if (count <= 100) {
-        counterSquare.textContent = count;
-        const newSize = 100 + count; // Increase size based on count
-        counterSquare.style.width = `${newSize}px`;
-        counterSquare.style.height = `${newSize}px`;
-        counterSquare.style.fontSize = `${2 + count / 50}rem`; // Slight font size increase
-        count++;
-        setTimeout(updateCounter, 100); // Update every 100ms
+    function szamolj() {
+      negyzet.textContent = szamlalo;
+      const uj = 100 + szamlalo;
+      negyzet.style.width = uj + "px";
+      negyzet.style.height = uj + "px";
+      negyzet.style.fontSize = (50 + szamlalo / 50) + "px";
+
+      if (novekedj)
+      {
+        szamlalo++;
+        if (szamlalo >= 100)
+        {
+          novekedj = false;
+        }
       }
+      else
+      {
+        szamlalo--;
+        if (szamlalo <= 0)
+        {
+          novekedj = true;
+        }
+      }
+
+      setTimeout(szamolj, 50);
     }
 
-    updateCounter();
+    szamolj();
   </script>
 
 </body>
