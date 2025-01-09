@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Béla</title>
+
+    <style>
+        #negyzet{
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="negyzet">0</div>
+
+    <script>
+        const negyzet = document.getElementById("negyzet");
+        let novekedj = true;
+        let szamlalo = 0;
+
+        function szamolj()
+        {
+            negyzet.textContent = szamlalo;
+            const ujMeret = (200 + szamlalo) * 2;
+            negyzet.style.width = ujMeret + "px";
+            negyzet.style.height = ujMeret + "px";
+            negyzet.style.fontSize = (50 + szamlalo / 50) + "px";
+
+            if (novekedj)
+            {
+                szamlalo++;
+                if (szamlalo >= 99)
+                {
+                    novekedj = false;
+                }
+            }
+            else
+            {
+                szamlalo--;
+                if (szamlalo <= 0)
+                {
+                    novekedj = true;
+                }
+            }
+
+            setTimeout(szamolj, 50)
+        }
+
+        szamolj();
+    </script>
+</body>
+</html>
