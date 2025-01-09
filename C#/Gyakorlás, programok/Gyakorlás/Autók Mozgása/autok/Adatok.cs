@@ -30,5 +30,15 @@ namespace autok
             perc = int.Parse(vag[2]);
             sebesseg = int.Parse(vag[3]);
         }
+
+        public string ido()
+        {
+            return ora + ":" + perc;
+        }
+
+        public bool check(int ora, int perc)
+        {
+            return ora == this.ora && perc == this.perc;
+        }
     }
 }

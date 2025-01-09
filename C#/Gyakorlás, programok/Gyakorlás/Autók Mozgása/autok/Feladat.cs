@@ -15,6 +15,8 @@ namespace autok
             feladat1();
             feladat2();
             feladat3();
+            feladat4();
+            feladat5();
         }
         void feladat1()
         {
@@ -37,7 +39,55 @@ namespace autok
 
         void feladat3()
         {
+            Console.WriteLine("3. feladat");
+            Console.WriteLine("Az első jármű: {0}", autok[0].rendszam);
 
+            Console.Write("Jeladásainak időpontjai: ");
+            
+
+            for (int i = 0; i < autok.Count; i++)
+            {
+                if (autok[i].rendszam == autok[0].rendszam)
+                {
+                    Console.Write(autok[i].ido() + " ");
+                }
+            }
+
+            Console.WriteLine();
+        }
+
+        void feladat4()
+        {
+            Console.WriteLine("4. feladat");
+            Console.Write("Kérem, adja meg az órát: ");
+            int ora = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Kérem, adja meg a percet: ");
+            int perc = Convert.ToInt32(Console.ReadLine());
+
+            int darab = 0;
+
+            for (int i = 0; i < autok.Count; i++)
+            {
+                if (autok[i].check(ora, perc))
+                {
+                    darab++;
+                }
+            }
+
+            Console.WriteLine("A jeladások száma: {0}", darab);
+        }
+
+        void feladat5()
+        {
+            Console.WriteLine("5. feladat");
+            int legnagyobb = 0;
+            for (int i = 0; i < autok.Count;i++)
+            {
+                if (autok[i].sebesseg > legnagyobb)
+                {
+                    legnagyobb = autok[i].sebesseg;
+                }
+            }
         }
     }
 }
