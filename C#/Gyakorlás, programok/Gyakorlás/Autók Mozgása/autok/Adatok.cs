@@ -40,5 +40,16 @@ namespace autok
         {
             return ora == this.ora && perc == this.perc;
         }
+
+        public double ut(Adatok elozo)
+        {
+            Console.WriteLine("{0} {1}",elozo.sebesseg, this.idoPercben / 60.0);
+            return elozo.sebesseg * this.idoPercben / 60;
+        }
+
+        public int idoPercben
+        {
+            get { return ora * 60 + perc;}
+        }
     }
 }

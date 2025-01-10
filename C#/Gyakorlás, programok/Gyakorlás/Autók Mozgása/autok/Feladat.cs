@@ -17,6 +17,7 @@ namespace autok
             feladat3();
             feladat4();
             feladat5();
+            feladat6();
         }
         void feladat1()
         {
@@ -86,6 +87,46 @@ namespace autok
                 if (autok[i].sebesseg > legnagyobb)
                 {
                     legnagyobb = autok[i].sebesseg;
+                }
+            }
+
+            Console.WriteLine("A legnagyobb sebesség km/ h: {0}",legnagyobb);
+            Console.Write("A járművek: ");
+
+            for (int i = 0; i < autok.Count; i++)
+            {
+                if (autok[i].sebesseg == legnagyobb)
+                {
+                   Console.Write(autok[i].rendszam + " ");
+                }
+            }
+            Console.WriteLine();
+        }
+
+        void feladat6()
+        {
+            Console.WriteLine("6. feladat");
+            Console.Write("Kérem, adja meg a rendszámot: ");
+            string rendszam = Console.ReadLine();
+
+            double megtettUt = 0;
+            Adatok elozo = new Adatok("q",6,0,0); 
+
+            for (int i = 0; i < autok.Count; i++)
+            {
+                if (autok[i].rendszam == rendszam)
+                {
+                    if (elozo.rendszam == "q")
+                    {
+
+                    }
+                    else
+                    {
+                        megtettUt += autok[i].ut(elozo);
+                        Console.WriteLine("{0} {1} km",autok[i].ido(),megtettUt);
+                    }
+                   
+                    elozo = autok[i];
                 }
             }
         }
