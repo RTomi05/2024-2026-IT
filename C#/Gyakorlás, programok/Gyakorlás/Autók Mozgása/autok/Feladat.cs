@@ -18,6 +18,7 @@ namespace autok
             feladat4();
             feladat5();
             feladat6();
+            feladat7();
         }
         void feladat1()
         {
@@ -123,12 +124,54 @@ namespace autok
                     else
                     {
                         megtettUt += autok[i].ut(elozo);
-                        Console.WriteLine("{0} {1} km",autok[i].ido(),megtettUt);
+                        Console.WriteLine("{0} {1:0.0} km",autok[i].ido(),megtettUt);
                     }
                    
                     elozo = autok[i];
                 }
             }
+        }
+
+        void feladat7()
+        {
+            Dictionary<string, List<Adatok>> rendszamSzerint = new Dictionary<string, List<Adatok>>();
+
+            for (int i = 0; i < autok.Count; i++)
+            {
+
+                /*
+                if (rendszamSzerint.ContainsKey(autok[i].rendszam))
+                {
+                    rendszamSzerint[autok[i].rendszam].Add(autok[i]);
+                }
+                else
+                {
+                    rendszamSzerint.Add(autok[i].rendszam, new List<Adatok>{autok[i]});
+                }
+                */
+
+
+                if (!rendszamSzerint.ContainsKey(autok[i].rendszam))
+                {
+                    rendszamSzerint.Add(autok[i].rendszam, new List<Adatok>());
+                }
+                rendszamSzerint[autok[i].rendszam].Add(autok[i]);
+            }
+
+            StreamWriter ir = new StreamWriter("ido.txt");
+            foreach (string kulcs in rendszamSzerint.Keys)
+            {
+                ir.WriteLine("{0} {1} {2} {3} {4}", kulcs,
+                    rendszamSzerint[kulcs][0].ora,
+                    rendszamSzerint[kulcs][0].perc,
+                    rendszamSzerint[kulcs][rendszamSzerint[kulcs].Count - 1].ora,
+                    rendszamSzerint[kulcs][rendszamSzerint[kulcs].Count - 1].perc
+                    );
+
+                
+            }
+
+            ir.Close();
         }
     }
 }

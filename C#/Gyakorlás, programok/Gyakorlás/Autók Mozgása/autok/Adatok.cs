@@ -43,8 +43,8 @@ namespace autok
 
         public double ut(Adatok elozo)
         {
-            Console.WriteLine("{0} {1}",elozo.sebesseg, this.idoPercben / 60.0);
-            return elozo.sebesseg * this.idoPercben / 60;
+            //Console.WriteLine("{0} {1}",elozo.sebesseg, this.idoPercben / 60.0);
+            return elozo.sebesseg * (this.idoPercben - elozo.idoPercben) / 60.0;
         }
 
         public int idoPercben
