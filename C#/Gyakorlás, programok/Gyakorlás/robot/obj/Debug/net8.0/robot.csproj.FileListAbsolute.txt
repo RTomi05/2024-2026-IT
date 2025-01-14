@@ -1,0 +1,15 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\bin\Debug\net8.0\robot.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\bin\Debug\net8.0\robot.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\bin\Debug\net8.0\robot.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\bin\Debug\net8.0\robot.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\bin\Debug\net8.0\robot.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\robot.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\robot.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\robot.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\robot.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\robot.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\robot.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\refint\robot.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\robot.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\robot.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\robot\obj\Debug\net8.0\ref\robot.dll
