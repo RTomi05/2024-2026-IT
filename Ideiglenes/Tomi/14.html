@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tökéletes számok</title>
+    <style>
+    </style>
+</head>
+<body>
+
+<div id="tokej"></div>
+
+    <script>
+        const maxSzam = 10000;
+        const tokSzamok = tokeletes(maxSzam);
+
+        function tokeletes(maxSzam)
+        {
+            const tokSzamok = [];
+
+            for (let szam = 0; szam < maxSzam; szam++)
+            {
+                let osszeg = 0;
+
+            for (let i = 1; i <= Math.floor(szam / 2); i++)
+            {
+                if (szam % i == 0)
+                {
+                        osszeg += i;
+                }
+            }
+
+        if (osszeg == szam)
+        {
+            tokSzamok.push(szam);
+        }
+        }
+
+        tokSzamok.shift(0); //ezzel bírtam kiveeni a nullát
+        return tokSzamok;
+        }
+
+        console.log('A ${maxSzam}-nél kisebb tökéletes számok:', tokSzamok);
+
+        document.getElementById("tokej").innerHTML = "A tökéletes számok: " + tokSzamok;
+    </script>
+</body>
+</html>

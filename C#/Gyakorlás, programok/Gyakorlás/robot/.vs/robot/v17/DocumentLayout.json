@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\robot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F92DA6B4-E11D-4F51-A764-FD56D0046191}|robot.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\robot\\adatok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F92DA6B4-E11D-4F51-A764-FD56D0046191}|robot.csproj|solutionrelative:adatok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F92DA6B4-E11D-4F51-A764-FD56D0046191}|robot.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\robot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F92DA6B4-E11D-4F51-A764-FD56D0046191}|robot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F92DA6B4-E11D-4F51-A764-FD56D0046191}|robot.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\robot\\adatok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F92DA6B4-E11D-4F51-A764-FD56D0046191}|robot.csproj|solutionrelative:adatok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +26,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Adatok.cs",
               "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\robot\\Adatok.cs",
               "RelativeDocumentMoniker": "Adatok.cs",
               "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\robot\\Adatok.cs",
               "RelativeToolTip": "Adatok.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAbAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAowDAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T12:28:10.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\robot\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\robot\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwBkAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T12:21:12.875Z",
               "EditorCaption": ""
