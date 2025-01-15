@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Események - Gyakorlás</title>
+    <style>
+        .doboz{
+            width: 300px;
+            height: 300px;
+            background-color: beige;
+        }
+
+        #uzenet{
+            background-color: blueviolet;
+            color: chartreuse;
+            height: 200px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="doboz" id="uzenet">Üzenetek</div>
+    <div class="doboz" id="box1" onclick="m('1. kattintás')" 
+                                 onmouseenter="m('Egér beérkezett')"
+                                 onmouseleave="m('Egér elment')">Első doboz</div>
+    <div class="doboz" id="box2" onclick="m('2. kattintás')">Második doboz</div>
+    
+
+    <script>
+        function m(szoveg)
+        {
+            document.getElementById("uzenet").innerHTML = szoveg;
+        }
+
+        document.getElementById("box2").onmousedown = function(e){m(e);console.log(e);};
+
+        document.getElementById("box2").addEventListener("dblclick",function(){m('dupla katt');});
+
+        document.getElementById("box1").addEventListener("contextmenu",function(){
+            console.log(this);
+            this.style.backgroundColor="blue";
+        });
+
+        document.getElementById("box2").addEventListener("contextmenu",function(){
+            console.log(this)
+            this.style.backgroundColor="green";
+        });
+    </script>
+
+    <!--Rajzoló program: nagy div-be, 20*20 kis négyzet, ha rákattintok egy négyzetre, a háttérszíne változzon feketére. Ha még egyszer, változzon fehérre / tűnjön el-->
+</body>
+</html>
