@@ -26,6 +26,7 @@ namespace robot
 
             //VAGY
 
+            /*
 
             bool valasz = false;
             for (int i = 0; i < kod.Length; i++)
@@ -38,13 +39,15 @@ namespace robot
 
             return valasz;
             }
+
+            */
         }
 
         public int iranyvaltasok()
         {
 
             int darab = 0;
-            for (int i = 0; i < kod.Length; i++)
+            for (int i = 1; i < kod.Length; i++)
             {
                 if (kod[i] != kod[i - 1])
                 {
@@ -52,6 +55,29 @@ namespace robot
                 }
             }
             return darab;
+        }
+
+        public int[] vegpont()
+        {
+            int[] koordinata= new int[] {0,0};
+            for (int i = 0; i < kod.Length; i++)
+            {
+                switch (kod[i]) {
+                    case 'E': koordinata[1]++; break;
+                    case 'H': koordinata[1]--; break;
+                    case 'J': koordinata[0]++; break;
+                    case 'B': koordinata[0]--; break;
+                }
+            }
+
+            return koordinata;
+        }
+
+        public double uthossz()
+        {
+            int[] vegpont = this.vegpont();
+
+            return Math.Sqrt(vegpont[0] * vegpont[0] + vegpont[1] * vegpont1]);
         }
     }
 }

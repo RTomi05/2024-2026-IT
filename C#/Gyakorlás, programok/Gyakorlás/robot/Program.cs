@@ -26,11 +26,11 @@ internal class Program
         Console.WriteLine("3. feladat: Helytelen kódsorozatok száma: {0}",darab);
 
         StreamWriter ir = new StreamWriter("ivsz.txt");
-        for (int i = 0; programok.Count > 0; i++)
+        for (int i = 0; i < programok.Count; i++)
         {
             if (!programok[i].hibas())
             {
-                ir.Write(programok[i].nev);
+                ir.Write(programok[i].nev + " ");
                 ir.WriteLine(programok[i].iranyvaltasok());
             }
         }

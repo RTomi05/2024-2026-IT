@@ -1,0 +1,12 @@
+Janos 3
+Pal 14
+Terezia 6
+Ferenc 42
+Sandor 80
+Benedek 1
+Alma 1
+Renato 15
+Gabor 18
+Alex 7
+Nikoletta 5
+Renata 21
