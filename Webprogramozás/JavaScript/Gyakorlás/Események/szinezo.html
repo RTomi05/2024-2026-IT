@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Színező</title>
+
+    <style>
+        #palya
+        {
+            background-color: green;
+            width: 700px;
+            height: 700px;
+            margin: auto;
+        }
+
+        .negyzet
+        {
+            width: 35px;
+            height: 35px;
+            float: left;
+			background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="palya"></div>
+
+    <script>
+        const p = document.getElementById("palya");
+		for (let i = 0; i < 400; i++)
+	{
+		p.innerHTML += '<div class="negyzet" onclick="katt(this)"></div>';
+	}
+	
+	function katt(elem)
+	{
+		console.log(elem);
+		if(elem.style.backgroundColor !== "green")
+		{
+			elem.style.backgroundColor = "green";
+		}
+
+		else
+		{
+			elem.style.backgroundColor = "";
+		}
+	}
+
+	</script>
+</body>
+</html>
