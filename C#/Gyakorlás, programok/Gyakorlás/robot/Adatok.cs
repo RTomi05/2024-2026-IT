@@ -77,7 +77,7 @@ namespace robot
         {
             int[] vegpont = this.vegpont();
 
-            return Math.Sqrt(vegpont[0] * vegpont[0] + vegpont[1] * vegpont1]);
+            return Math.Sqrt(vegpont[0] * vegpont[0] + vegpont[1] * vegpont[1]);
         }
     }
 }
