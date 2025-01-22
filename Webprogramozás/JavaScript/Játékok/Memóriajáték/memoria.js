@@ -1,0 +1,1 @@
+const kepek = ["buttonchoose.jpg","meme_will_smith.jpg","lookat.jpg","manlooking.jpg","big_dog.jpg","spiderman.jpg","dragons.jpg","jesus_saving.jpg","nutella.jpg","peter_griffin.jpg","gta_6_template.jpg","pooh.jpg"]
