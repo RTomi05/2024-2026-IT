@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\\u00D6sszetett feladatok\\kraterek\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0917AD1B-FE5B-46A6-9B09-B49E52B9EBB0}|kraterek.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\\u00F6sszetett feladatok\\kraterek\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0917AD1B-FE5B-46A6-9B09-B49E52B9EBB0}|kraterek.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0917AD1B-FE5B-46A6-9B09-B49E52B9EBB0}|kraterek.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\\u00F6sszetett feladatok\\kraterek\\krater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0917AD1B-FE5B-46A6-9B09-B49E52B9EBB0}|kraterek.csproj|solutionrelative:krater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "krater.cs",
+              "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\\u00D6sszetett feladatok\\kraterek\\krater.cs",
+              "RelativeDocumentMoniker": "krater.cs",
+              "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\\u00D6sszetett feladatok\\kraterek\\krater.cs",
+              "RelativeToolTip": "krater.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:51:35.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\\u00D6sszetett feladatok\\kraterek\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\\u00D6sszetett feladatok\\kraterek\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwB8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:48:17.002Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
