@@ -1,4 +1,5 @@
 ﻿using kraterek;
+using System.Diagnostics;
 
 internal class Program
 {
@@ -14,7 +15,7 @@ internal class Program
         }
 
         Console.WriteLine();
-        Console.WriteLine("2. feladat \nA kráterek száma: {0}",kraterek.Count());
+        Console.WriteLine("2. feladat \nA kráterek száma: {0}", kraterek.Count());
 
         Console.WriteLine("3. feladat");
         Console.Write("Kérem egy kráter nevét: ");
@@ -31,5 +32,42 @@ internal class Program
 
         Console.WriteLine(szoveg);
 
+        Console.WriteLine("4. feladat");
+
+        Krater legnagyobb = kraterek[0];
+        for (int i = 0; 1 < kraterek.Count; i++)
+        {
+            if (kraterek[i].r > legnagyobb.r)
+            {
+                legnagyobb = kraterek[i];
+            }
+        }
+        Console.WriteLine("A legnagyobb kráterek neve és sugara: {0} {1}", legnagyobb.nev, legnagyobb.r);
+
+        Console.WriteLine("6. feladat");
+        Console.Write("Kérem egy kráter nevét: ");
+        nev = Console.ReadLine();
+
+        int id = -1;
+        
+        for (int i = 0; i < kraterek.Count; i++)
+        {
+            if (kraterek[i].nev == nev)
+            {
+                id = i;
+                break;
+            }
+        }
+        if (id == -1)
+        {
+            Console.WriteLine("Nincs ilyen kráter.");
+        }
+        else
+        {
+            for (int i = 0; i < kraterek.Count; i++)
+            {
+
+            }
+        }
     }
 }

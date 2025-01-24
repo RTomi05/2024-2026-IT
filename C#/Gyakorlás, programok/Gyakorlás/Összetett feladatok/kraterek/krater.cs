@@ -15,7 +15,7 @@ namespace kraterek
 
         public Krater(string sor)
         {
-            string[] vag = sor.Split("\t");
+            string[] vag = sor.Split('\t');
             x = double.Parse(vag[0]);
             y = double.Parse(vag[1]);
             r = double.Parse(vag[2]);
@@ -24,7 +24,14 @@ namespace kraterek
 
         public override string ToString()
         {
-            return $"A(z) {nev} középpontja X = {x} Y = {y} sugara R = {r}.";
+            return $"A(z) {nev} középpontja X={x} Y={y} sugara R={r}.";
+        }
+
+        public double tavolsag(Krater masik)
+        {
+            double dx = this.x - masik.x;
+            double dy = this.y - masik.y;
+            return Math.Sqrt(dx * dx + dy * dy);
         }
     }
 }
