@@ -35,7 +35,7 @@ internal class Program
         Console.WriteLine("4. feladat");
 
         Krater legnagyobb = kraterek[0];
-        for (int i = 0; 1 < kraterek.Count; i++)
+        for (int i = 0; i < kraterek.Count; i++)
         {
             if (kraterek[i].r > legnagyobb.r)
             {
@@ -66,8 +66,34 @@ internal class Program
         {
             for (int i = 0; i < kraterek.Count; i++)
             {
-
+                if (kraterek[i].r + kraterek[id].r < kraterek[id].tavolsag(kraterek[i]))
+                {
+                    Console.Write(kraterek[i].nev + ", ");
+                }
+                Console.WriteLine();
             }
         }
+
+        Console.WriteLine("7. feladat");
+
+        for (int i = 0; i < kraterek.Count; i++)
+        {
+            for (int k = 0; k < kraterek.Count; k++)
+            {
+                if (i != k)
+                {
+                    if (kraterek[i].benneVan(kraterek[k]))
+                    {
+                        Console.WriteLine($"A(z) {kraterek[i].nev} kráter tartalmazza a(z) {kraterek[k].nev} krátert.");
+                    }
+                }
+            }
+        }
+
+        StreamWriter ir = new StreamWriter("terulet.txt");
+
+
+
+        ir.Close();
     }
 }

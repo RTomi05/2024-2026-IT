@@ -33,5 +33,15 @@ namespace kraterek
             double dy = this.y - masik.y;
             return Math.Sqrt(dx * dx + dy * dy);
         }
+
+        public bool benneVan(Krater masik)
+        {
+            return tavolsag(masik) + masik.r < r;
+        }
+
+        public double terulet()
+        {
+            return r * r * Math.PI
+        }
     }
 }
