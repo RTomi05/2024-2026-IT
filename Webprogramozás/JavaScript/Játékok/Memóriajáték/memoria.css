@@ -22,3 +22,10 @@ body{
     display: inline-block;
     margin: 5px; 
 }
+
+.gameover{
+    font-size: 50px;
+    text-align: center;
+    background-color: aqua;
+    margin: auto;
+}
