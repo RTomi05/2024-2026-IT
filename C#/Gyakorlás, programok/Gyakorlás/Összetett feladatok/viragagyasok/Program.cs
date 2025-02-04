@@ -1,4 +1,5 @@
 ﻿using park;
+using System.Collections.Concurrent;
 
 internal class Program
 {
@@ -38,8 +39,27 @@ internal class Program
         Console.Write("4. feladat:\nAdja meg az ágyás sorszámát! ");
 
         int agyas = int.Parse(Console.ReadLine());
+        int darab = 0;
+        string szin = "#";
+        List<string> szinek = new List<string>();
 
-
-
+        for (int i = 0; i < felajanlasok.Count;i++)
+        {
+            if (felajanlasok[i].benneVanEz(agyas))
+            {
+                darab++;
+                if (darab == 1)
+                {
+                    szin = felajanlasok[i].szin;
+                }
+                if (!szinek.Contains(felajanlasok[i].szin))
+                {
+                    szinek.Add(felajanlasok[i].szin);
+                } 
+            }
+        }
+        Console.WriteLine("A felajánlók száma: {0}.", darab);
+        Console.WriteLine("A virágágyás színe, ha csak az első ültet: {0}", szin);
+        Console.WriteLine("A virágágyás színei: {0}", String.Join(" ", szinek));
     }
 }
