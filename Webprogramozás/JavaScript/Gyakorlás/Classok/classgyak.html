@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class gyakorlás</title>
+</head>
+<body>
+	<div id="ide"></div>
+    <script>
+        class Cat
+        {
+            constructor(nev)
+            {
+                this.nev = nev;
+				this.kepesseg = ["repülés", "szupererő"];
+            }
+
+			adatlap()
+			{
+				let vissza = "<div style = 'width:200px'>";
+				vissza += "<h1>" + this.nev + "</h1>";
+				vissza += "<ul>";
+				this.kepesseg.forEach(e =>
+				{
+					vissza += "<li>" + e + "</li>";	
+				})
+				vissza += "</ul>";
+				vissza += "</div>";
+
+				return vissza;
+			}
+        }
+        
+        class Powerpuff extends /*örököltet*/ Cat
+        {
+            constructor(nev, szin)
+            {
+                super(nev);
+                this.szin = szin;
+            }
+            koszon()
+			{
+				return "Helló, én " + this.nev + " vagyok, a színem " + this.szin + "!";
+			}
+        }
+
+		
+
+		const p1 = new Powerpuff("Csuporka","zöld");
+		const p2 = new Powerpuff("Puszedli","kék");
+		const p3 = new Powerpuff("Sziporka","piros");
+
+		document.getElementById("ide").innerHTML = p1.adatlap() + p2.adatlap() + p3.adatlap();
+		console.log(p1.koszon());
+		console.log(p2.koszon());
+		console.log(p3.koszon());
+
+    </script>
+</body>
+</html>
