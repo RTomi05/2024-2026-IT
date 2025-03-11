@@ -45,5 +45,12 @@ namespace Gyak_03._07
             
             }
         }
+
+        private void rogzitGomb_Click(object sender, RoutedEventArgs e)
+        {
+            string uticel = comboBox.Text;
+            string indulas.Text;
+            MessageBox.Show(uticel);
+        }
     }
 }

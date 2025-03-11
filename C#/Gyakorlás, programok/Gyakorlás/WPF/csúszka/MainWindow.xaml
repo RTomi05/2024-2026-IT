@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="Black">
-        
+
         <Slider x:Name="csuszka" HorizontalAlignment="Left" Margin="334,109,0,0" VerticalAlignment="Top" Width="185" Height="27" FontSize="72" RenderTransformOrigin="0.502,0.481" TickPlacement="TopLeft" ValueChanged="Slider_ValueChanged" Maximum="100" SmallChange="1" IsSnapToTickEnabled="True">
             <Slider.RenderTransform>
                 <TransformGroup>
@@ -33,6 +33,12 @@
                 <Grid Background="#FFE5E5E5">
                     <Label Content="Úti célok:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="40"/>
                     <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="200,31,0,0" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Indulás:" HorizontalAlignment="Left" Margin="33,98,0,0" VerticalAlignment="Top" FontSize="25"/>
+                    <DatePicker x:Name="indulas" HorizontalAlignment="Left" Margin="145,108,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Érkezés:" HorizontalAlignment="Left" Margin="33,160,0,0" VerticalAlignment="Top" FontSize="25"/>
+                    <DatePicker x:Name="erkezes" HorizontalAlignment="Left" Margin="145,170,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="rogzitGomb" Content="Rögzít" HorizontalAlignment="Left" Margin="56,217,0,0" VerticalAlignment="Top" FontSize="30" Height="69" Width="170" Click="rogzitGomb_Click"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="353,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="97" Width="422"/>
                 </Grid>
             </TabItem>
         </TabControl>
