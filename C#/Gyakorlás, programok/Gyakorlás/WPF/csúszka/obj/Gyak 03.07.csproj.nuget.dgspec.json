@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\\Gyak 03.07.csproj": {}
+    "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Gyak 03.07.csproj": {}
   },
   "projects": {
-    "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\\Gyak 03.07.csproj": {
+    "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Gyak 03.07.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\\Gyak 03.07.csproj",
+        "projectUniqueName": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Gyak 03.07.csproj",
         "projectName": "Gyak 03.07",
-        "projectPath": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\\Gyak 03.07.csproj",
+        "projectPath": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Gyak 03.07.csproj",
         "packagesPath": "C:\\Users\\rengelt22\\.nuget\\packages\\",
-        "outputPath": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\\obj\\",
+        "outputPath": "D:\\munkakönyvtár\\Rengel Tamás\\2024-2025-IT\\C#\\Gyakorlás, programok\\Gyakorlás\\WPF\\csúszka\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rengelt22\\AppData\\Roaming\\NuGet\\NuGet.Config",

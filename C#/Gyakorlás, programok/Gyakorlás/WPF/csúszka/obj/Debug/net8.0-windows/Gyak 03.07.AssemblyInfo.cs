@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Gyak 03.07")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08a411f72d7507bed429a79852b7615562218ece")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+079f403b92e2dbef5215ded950e20f1c6835f1b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Gyak 03.07")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Gyak 03.07")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
