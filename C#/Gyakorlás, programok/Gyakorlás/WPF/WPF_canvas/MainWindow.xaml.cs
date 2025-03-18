@@ -37,7 +37,14 @@ namespace WPF_canvas
             canvas.Children.Add(myLine);
             */
 
-            kor(100, 100, 100, 0);
+            for (int i = 0; i < 36; i++)
+            {
+                kor(100, 100, 100, i * 10);
+                canvas.Children.Clear();
+                
+            }
+
+            
         }
 
         void kor(int x, int y, int sugar, int szog)
@@ -53,8 +60,14 @@ namespace WPF_canvas
             vonal.Stroke = Brushes.Black;
             vonal.X1 = x + sugar;
             vonal.Y1 = y + sugar;
-            vonal.X2 = x + sugar * 2;
-            vonal.Y2 = y + sugar;
+
+            double dY = sugar * Math.Sin(szog / 180.0 * Math.PI);
+            double dX = sugar * Math.Cos(szog / 180.0 * Math.PI);
+
+            vonal.X2 = x + sugar + dX;
+            vonal.Y2 = y + sugar + dY;
+
+
             canvas.Children.Add(vonal);
 
             //Hf.: Olyan képlet / URL, ami a koordinátás rajzolásra, vonalak, szögek kapcsán (45 fokos sugár pl.) működik
