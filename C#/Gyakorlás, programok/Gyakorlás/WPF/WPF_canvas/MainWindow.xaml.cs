@@ -24,6 +24,7 @@ namespace WPF_canvas
         private void canvas_Loaded(object sender, RoutedEventArgs e)
         {
             // Add a Line Element
+            /*
             Line myLine = new Line();
             myLine.Stroke = Brushes.Red;
             myLine.X1 = 1;
@@ -34,6 +35,7 @@ namespace WPF_canvas
             //myLine.VerticalAlignment = VerticalAlignment.Center;
             myLine.StrokeThickness = 5;
             canvas.Children.Add(myLine);
+            */
 
             kor(100, 100, 100, 0);
         }
@@ -55,7 +57,7 @@ namespace WPF_canvas
             vonal.Y2 = y + sugar;
             canvas.Children.Add(vonal);
 
-            //Hf.: Olyan képlet / URL, ami a koordinátás rajzolásra, vonalak, szögek kapcsán (45 fokos sugér pl.)
+            //Hf.: Olyan képlet / URL, ami a koordinátás rajzolásra, vonalak, szögek kapcsán (45 fokos sugár pl.) működik
         }
     }
 }
