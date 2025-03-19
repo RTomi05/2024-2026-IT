@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doga - Classok</title>
+</head>
+<body>
+    <script>
+
+        class Jarmu
+        {
+            constructor(marka, modell, szin)
+            {
+                this.marka = marka;
+                this.modell = modell;
+                this.szin = szin;
+            }
+
+            set speed(sebesseg)
+            {
+                if (sebesseg >= 0)
+                {
+                    this.sebesseg = sebesseg;
+                }
+            }
+
+            get speed()
+            {
+                return this.speed;
+            }
+
+            leir()
+            {
+                return "Ez egy " + this.szin + " színű " + this.marka + " " + this.modell + ". A sebessége jelenleg " + this.sebesseg + " km/h.";
+            }
+
+            gyorsit(sebesseg)
+            {
+                this.sebesseg += sebesseg;
+            }
+
+            lassit(sebesseg)
+            {
+                this.sebesseg -= sebesseg;
+            }
+        }
+
+        class Auto extends Jarmu
+        {
+            constructor(marka, modell, szin, ajtokSzama)
+            {
+                super(marka, modell, szin)
+                this.ajtokSzama = ajtokSzama;
+            }
+
+            set speed(sebesseg)
+            {
+                if (sebesseg >= 0)
+                {
+                    this.sebesseg = sebesseg;
+                }
+            }
+
+            leir()
+            {
+                return "Ez egy " + this.szin + " színű " + this.marka + " " + this.modell + ". A sebessége jelenleg " + this.sebesseg + " km/h. Ez egy autó " + this.ajtokSzama + " ajtóval." ;
+            }
+
+            dudal()
+            {
+                return "Dud-dud!";
+            }
+        }
+
+        const jarmu1 = new Jarmu("Általános", "Corolla", "szürke", 5);
+        const auto1 = new Auto("Toyota", "Corolla", "piros", 5);
+
+        console.log(jarmu1.marka);
+        console.log(auto1.modell);
+        console.log(auto1.szin);
+        console.log(auto1.ajtokSzama);
+
+        auto1.sebesseg = 30;
+        console.log(auto1.sebesseg);
+        jarmu1.sebesseg = 0;
+
+        console.log(jarmu1.leir());
+
+        auto1.sebesseg = 30;
+
+        console.log(auto1.leir());
+
+        jarmu1.gyorsit(10);
+        auto1.gyorsit(25);
+
+        console.log(auto1.leir());
+        auto1.lassit(5);
+
+        console.log(auto1.leir());
+
+        auto1.dudal();
+
+        //Nem jó, de legalább jól néz ki :D
+        console.log("Dud-dud!")
+    </script>
+</body>
+</html>
