@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace WPF_canvas
 {
@@ -20,6 +21,8 @@ namespace WPF_canvas
         {
             InitializeComponent();
         }
+
+        DispatcherTimer timer = new DispatcherTimer();
 
         private void canvas_Loaded(object sender, RoutedEventArgs e)
         {
@@ -37,13 +40,33 @@ namespace WPF_canvas
             canvas.Children.Add(myLine);
             */
 
+            
+            timer.Interval = TimeSpan.FromMilliseconds(40);
+            timer.Tick += korRajzol;
+            timer.Start();
+            /*
             for (int i = 0; i < 36; i++)
             {
                 kor(100, 100, 100, i * 10);
                 canvas.Children.Clear();
-                
             }
+            */
+        }
 
+        int szogAllas = 0;
+
+        void korRajzol(object sender, EventArgs e)
+        {
+            canvas.Children.Clear();
+            kor(100, 100, 100, szogAllas * 10);
+            
+            szogAllas++;
+            
+            if(szogAllas >= 360)
+            {
+                szogAllas -= 360;
+                timer.Stop();
+            }
             
         }
 
