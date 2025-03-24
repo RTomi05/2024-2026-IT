@@ -23,6 +23,7 @@ namespace WPF_canvas
         }
 
         DispatcherTimer timer = new DispatcherTimer();
+        DispatcherTimer oraTimer = new DispatcherTimer();
 
         private void canvas_Loaded(object sender, RoutedEventArgs e)
         {
@@ -51,10 +52,32 @@ namespace WPF_canvas
                 canvas.Children.Clear();
             }
             */
+            oraTimer.Interval = TimeSpan.FromSeconds(1);
+            oraTimer.Tick += oraIdozit;
+            oraTimer.Start();
+            //oraRajzol(0, 0, 200);
 
-            szamlap(0, 0, 100);
-            mutato(100, 100, "kismutató", 0, 50);
-            mutato(100, 100, "nagymutató", 30, 80);
+        }
+
+        void oraIdozit(object sender, EventArgs e)
+        {
+            oraRajzol(0, 0, 200);
+        }
+
+        void oraRajzol(int x, int y, int meret)
+        {
+            canvas.Children.Clear();
+            int x1 = x + meret / 2;
+            int y1 = y + meret / 2;
+            szamlap(x, y, meret / 2);
+
+            int ora = DateTime.Now.Hour;
+            int perc = DateTime.Now.Minute;
+            int mp = DateTime.Now.Second;
+
+            mutato(x1, y1, "kismutató", (360/12*ora) - 90, (int)(meret / 2 * 0.5));
+            mutato(x1, y1, "nagymutató", (360/60*perc) - 90, (int)(meret / 2 * 0.8));
+            mutato(x1, y1, "másodpercmutató", (360/60*mp) - 90, (int)(meret / 2 * 0.95));
         }
 
         void mutato(int x, int y, string fajta, int szog, int hossz)
@@ -69,11 +92,11 @@ namespace WPF_canvas
                     break;
                 case "nagymutató":
                     vonal.Stroke = Brushes.Green;
-                    vonal.StrokeThickness = 2;
+                    vonal.StrokeThickness = 4;
                     break;
                 case "másodpercmutató":
                     vonal.Stroke = Brushes.Black;
-                    vonal.StrokeThickness = 1;
+                    vonal.StrokeThickness = 3;
                     break;
                 default:
                     vonal.Stroke = Brushes.Red;
