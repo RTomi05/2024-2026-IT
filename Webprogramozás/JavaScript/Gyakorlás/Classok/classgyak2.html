@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class - gyakorlás 2</title>
+</head>
+<body>
+    <div id="uzenet"></div>
+    <script>
+        class Konyv
+        {
+            constructor(szerzo, cim, maxOldalSzam)
+			{
+				this.szerzo = szerzo;
+				this.cim = cim;
+				this.maxOldalSzam = maxOldalSzam;
+
+				this.oldalSzam = 1;
+			}
+			lapozz()
+			{
+				if(this.oldalSzam <this.maxOldalSzam)
+			{
+				this.oldalSzam ++;
+			}
+			}
+			olvass()
+			{
+				return this.oldalSzam + ". oldal: Teljesen üres!";
+			}
+
+			get holTartunk()
+			{
+				return this.oldalSzam;
+			}
+
+			set holTartunk(oldal)
+			{
+				if(oldal < this.maxOldalSzam)
+				{
+					if(oldal > 0)
+					{
+						this.oldalSzam = oldal;
+					}
+
+				}
+			}
+        }
+
+		class Konyv2 extends Konyv
+		{
+			constructor(szerzo, cim, oldalSzam)
+			{
+				super(szerzo, cim, oldalSzam);
+			}
+
+			set holTartunk(oldal)
+			{
+				if(oldal < 1)
+				{
+					this.oldalSzam = 1;
+				}
+				else if(oldal > this.maxOldalSzam)
+				{
+					this.oldalSzam = this.maxOldalSzam;
+				}
+				else
+				{
+					this.oldalSzam = oldal;
+				}
+			}
+		}
+
+		const k1 = new Konyv("Vámos Robi", "Nyugi má.. nyugi van!", 189);
+		const k2 = new Konyv2("Rebecca Quin", "Not that average average girl", 265);
+
+//tesztesetek
+
+		document.getElementById("uzenet").innerHTML = k1.olvass() + "<br>";
+		k1.lapozz();
+		document.getElementById("uzenet").innerHTML += k1.olvass() + "<br>";
+		document.getElementById("uzenet").innerHTML += k1.holTartunk + "<br>";
+		k1.holTartunk = 100;
+		document.getElementById("uzenet").innerHTML += k1.holTartunk + "<br>";
+		k1.holTartunk = -10;
+		document.getElementById("uzenet").innerHTML += k1.holTartunk + "<br>";
+		k1.holTartunk = 188;
+		document.getElementById("uzenet").innerHTML += k1.holTartunk + "<br>";
+		document.getElementById("uzenet").innerHTML += k2.olvass() + "<br>";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.exe
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.deps.json
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.runtimeconfig.json
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.dll
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.pdb
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\App.g.cs
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07_MarkupCompile.cache
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07_MarkupCompile.lref
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\MainWindow.baml
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.g.resources
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.AssemblyInfo.cs
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.sourcelink.json
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.dll
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\refint\Gyak 03.07.dll
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.pdb
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.genruntimeconfig.cache
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Gyak 03.07\obj\Debug\net8.0-windows\ref\Gyak 03.07.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\bin\Debug\net8.0-windows\Gyak 03.07.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\App.g.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07_MarkupCompile.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07_MarkupCompile.lref
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\MainWindow.baml
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.g.resources
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\refint\Gyak 03.07.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\Gyak 03.07.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\Botilori08 2024-25 main Aaf C#-Órai_Gyak 03.07\obj\Debug\net8.0-windows\ref\Gyak 03.07.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\bin\Debug\net8.0-windows\Gyak 03.07.exe
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\bin\Debug\net8.0-windows\Gyak 03.07.deps.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\bin\Debug\net8.0-windows\Gyak 03.07.runtimeconfig.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\bin\Debug\net8.0-windows\Gyak 03.07.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\bin\Debug\net8.0-windows\Gyak 03.07.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\App.g.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07_MarkupCompile.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07_MarkupCompile.lref
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\MainWindow.baml
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.g.resources
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.AssemblyInfo.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.sourcelink.json
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\refint\Gyak 03.07.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.pdb
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\Gyak 03.07.genruntimeconfig.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\csúszka\obj\Debug\net8.0-windows\ref\Gyak 03.07.dll

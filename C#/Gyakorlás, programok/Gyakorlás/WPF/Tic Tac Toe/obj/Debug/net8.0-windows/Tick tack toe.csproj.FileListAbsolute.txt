@@ -1,0 +1,28 @@
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\bin\Debug\net8.0-windows\Tick tack toe.exe
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\bin\Debug\net8.0-windows\Tick tack toe.deps.json
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\bin\Debug\net8.0-windows\Tick tack toe.runtimeconfig.json
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\bin\Debug\net8.0-windows\Tick tack toe.dll
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\bin\Debug\net8.0-windows\Tick tack toe.pdb
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\App.g.cs
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe_MarkupCompile.cache
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe_MarkupCompile.lref
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\MainWindow.baml
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.g.resources
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.GeneratedMSBuildEditorConfig.editorconfig
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.AssemblyInfoInputs.cache
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.AssemblyInfo.cs
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.csproj.CoreCompileInputs.cache
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.sourcelink.json
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.dll
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\refint\Tick tack toe.dll
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.pdb
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\Tick tack toe.genruntimeconfig.cache
+D:\munkakönyvtár\Boti Lóránt\2024-25\Aaf C#\Órai\Tick tack toe\obj\Debug\net8.0-windows\ref\Tick tack toe.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\Tic Tac Toe\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\Tic Tac Toe\obj\Debug\net8.0-windows\App.g.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\Tic Tac Toe\obj\Debug\net8.0-windows\Tick tack toe_MarkupCompile.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\Tic Tac Toe\obj\Debug\net8.0-windows\Tick tack toe_MarkupCompile.lref
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\Tic Tac Toe\obj\Debug\net8.0-windows\Tick tack toe.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\Tic Tac Toe\obj\Debug\net8.0-windows\refint\Tick tack toe.dll
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\Tic Tac Toe\obj\Debug\net8.0-windows\Tick tack toe.pdb

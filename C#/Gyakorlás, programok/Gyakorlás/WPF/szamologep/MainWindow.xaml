@@ -13,7 +13,7 @@
         <TextBox x:Name="bSzam" HorizontalAlignment="Left" Margin="132,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" Height="25" FontSize="15"/>
         <Label Content="+" HorizontalAlignment="Left" Margin="107,77,0,0" VerticalAlignment="Top" FontSize="15"/>
         <Label Content="=" HorizontalAlignment="Left" Margin="227,77,0,0" VerticalAlignment="Top"/>
-        <Button Content="Összead" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" FontSize="20" Height="56" Width="276" Click="Button_Click"/>
+        <Button Content="Összead" HorizontalAlignment="Center" Margin="0,126,0,0" VerticalAlignment="Top" FontSize="20" Height="56" Width="276" Click="Button_Click" IsDefault="True" ToolTip="összeadás"/>
         <Label Content="A+B" HorizontalAlignment="Left" Margin="241,26,0,0" VerticalAlignment="Top" FontSize="20"/>
         <Label x:Name="osszeg" Content="0" HorizontalAlignment="Left" Margin="250,75,0,0" VerticalAlignment="Top" FontSize="18"/>
     </Grid>

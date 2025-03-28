@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenék</title>
+</head>
+<body>
+    <div id="ide"></div>
+    <script>
+        //class Zene néven, 2 tulajdonság (műfaj, hossz)
+        //Legyen az osztálynak leszérmazottja Konnyuzene néven (műfaj, hossz)
+        //Hangzás függvény
+
+        class Zene
+        {
+            constructor(mufaj, hossz)
+            {
+                this.mufaj = mufaj;
+                this.hossz = hossz;
+            }
+        }
+
+        class Konnyuzene extends Zene
+        {
+            constructor(mufaj, hossz)
+            {
+                super(mufaj, hossz)
+            }
+
+            hangzas()
+            {
+                //"ducc" részt megismétli hossz-szor
+                let hang = "";
+                for(let i = 0; i < this.hossz; i++)
+                {
+                    console.log(hang.concat(hang,));
+                }
+            }
+        }
+
+        const z1 = new Konnyuzene("pop", 3);
+        document.getElementById("ide").innerHTML = z1.hangzas();
+
+
+        //album osztály, aminek van neve és előadója, számai, hozzá kell adni a számokat(könnyűzenei számok legyenek)
+        //Getter függvény, ami megmondja az album hosszát, lejátszás függvény, amivel a számokat lejátssza
+    </script>
+</body>
+</html>
