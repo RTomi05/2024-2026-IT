@@ -77,6 +77,45 @@ namespace szinusz_fgv
             yTengely.Y2 = sinus.ActualHeight;
 
             sinus.Children.Add(yTengely);
+
+            for (int i = 45; i < 500; i+=45)
+            {
+                Line vonalka = new Line();
+                vonalka.Stroke = Brushes.Black;
+                vonalka.X1 = i + origoX;
+                vonalka.Y1 = origoY - 5;
+                vonalka.X2 = i + origoX;
+                vonalka.Y2 = origoY + 5;
+
+                sinus.Children.Add(vonalka);
+            }
+
+            for (double i = -1; i <= 1; i += 0.5)
+            {
+                Line vonalka = new Line();
+                vonalka.Stroke = Brushes.Black;
+                vonalka.X1 = origoX - 5;
+                vonalka.Y1 = origoY + r * i;
+                vonalka.X2 = origoX + 5;
+                vonalka.Y2 = origoY + r * i;
+
+                sinus.Children.Add(vonalka);
+            }
+
+            //VAGY
+
+            for (int i = -2; i < 3; i++)
+            {
+                Line vonalka = new Line();
+                vonalka.Stroke = Brushes.Black;
+                vonalka.X1 = origoX - 5;
+                vonalka.Y1 = origoY + i * r/2;
+                vonalka.X2 = origoX + 5;
+                vonalka.Y2 = origoY + i * r/2;
+
+                sinus.Children.Add(vonalka);
+            }
+
         }
     }
 }
