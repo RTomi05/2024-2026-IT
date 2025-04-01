@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:szinusz_fgv"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="sinus" Loaded="sinus_Loaded">
-
+    <Grid>
+        <Canvas x:Name="sinus" Loaded="sinus_Loaded" />
     </Grid>
 </Window>

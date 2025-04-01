@@ -48,9 +48,14 @@ namespace szinusz_fgv
             /// -fekete sugár
             /// -kék vízszintes, vastag vonal
             /// -infodoboz
+            /// 
             origoX = r;
             origoY = (int)(sinus.ActualHeight / 2);
             koordinataRendszer();
+
+            feketeKor(0);
+            feketeKor(10);
+
 
         }
 
@@ -115,6 +120,19 @@ namespace szinusz_fgv
 
                 sinus.Children.Add(vonalka);
             }
+
+        }
+        void feketeKor(int x)
+        {
+            Ellipse k = new Ellipse();
+            k.Width = r / 10;
+            k.Height = r / 10;
+            k.Margin = new Thickness(origoX - k.Width / 2 + x, origoY - k.Height / 2, 0, 0);
+
+            k.Stroke = Brushes.Black;
+            k.Fill = Brushes.Black;
+
+            sinus.Children.Add(k);
 
         }
     }

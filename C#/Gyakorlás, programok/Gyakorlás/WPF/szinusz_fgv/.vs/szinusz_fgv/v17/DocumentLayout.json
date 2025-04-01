@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\WPF\\szinusz_fgv\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EDAAB1C-088B-4403-820F-B192615A8637}|szinusz_fgv.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\wpf\\szinusz_fgv\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EDAAB1C-088B-4403-820F-B192615A8637}|szinusz_fgv.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1EDAAB1C-088B-4403-820F-B192615A8637}|szinusz_fgv.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\wpf\\szinusz_fgv\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{1EDAAB1C-088B-4403-820F-B192615A8637}|szinusz_fgv.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EDAAB1C-088B-4403-820F-B192615A8637}|szinusz_fgv.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\wpf\\szinusz_fgv\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EDAAB1C-088B-4403-820F-B192615A8637}|szinusz_fgv.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,24 +26,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\WPF\\szinusz_fgv\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
               "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\WPF\\szinusz_fgv\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-26T12:27:54.539Z"
+              "WhenOpened": "2025-03-26T12:27:54.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\WPF\\szinusz_fgv\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\WPF\\szinusz_fgv\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAkwHMAAAAsAAAA",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAYwIoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T12:27:52.513Z",
               "EditorCaption": ""
