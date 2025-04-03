@@ -51,10 +51,22 @@ namespace szinusz_fgv
             /// 
             origoX = r;
             origoY = (int)(sinus.ActualHeight / 2);
+
+            pontok.Add(
+                            new Point(origoX,
+                                origoY
+                                )
+                            );
+
+
             koordinataRendszer();
 
-            feketeKor(0);
-            feketeKor(10);
+            int szog = 110;
+            feketeKor(szog);
+            pirosvonal(szog);
+            sugar(szog);
+            kekKor(szog);
+            szinuszGorbe(szog);
 
 
         }
@@ -134,6 +146,73 @@ namespace szinusz_fgv
 
             sinus.Children.Add(k);
 
+        }
+
+        void pirosvonal(int x)
+        {
+            double magassag = Math.Sin(x / 180.0 * Math.PI) * r;
+
+            Line v = new Line();
+            v.Stroke = Brushes.Red;
+            v.StrokeThickness = 3;
+
+            v.X1 = origoX + x;
+            v.Y1 = origoY;
+            v.X2 = origoX + x;
+            v.Y2 = origoY - magassag;
+
+            sinus.Children.Add(v);
+
+        }
+
+        void sugar(int x)
+        {
+            double dX = Math.Cos(x / 180.0 * Math.PI) * r;
+            double magassag = Math.Sin(x / 180.0 * Math.PI) * r;
+
+            Line v = new Line();
+            v.Stroke = Brushes.Black;
+            v.StrokeThickness = 3;
+
+            v.X1 = origoX + x;
+            v.Y1 = origoY - magassag;
+            v.X2 = origoX + x - dX;
+            v.Y2 = origoY;
+
+            sinus.Children.Add(v);
+
+        }
+
+        void kekKor(int x)
+        {
+            double dX = Math.Cos(x / 180.0 * Math.PI) * r;
+            Ellipse kor = new Ellipse();
+            kor.Stroke = Brushes.Blue;
+            kor.StrokeThickness = 1;
+            kor.Width = 2 * r;
+            kor.Height = 2 * r;
+
+            kor.Margin = new Thickness(origoX + x - dX - r,
+                                        origoY - r,
+                                        0, 0);
+
+            sinus.Children.Add(kor);
+        }
+
+
+        PointCollection pontok = new PointCollection();
+        void szinuszGorbe(int x)
+        {
+            double magassag = Math.Sin(x / 180.0 * Math.PI) * r;
+            pontok.Add(new Point(x + origoX,
+                                origoY - magassag)
+                                );
+            Polyline vonal = new Polyline();
+            vonal.Stroke = Brushes.Red;
+            vonal.StrokeThickness = 3;
+            //vonal.FillRule = FillRule.EvenOdd;
+            vonal.Points = pontok;
+            sinus.Children.Add(vonal);
         }
     }
 }
