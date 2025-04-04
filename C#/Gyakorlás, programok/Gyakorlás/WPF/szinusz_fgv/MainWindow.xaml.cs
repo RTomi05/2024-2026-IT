@@ -18,11 +18,11 @@ namespace szinusz_fgv
     /// https://www.youtube.com/watch?v=Q55T6LeTvsA
     /// 
     /// Amiket meg kell csinálnunk:
-    /// -koordináta-rendszer
-    /// -körív
-    /// -magasság (szinuszérték / piros függőleges vonal
+    /// -koordináta-rendszer    DONE
+    /// -körív  
+    /// -magasság (szinuszérték / piros függőleges vonal)   DONE
     /// -nagy, vékony keretes kör
-    /// fekete pont (aktuális x hely)
+    /// fekete pont (aktuális x hely)   DONE
     /// -belső szög körív
     /// -fekete sugár
     /// -kék vízszintes, vastag vonal
@@ -67,7 +67,7 @@ namespace szinusz_fgv
             sugar(szog);
             kekKor(szog);
             szinuszGorbe(szog);
-
+            korIvKicsi(szog);
 
         }
 
@@ -213,6 +213,33 @@ namespace szinusz_fgv
             //vonal.FillRule = FillRule.EvenOdd;
             vonal.Points = pontok;
             sinus.Children.Add(vonal);
+        }
+
+        void korIvKicsi(int x)
+        {
+            Path path = new Path();
+            path.Stroke = Brushes.Blue;
+            path.StrokeThickness = 1;
+            path.Fill = Brushes.Red;
+
+            PathGeometry pathGeometry = new PathGeometry();
+
+            PathFigure pathFigure = new PathFigure();
+            pathFigure.StartPoint = new Point(x, origoY);
+
+            ArcSegment arcSegment = new ArcSegment();
+            arcSegment.Point = new Point(x + origoX, origoY);
+            arcSegment.Size = new Size(100, 100);
+            arcSegment.SweepDirection = SweepDirection.Clockwise;
+
+            arcSegment.IsLargeArc = true;
+
+            pathFigure.Segments.Add(arcSegment);
+            pathGeometry.Figures.Add(pathFigure);
+            path.Data = pathGeometry;
+
+            sinus.Children.Add(path);
+
         }
     }
 }
