@@ -61,13 +61,14 @@ namespace szinusz_fgv
 
             koordinataRendszer();
 
-            int szog = 110;
+            int szog = 210;
             feketeKor(szog);
             pirosvonal(szog);
             sugar(szog);
             kekKor(szog);
             szinuszGorbe(szog);
             korIvKicsi(szog);
+            korIvNagy(szog);
 
         }
 
@@ -217,22 +218,54 @@ namespace szinusz_fgv
 
         void korIvKicsi(int x)
         {
+            double dX = Math.Cos(x / 180.0 * Math.PI) * r;
+            double magassag = Math.Sin(x / 180.0 * Math.PI) * r;
+
             Path path = new Path();
             path.Stroke = Brushes.Blue;
-            path.StrokeThickness = 1;
-            path.Fill = Brushes.Red;
+            path.StrokeThickness = 3;
+            
 
             PathGeometry pathGeometry = new PathGeometry();
 
             PathFigure pathFigure = new PathFigure();
-            pathFigure.StartPoint = new Point(x, origoY);
+            pathFigure.StartPoint = new Point(origoX + x - dX + r*0.1, origoY);
 
             ArcSegment arcSegment = new ArcSegment();
-            arcSegment.Point = new Point(x + origoX, origoY);
-            arcSegment.Size = new Size(100, 100);
-            arcSegment.SweepDirection = SweepDirection.Clockwise;
+            arcSegment.Point = new Point(x + origoX, origoY - magassag);
+            arcSegment.Size = new Size(r, r);
+            arcSegment.SweepDirection = SweepDirection.Counterclockwise;
 
-            arcSegment.IsLargeArc = true;
+            arcSegment.IsLargeArc = x > 180;
+
+            pathFigure.Segments.Add(arcSegment);
+            pathGeometry.Figures.Add(pathFigure);
+            path.Data = pathGeometry;
+
+            sinus.Children.Add(path);
+
+        }
+
+        void korIvNagy(int x)
+        {
+            double dX = Math.Cos(x / 180.0 * Math.PI) * r;
+            double magassag = Math.Sin(x / 180.0 * Math.PI) * r;
+            Path path = new Path();
+            path.Stroke = Brushes.Blue;
+            path.StrokeThickness = 3;
+
+
+            PathGeometry pathGeometry = new PathGeometry();
+
+            PathFigure pathFigure = new PathFigure();
+            pathFigure.StartPoint = new Point(origoX + x - dX + r, origoY);
+
+            ArcSegment arcSegment = new ArcSegment();
+            arcSegment.Point = new Point(x + origoX, origoY - magassag);
+            arcSegment.Size = new Size(r, r);
+            arcSegment.SweepDirection = SweepDirection.Counterclockwise;
+
+            arcSegment.IsLargeArc = x > 180;
 
             pathFigure.Segments.Add(arcSegment);
             pathGeometry.Figures.Add(pathFigure);
