@@ -228,12 +228,27 @@ namespace szinusz_fgv
 
             PathGeometry pathGeometry = new PathGeometry();
 
+            /*
+            v.X1 = origoX + x;
+            v.Y1 = origoY - magassag;
+            v.X2 = origoX + x - dX;
+            v.Y2 = origoY;
+            */
+
+            double x1 = origoX + x - dX;
+            double y1 = origoY;
+            double x2 = origoX + x;
+            double y2 = origoY - magassag;
+
+            double x3 = x1 - (x1 - x2) / 10;
+            double y3 = y1 - (y1 - y2) / 10;
+
             PathFigure pathFigure = new PathFigure();
             pathFigure.StartPoint = new Point(origoX + x - dX + r*0.1, origoY);
 
             ArcSegment arcSegment = new ArcSegment();
-            arcSegment.Point = new Point(x + origoX, origoY - magassag);
-            arcSegment.Size = new Size(r, r);
+            arcSegment.Point = new Point(x3,y3);
+            arcSegment.Size = new Size(r * 0.1, r * 0.1);
             arcSegment.SweepDirection = SweepDirection.Counterclockwise;
 
             arcSegment.IsLargeArc = x > 180;
@@ -256,6 +271,7 @@ namespace szinusz_fgv
 
 
             PathGeometry pathGeometry = new PathGeometry();
+
 
             PathFigure pathFigure = new PathFigure();
             pathFigure.StartPoint = new Point(origoX + x - dX + r, origoY);
