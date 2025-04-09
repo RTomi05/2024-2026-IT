@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("szinusz_fgv")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b3a4825b2595b9282702eaf9e83d6db5a59589a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e96151dacffaa6f3c853b65a8190c5c5dcb3a04c")]
 [assembly: System.Reflection.AssemblyProductAttribute("szinusz_fgv")]
 [assembly: System.Reflection.AssemblyTitleAttribute("szinusz_fgv")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

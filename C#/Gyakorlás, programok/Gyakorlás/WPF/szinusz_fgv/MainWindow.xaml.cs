@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace szinusz_fgv
 {
@@ -58,21 +59,51 @@ namespace szinusz_fgv
                                 )
                             );
 
+            //rajzol();
 
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Tick += rajzol;
+            timer.Interval = TimeSpan.FromMilliseconds(10);
+            timer.Start();
+        }
+
+        int szog = 0;
+        bool eloreMegy = true;
+
+        void rajzol(object sender, EventArgs e)
+        {
+            sinus.Children.Clear();
             koordinataRendszer();
-
-            int szog = 210;
-            feketeKor(szog);
             pirosvonal(szog);
+            feketeKor(szog);
             sugar(szog);
             kekKor(szog);
             szinuszGorbe(szog);
             korIvKicsi(szog);
             korIvNagy(szog);
 
+            if (eloreMegy)
+            {
+                
+                szog += 3;
+            }
+            else
+            {
+                szog -= 3;
+            }
+
+            if (szog >= 360)
+            {
+                eloreMegy = false;
+            }
+
+            if(szog <= 0)
+            {
+                eloreMegy = true;
+            }
         }
 
-        int origoX = 0;
+        int origoX = 00;
         int origoY = 0;
         int r = 100;
 
@@ -205,15 +236,25 @@ namespace szinusz_fgv
         void szinuszGorbe(int x)
         {
             double magassag = Math.Sin(x / 180.0 * Math.PI) * r;
-            pontok.Add(new Point(x + origoX,
+
+            if(eloreMegy)
+            {
+                pontok.Add(new Point(x + origoX,
                                 origoY - magassag)
                                 );
+            }
+            
             Polyline vonal = new Polyline();
             vonal.Stroke = Brushes.Red;
             vonal.StrokeThickness = 3;
             //vonal.FillRule = FillRule.EvenOdd;
             vonal.Points = pontok;
             sinus.Children.Add(vonal);
+
+            if (eloreMegy == false)
+            {
+                pontok.Remove(pontok.Last());
+            }
         }
 
         void korIvKicsi(int x)
@@ -251,7 +292,7 @@ namespace szinusz_fgv
             arcSegment.Size = new Size(r * 0.1, r * 0.1);
             arcSegment.SweepDirection = SweepDirection.Counterclockwise;
 
-            arcSegment.IsLargeArc = x > 180;
+            arcSegment.IsLargeArc = x%360 > 180;
 
             pathFigure.Segments.Add(arcSegment);
             pathGeometry.Figures.Add(pathFigure);
@@ -281,7 +322,7 @@ namespace szinusz_fgv
             arcSegment.Size = new Size(r, r);
             arcSegment.SweepDirection = SweepDirection.Counterclockwise;
 
-            arcSegment.IsLargeArc = x > 180;
+            arcSegment.IsLargeArc = x%360 > 180;
 
             pathFigure.Segments.Add(arcSegment);
             pathGeometry.Figures.Add(pathFigure);
