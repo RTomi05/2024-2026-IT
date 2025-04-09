@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax - Get</title>
+    <style>
+        body
+        {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        input
+        {
+            font-size: 20px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        button
+        {
+            font-size: 16px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="ajaxTest.php">
+        
+        <label for="vezeteknev">Vezetéknév</label><br>
+        <input type="text" id="vezeteknev" name="vezeteknev"><br>
+        <label for="keresztnev">Keresztnév</label><br>
+        <input type="text" id="keresztnev" name="keresztnev"><br>
+        <label for="lakhely">Lakhely (város)</label><br>
+        <input type="text" id="lakhely" name="lakhely"><br>
+        <label for="telefonszam">Telefonszám</label><br>
+        <input type="tel" id="telefonszam" name="telefonszam"><br>
+
+        <div>
+            <input type="file" name="file" id="file">
+        </div>
+
+        <input type="hidden" name="id" id="id" value="1024">
+
+        <button type="submit" onmousedown="kuldes()" onclick= "return false">Küldés (get)</button>
+        <button type="submit" onmousedown="kuldes()" onclick= "return false">Küldés (post)</button>
+        
+    </form>
+    <pre id="uzenet"></pre>
+
+    <script>
+        function kuldes()
+        {
+            //console.log("Elküldve");
+            const vezeteknev = document.getElementById("vezeteknev").value;
+            const keresztnev = document.getElementById("keresztnev").value;
+            const lakhely = document.getElementById("lakhely").value;
+            const telefonszam = document.getElementById("telefonszam").value;
+
+
+            const kuld = new XMLHttpRequest();
+            
+            kuld.onload = function(){
+                document.getElementById("uzenet").innerHTML = this.responseText
+            };
+
+            kuld.open("GET","ajaxTest.php? + vezeteknev=" + vezeteknev +
+            "&keresztnev=" + keresztnev +
+            "&lakhely=" + lakhely +
+            "&telefonszam=" + telefonszam);
+            kuld.send();
+        }
+
+        function kuldesPost()
+        {
+            const vezeteknev = document.getElementById("vezeteknev").value;
+            const keresztnev = document.getElementById("keresztnev").value;
+            const lakhely = document.getElementById("lakhely").value;
+            const telefonszam = document.getElementById("telefonszam").value;
+
+            const kuld = new XMLHttpRequest();
+            
+            kuld.onload = function(){
+                document.getElementById("uzenet").innerHTML = this.responseText;
+
+            };
+
+            kuld.open("POST","ajaxTest.php?nev=1");
+
+            kuld.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            kuld.send("vezeteknev=" + vezeteknev + 
+            "&keresztnev=" + keresztnev +
+            "&lakhely=" + lakhely +
+            "&telefonszam=" + telefonszam);
+        }
+    </script>
+</body>
+</html>

@@ -1,21 +1,23 @@
--- A feladatok megoldására elkészített SQL parancsokat illessze be a feladat sorszáma után!
+-- ALLEKÉRDEZÉSEK
 
 
 -- 1. feladat:
 
-    create database nagykonyv default charset = utf8 collate = utf8_hungarian_ci;
-    \C latin2
+    select nev, (select min(helyezes) from konyv where szerzo.id = szerzoId) from szerzo;
+    select nev,helyezes from szerzo inner join konyv on szerzo.id = szerzoId group by 1;
+
+-- 2. feladat:
+
+    
 
 -- 3. feladat:
 
-    select distinct nemzetiseg from szerzo where nemzetiseg != "magyar";
+select nev from szerzo where szulEv = (select szulEv from szerzo where nev = 'Kertész Imre') and nev != 'Kertész Imre';
 
 -- 4. feladat:
 
-    select nev, 2005-szulEv as kor from szerzo where halEv is NULL;
+
 
 -- 5. feladat:
 
-
--- 6. feladat:
 
