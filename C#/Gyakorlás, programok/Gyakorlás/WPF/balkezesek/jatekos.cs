@@ -22,6 +22,12 @@ namespace balkezesek
             this.suly = suly;
             this.magassag = magassag;
         }
+
+        public double magassagCentimeterben
+        {
+            get { return Math.Round(this.magassag * 2.54, 1); }
+        }
+
         public static Jatekos Factory(string sor)
         {
             //"Jim Abbott;1989-04-08;1999-07-21;200;75"

@@ -33,6 +33,26 @@ namespace balkezesek
                 jatekosok.Add(Jatekos.Factory(sorok[i]));
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            szovegdoboz.Text = jatekosok.Count.ToString();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            List<string> elemek = new List<string>();
+            
+            for (int i = 0; i < jatekosok.Count; i++)
+            {
+                if (jatekosok[i].utolsoDatum < DateOnly.Parse("1999-11-01"))
+                {
+                    elemek.Add(jatekosok[i].nev + " " + jatekosok[i].magassagCentimeterben);
+                }
+            }
+            listBox.ItemsSource = elemek;
+        }
+
     }
 
 }
