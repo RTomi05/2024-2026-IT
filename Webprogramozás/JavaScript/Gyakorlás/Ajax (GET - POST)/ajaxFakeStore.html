@@ -4,29 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Store</title>
+    <style>
+        .kartya{
+            width: 200px;
+            display: inline-block;
+            border: 1px solid red;
+        }
+        .kartya .kep img{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <button type="button" onclick="egyElemBetoltese()">egy elem betöltése</button>
-
+    <button type="button" onclick="egyElemBetoltese(1)">egy elem betöltése</button>
+    <button type="button" onclick="mindenElemBetoltese()">minden elem betöltése</button>
+    <div id="tartalom"></div>
+	<div id="elem"></div>
     <script>
-        function egyElemBetoltese()
+
+        function mindenElemBetoltese()
         {
-            //console.log("valami");
-
-            /*
-            fetch('https://fakestoreapi.com/products/1')
-            .then(response => response.json())
-            .then(data => console.log(data));
-            */
-
             let xml = new XMLHttpRequest();
-            xml.open("GET", "https://fakestoreapi.com/products/1");
+            xml.open("GET", "https://fakestoreapi.com/products")
             xml.onload = function()
             {
-                console.log(xml.response)
+                let json = JSON.parse(xml.response)
+                console.log(json);
+
+                let szoveg = "";
+                json.forEach(elem =>{
+                    szoveg+=`
+    <div class="kartya" onclick="egyElemBetoltese(`+ elem.id +`)">
+        <h3>` + elem.title + `</h3>
+        <div class="kep"><img src="` + elem.image + `"</div>
+        <div class="ar">
+            <span class="szoveg">Ár:</span>
+            <span class="ertek">` + elem.price + ` &euro;</span>
+			<br>
+			<span class="ertekeles">Értékelés ` + elem.rating.rate +` <br> Értékelések száma: ` + elem.rating.count + `</span>
+        </div>
+    </div>`;
+                })
+                document.getElementById("tartalom").innerHTML = szoveg;
+            }
+            xml.send();
+        }
+
+
+
+
+        function egyElemBetoltese(id)
+        {
+            let xml = new XMLHttpRequest();
+            xml.open("GET", "https://fakestoreapi.com/products/" + id);
+            xml.onload = function()
+            {
+                let json = JSON.parse(xml.response)
+                console.log(json)
+
+
+                let szoveg = "";
+                
+                szoveg=`
+                <div class="kartya">
+        <h3>` + json.title + `</h3>
+        <div class="kep"><img src="` + json.image + `"</div>
+        <div class="ar">
+            <span class="szoveg">Ár:</span>
+            <span class="ertek">` + json.price + ` &euro;</span>
+        </div>
+        <div class="leiras">` + json.description + `</div>
+    </div>`;
+
+
+
+            document.getElementById("elem").innerHTML = szoveg;
+
             }
             xml.send();
         }
     </script>
+
+    <div class="kartya">
+        <h3>Title</h3>
+        <div class="kep"><img src="" alt=""></div>
+        <div class="ar">
+            <span class="szoveg">Ár:</span>
+            <span class="ertek">123 Ft</span>
+        </div>
+        <div class="leiras">description</div>
+    </div>
 </body>
 </html>
