@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomuser Gyak</title>
+    
+    <style>
+        .keret
+        {
+            border:3px solid black;
+            display: inline-block;
+            margin: 10px;
+        }
+
+		.kep{
+			text-align: center;
+		}
+    </style>
+</head>
+<body _onload="betoltMasodik()">
+
+    <label for="darab">Userek száma:</label>
+    <input type="range" id="darab" min="1" max="10" value="1" onmouseup="harmadik(this)">
+    <div id="szam"></div>
+
+    <div id="elem"></div>
+
+    <script>
+
+        //kép középen (done), keretek között hézag, életkor, ország, város
+
+        function harmadik(elem)
+        {
+
+            document.getElementById("elem").innerHTML = "";
+
+
+            console.log(elem.value);
+
+            let xhttp = new XMLHttpRequest();
+            xhttp.onload = function()
+            {
+                let json = JSON.parse(xhttp.response);
+                console.log(json);
+                if(xhttp.status = "200")
+                {
+                    for(let i = 0; i < json.results.length;i++)
+                    {
+                        let nev = json.results[i].name.title + " "+json.results[i].name.first +" "+json.results[i].name.last;
+                        let szoveg = "";
+                        szoveg += "<div class='keret'>";
+                        szoveg += "<div><h3>"+nev+"</h3>"
+                        szoveg += "<div class='kep'><img src="+json.results[i].picture.large+"></div>"
+                        szoveg += "</div>"
+
+                        document.getElementById("elem").innerHTML += szoveg;
+                        document.getElementById("szam").innerHTML = elem.value;
+                    }
+                }
+                else
+                {
+                    document.getElementById("elem").innerHTML += "Not working";
+                }
+
+            }
+
+            xhttp.open("GET","https://randomuser.me/api/?results="+elem.value)
+            
+            xhttp.send()
+
+
+
+        }
+
+
+        function betolt()
+        {
+            let xhttp = new XMLHttpRequest();
+
+            xhttp.onload = function()
+            {
+                let json = JSON.parse(xhttp.response);
+                console.log(json)
+                let nev= json.results[0].name.title + " "+json.results[0].name.first +" "+json.results[0].name.last;
+                let szoveg = "";
+                szoveg+= "<h3>"+nev+"</h3>"
+                szoveg+="<div class='kep'><img src="+json.results[0].picture.large+"></div>"
+
+
+                document.getElementById("elem").innerHTML += szoveg;
+                
+            }
+
+            
+            xhttp.open("GET","https://randomuser.me/api/");
+
+            xhttp.send();
+
+        }
+
+        function betoltMasodik()
+        {
+            let xhttp = new XMLHttpRequest();
+            xhttp.onload = function()
+            {
+                let json = JSON.parse(xhttp.response);
+                console.log(json);
+
+                for(let i = 0; i < json.results.length;i++)
+                {
+                    let nev= json.results[i].name.title + " "+json.results[i].name.first +" "+json.results[i].name.last;
+                    let szoveg = "";
+                    szoveg+= "<h3>"+nev+"</h3>"
+                    szoveg+="<div class='kep'><img src="+json.results[i].picture.large+"></div>"
+
+
+                    document.getElementById("elem").innerHTML += szoveg;
+                }
+            }
+
+            xhttp.open("GET","https://randomuser.me/api/?results=5")
+            
+            xhttp.send()
+        }
+
+
+
+    </script>
+</body>
+</html>
