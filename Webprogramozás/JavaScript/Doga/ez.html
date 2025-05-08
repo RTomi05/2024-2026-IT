@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolgozat</title>
+	<style>
+		button{
+			margin-top: 30px;
+			margin-left: 250px;
+			font-size: 30px;
+			
+		}
+		input{
+			font-size: 20px;
+			margin: 30px;
+		}
+
+		h2{
+			margin: 30px;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body onload="betolt()">
+
+	<form action="">
+    <input type="number" id="szam1"> +
+    <input type="number" id="szam2"><br>
+	<button type="button">Számolj!</button>
+	</form>
+	<h2 id="osszeg">Összeg: </h2>
+
+    <script>
+        function betolt()
+        {
+
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function()
+            {
+                console.log(xhttp.response)
+            }
+            xhttp.open("GET","/~pepa/dolgozat/dolgozat.php?nev=rengeltamas&feladat=3");
+            xhttp.send();
+
+        }
+
+
+        /*
+        A feladat leírása: Két szám összegének kiszámolása. A két szám bekéréséhez készíts egy űrlapot.
+        A bekért adatokat POST segítségével küld el a dolgozat.php-nak.
+        A visszakapott eredményt, vagy üzenetet jelenítsd meg az oldalban. GET változók: nev=sajatneved, akcio=osszeadas
+        POST változók: szam1, szam2
+        A megoldásodat teszteld jó és rossz adatokkal is, és a visszakapott választ úgy jelenítsd meg, ahogy azt a válasz megkívánja.
+        */
+
+        function elso()
+        {
+			
+			xhttp.send("POST","http://sulixerver/~pepa/dolgozat/dolgozat.php")
+
+			document.getElementById("osszeg");
+        }
+
+		//RandomUser
+
+		function harmadik()
+		{
+			xhttp.onload = function()
+            {
+                console.log(xhttp.response)
+            }
+            xhttp.open("GET","https://randomuser.me/api/");
+            xhttp.send();
+		}
+
+    </script>
+</body>
+</html>
