@@ -53,6 +53,35 @@ namespace balkezesek
             listBox.ItemsSource = elemek;
         }
 
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //label3.Content = textBox.Text;
+            label3.Content = "";
+            try
+            {
+                int szam = int.Parse(textBox.Text);
+                if(szam < 1990 || szam > 1999)
+                {
+                    throw new Exception();
+                }
+            }
+            catch 
+            {
+                label3.Content = "Hibás adat! Kérek egy 1990 és 1999 közötti évszámot!";
+            }
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            List<int> sulyok = new List<int>();
+            for (int i = 0;i < jatekosok.Count; i++)
+            {
+                if (jatekosok[i].jatszottE(int.Parse(textBox.Text)))
+                {
+                    sulyok.Add(jatekosok[i].suly);
+                }
+            }
+        }
     }
 
 }
