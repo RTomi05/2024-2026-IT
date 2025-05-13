@@ -17,7 +17,7 @@
         <Label x:Name="label3" Content="" HorizontalAlignment="Left" Margin="195,299,0,0" VerticalAlignment="Top" Foreground="Red"/>
         <Button Content="6. feladat" HorizontalAlignment="Left" Margin="36,341,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
         <Label Content="Átlagsúly:" HorizontalAlignment="Left" Margin="105,338,0,0" VerticalAlignment="Top"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="185,338,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" Content="" HorizontalAlignment="Left" Margin="185,338,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

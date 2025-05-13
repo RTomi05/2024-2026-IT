@@ -53,6 +53,7 @@ namespace balkezesek
             listBox.ItemsSource = elemek;
         }
 
+        bool joEvszam = false;
         private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             //label3.Content = textBox.Text;
@@ -64,22 +65,35 @@ namespace balkezesek
                 {
                     throw new Exception();
                 }
+                joEvszam = true;
             }
             catch 
             {
+                joEvszam=false;
                 label3.Content = "Hibás adat! Kérek egy 1990 és 1999 közötti évszámot!";
             }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            List<int> sulyok = new List<int>();
-            for (int i = 0;i < jatekosok.Count; i++)
+            if (joEvszam)
             {
-                if (jatekosok[i].jatszottE(int.Parse(textBox.Text)))
+                List<int> sulyok = new List<int>();
+                for (int i = 0; i < jatekosok.Count; i++)
                 {
-                    sulyok.Add(jatekosok[i].suly);
+                    if (jatekosok[i].jatszottE(int.Parse(textBox.Text)))
+                    {
+                        sulyok.Add(jatekosok[i].suly);
+                    }
                 }
+
+                int osszSuly = 0;
+                for (int i = 0; i < sulyok.Count; i++)
+                {
+                    osszSuly += sulyok[i];
+                }
+
+                label5.Content = Math.Round(osszSuly / (double)sulyok.Count,2);
             }
         }
     }
