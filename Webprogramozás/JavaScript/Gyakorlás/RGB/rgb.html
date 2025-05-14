@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB színek</title>
+    <script src="kep.js"></script>
+</head>
+<body>
+	<h2>2. feladat</h2>
+	<p>Kérek egy sor és oszlopszámot!</p>
+	<label for="sor">Sor: </label>
+	<input type="text" id="sor">
+	<label for="oszlop">Oszlop: </label>
+	<input type="text" id="oszlop">
+	<button type="button" onclick="feladat2()">Katt</button>
+	<div id="f2"></div>
+    <script>
+		class Pixel
+		{
+			constructor(r,g,b)
+			{
+				this.r = r;
+				this.g = g;
+				this.b = b;
+			}
+
+			rgb()
+			{
+				return `RGB(${this.r},${this.g},${this.b})`; 
+			}
+		}
+		let pixelek = [];
+
+		const sorok = adatok.split("\n");
+		sorok.forEach(elem => {
+			const vag = elem.split(" ");
+			let sor = [];
+			let temp = [];
+			vag.forEach(elem =>
+				{
+					temp.push(parseInt(elem));
+					if(temp.length == 3)
+					{
+						sor.push(new Pixel(temp[0],temp[1],temp[2]))
+						temp = [];
+					}
+				});
+			pixelek.push(sor);
+		});
+		console.log(pixelek);
+
+		function feladat2()
+		{
+			//console.log("feladat2");
+			const oszlop = parseInt(document.getElementById("oszlop").value);
+			const sor = parseInt(document.getElementById("sor").value);
+
+			document.getElementById("f2").innerHTML = "A képpont színe: " + pixelek[sor-1][oszlop-1].rgb();
+		}
+    </script>
+</body>
+</html>
