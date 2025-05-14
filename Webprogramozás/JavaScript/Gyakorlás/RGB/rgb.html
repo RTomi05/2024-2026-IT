@@ -15,6 +15,18 @@
 	<input type="text" id="oszlop">
 	<button type="button" onclick="feladat2()">Katt</button>
 	<div id="f2"></div>
+
+	<h2>3. feladat</h2>
+	<p>A világos képpontok száma: <span id="vilagosDarab"></span></p>
+	<button type="button" onclick="feladat3()">Katt</button>
+
+	<h2>4. feladat</h2>
+	<p>A legsötétebb pont RGB összege: <span id="sotetOsszeg"></span></p>
+	<p>A legsötétebb pixelek színe: </p>
+	<div id="f4"></div>
+	<button type="button" onclick="feladat4()">Katt</button>
+
+
     <script>
 		class Pixel
 		{
@@ -28,6 +40,16 @@
 			rgb()
 			{
 				return `RGB(${this.r},${this.g},${this.b})`; 
+			}
+
+			szinOsszeg()
+			{
+				return this.r + this.g + this.b
+			}
+
+			vilagos()
+			{
+				return this.szinOsszeg() > 600;
 			}
 		}
 		let pixelek = [];
@@ -56,7 +78,33 @@
 			const oszlop = parseInt(document.getElementById("oszlop").value);
 			const sor = parseInt(document.getElementById("sor").value);
 
-			document.getElementById("f2").innerHTML = "A képpont színe: " + pixelek[sor-1][oszlop-1].rgb();
+			document.getElementById("f2").innerHTML = "A képpont színe: " +
+							pixelek[sor-1][oszlop-1].rgb()+
+							"<div style='background-color:"+
+							pixelek[sor-1][oszlop-1].rgb()+
+							";width:100px;height:100px;margin:40px;'></div>";
+		}
+
+		function feladat3()
+		{
+			const darab = pixelek.flat().filter(elem => elem.vilagos()).length;
+			document.getElementById("vilagosDarab").innerHTML = darab;
+			document.querySelector("#vilagosDarab").innerHTML = darab;
+		}
+
+		function feladat4()
+		{
+			const sotet = pixelek.flat().sort((a,b) => a-b)[0].szinOsszeg();
+			document.getElementById("sotetOsszeg").innerHTML = sotet;
+			const osszesSotet = pixelek.flat().filter(elem => elem.szinOsszeg() == sotet);
+			console.log(osszesSotet);
+			osszesSotet.forEach(elem => {
+				document.getElementById("f4").innerHTML += "" +
+							elem.rgb()+
+							"<div style='background-color:"+
+							elem.rgb()+
+							";width:100px;height:100px;margin:40px;'></div>";
+			})
 		}
     </script>
 </body>
