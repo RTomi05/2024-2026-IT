@@ -1,0 +1,104 @@
+﻿<Window x:Class="almasdoga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:almasdoga"
+        mc:Ignorable="d"
+        Title="Dolgozat" Height="528" Width="440">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="163*"/>
+            <ColumnDefinition Width="277*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl Grid.ColumnSpan="2">
+            <TabItem Header="Első">
+                <Grid Background="#FF1FDED1">
+                    <Label Content="Adatok" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Bauhaus 93" FontSize="45"/>
+                    <Label Content="Méret" HorizontalAlignment="Left" Margin="22,93,0,0" VerticalAlignment="Top" FontSize="17"/>
+                    <Slider HorizontalAlignment="Left" Margin="94,101,0,0" VerticalAlignment="Top" Width="310" Value="5" TickPlacement="Both"/>
+                    <Rectangle HorizontalAlignment="Left" Height="138" Margin="10,164,0,0" Stroke="Black" VerticalAlignment="Top" Width="138"/>
+                    <Label Content="Válassz!" HorizontalAlignment="Left" Margin="15,164,0,0" VerticalAlignment="Top" FontSize="18"/>
+                    <RadioButton Content="hús" HorizontalAlignment="Left" Margin="42,199,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <RadioButton Content="gyümölcs" HorizontalAlignment="Left" Margin="42,218,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <RadioButton Content="zöldség" HorizontalAlignment="Left" Margin="42,238,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <RadioButton Content="egyéb" HorizontalAlignment="Left" Margin="42,258,0,0" VerticalAlignment="Top" FontSize="16"/>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="292,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="20"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="290,215,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" IsChecked="True">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="20"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="289,241,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" IsChecked="True">
+                        <CheckBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="20"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </CheckBox.RenderTransform>
+                    </CheckBox>
+                    <ComboBox HorizontalAlignment="Left" Margin="165,246,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="0.5,0.5" FontSize="15">
+                        <ComboBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="20.453"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ComboBox.RenderTransform>
+                        <ComboBoxItem Content="Háromfa" IsSelected="True"/>
+                    </ComboBox>
+                    <TextBox HorizontalAlignment="Left" Margin="10,318,0,0" TextWrapping="Wrap" Text="Megjegyzés" VerticalAlignment="Top" Width="404" Height="73"/>
+                    <Label Content="Elolvastam a szabáyokat: " HorizontalAlignment="Left" Margin="40,406,0,0" VerticalAlignment="Top" FontSize="14"/>
+                    <CheckBox Content="" HorizontalAlignment="Left" Margin="202,414,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Mehet!" HorizontalAlignment="Left" Margin="285,396,0,0" VerticalAlignment="Top" Background="#FF1855CC" Foreground="White" Height="58" Width="129" FontSize="23"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Második" RenderTransformOrigin="0.5,0.5">
+                <TabItem.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.995"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TabItem.RenderTransform>
+                <Grid Background="#FFD4C40F">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="209*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="1" Content="Név:" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" FontSize="18"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="69,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="15"/>
+                    <Label Grid.Column="1" Content="Címke:" HorizontalAlignment="Left" Margin="0,94,0,0" VerticalAlignment="Top" FontSize="18"/>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="69,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="15"/>
+                    <Button Content="Felvétel" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top" Height="64" Width="197" Grid.ColumnSpan="2" FontSize="20" Background="#FFAFA76F"/>
+                    <Label Grid.Column="1" Content="Eddigiek:" HorizontalAlignment="Left" Margin="0,256,0,0" VerticalAlignment="Top" FontSize="18"/>
+                    <Image Grid.Column="1" HorizontalAlignment="Left" Height="232" Margin="219,31,0,0" VerticalAlignment="Top" Width="166" Source="/alma.png"/>
+                    <ListBox Grid.Column="1" Margin="10,295,33,20" SelectionChanged="ListBox_SelectionChanged">
+                        <ComboBoxItem Content="körte" IsSelected="True" FontSize="15"/>
+                        <ComboBoxItem Content="barack" IsSelected="False" FontSize="15"/>
+                        <ComboBoxItem Content="cseresznye" IsSelected="True" FontSize="15"/>
+                    </ListBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
