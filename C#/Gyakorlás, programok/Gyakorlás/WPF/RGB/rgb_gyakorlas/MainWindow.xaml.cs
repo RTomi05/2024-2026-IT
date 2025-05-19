@@ -31,7 +31,7 @@ namespace rgb_gyakorlas
             {
                 string[] vag = sorok[i].Split(" ");
                 List<Pixel> temp = new List<Pixel>();
-                for (int k = 0; k < vag.Length; k+=3)
+                for (int k = 0; k < vag.Length; k += 3)
                 {
                     temp.Add(new Pixel(
                         int.Parse(vag[k]),
@@ -44,18 +44,36 @@ namespace rgb_gyakorlas
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void gomb_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-
+                int sor = int.Parse(textBox.Text);
+                int oszlop = int.Parse(textBox1.Text);
+                Pixel p = pixelek[sor - 1][oszlop - 1];
+                textBlock.Text = "A képpont színe " + p.rgbkod();
+                szinesdoboz.Fill = new SolidColorBrush(Color.FromRgb((byte)p.r, (byte)p.g, (byte)p.b));
             }
             catch
             {
 
+            }   
+        }
+
+        private void vilagosSzamol_Click(object sender, RoutedEventArgs e)
+        {
+            int darab = 0;
+            for (int i = 0; i < pixelek.Count; i++)
+            {
+                for (int k = 0; k < pixelek[i].Count; k++)
+                {
+                    if (pixelek[i][k].vilagos())
+                    {
+                        darab++;
+                    }
+                }
             }
-            int sor = int.Parse(textBox.Text);
-            int oszlop = int.Parse(textBox1.Text);
+            textBlock1.Text = darab.ToString();
         }
 
     }

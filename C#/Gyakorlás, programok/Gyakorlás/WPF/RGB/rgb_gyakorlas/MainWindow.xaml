@@ -7,15 +7,31 @@
         mc:Ignorable="d"
         Title="RGB színek" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <Label Content="2. feladat" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <Label Content="Sor:" HorizontalAlignment="Left" Margin="20,52,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="94,56,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="48"/>
-        <Label Content="Oszlop:" HorizontalAlignment="Left" Margin="20,83,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="94,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="48"/>
-        <Button x:Name="button" Content="Lekér" HorizontalAlignment="Left" Margin="83,157,0,0" VerticalAlignment="Top" FontSize="20" Click="Button_Click"/>
-        <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Height="72" Margin="168,62,0,0" Stroke="Black" VerticalAlignment="Top" Width="72"/>
-        <Label Content="Színkód:" HorizontalAlignment="Left" Margin="20,114,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="label3" HorizontalAlignment="Left" Margin="94,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="48"/>
+        <Label Content="2. feladat" HorizontalAlignment="Left" Margin="15,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sor:" HorizontalAlignment="Left" Margin="15,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="73,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <Label Content="Oszlop:" HorizontalAlignment="Left" Margin="15,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="73,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77"/>
+        <Button x:Name="gomb" Content="Button" HorizontalAlignment="Left" Margin="73,141,0,0" VerticalAlignment="Top" Click="gomb_Click"/>
+        <Rectangle x:Name="szinesdoboz" HorizontalAlignment="Left" Height="63" Margin="165,39,0,0" Stroke="Black" VerticalAlignment="Top" Width="63" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.579"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.323"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="73,113,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179"/>
+        <Label Content="Színkód:" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="3. feladat" HorizontalAlignment="Left" Margin="15,172,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="vilagosSzamol" Content="Világos számol" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Center" Click="vilagosSzamol_Click" Width="90"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="128,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20"/>
+        <Label Content="4. feladat" HorizontalAlignment="Left" Margin="15,242,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button2" Content="Legsötétebb keresés" HorizontalAlignment="Left" Margin="15,273,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label6" Content="A legsötétebb pont RGB összege:" HorizontalAlignment="Left" Margin="143,270,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="331,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

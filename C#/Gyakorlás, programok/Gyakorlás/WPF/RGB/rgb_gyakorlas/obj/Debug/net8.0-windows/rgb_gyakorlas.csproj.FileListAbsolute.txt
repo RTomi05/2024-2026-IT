@@ -1,12 +1,12 @@
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\App.g.cs
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\rgb_gyakorlas_MarkupCompile.cache
+D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\rgb_gyakorlas_MarkupCompile.lref
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\bin\Debug\net8.0-windows\rgb_gyakorlas.exe
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\bin\Debug\net8.0-windows\rgb_gyakorlas.deps.json
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\bin\Debug\net8.0-windows\rgb_gyakorlas.runtimeconfig.json
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\bin\Debug\net8.0-windows\rgb_gyakorlas.dll
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\bin\Debug\net8.0-windows\rgb_gyakorlas.pdb
-D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\MainWindow.g.cs
-D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\App.g.cs
-D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\rgb_gyakorlas_MarkupCompile.cache
-D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\rgb_gyakorlas_MarkupCompile.lref
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\MainWindow.baml
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\rgb_gyakorlas.g.resources
 D:\munkakönyvtár\Rengel Tamás\2024-2025-IT\C#\Gyakorlás, programok\Gyakorlás\WPF\RGB\rgb_gyakorlas\obj\Debug\net8.0-windows\rgb_gyakorlas.GeneratedMSBuildEditorConfig.editorconfig

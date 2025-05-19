@@ -18,5 +18,22 @@ namespace rgb_gyakorlas
             this.g = g;
             this.b = b;
         }
+
+        public string rgbkod()
+        {
+
+            return $"RGB({this.r},{this.g},{this.b})";
+        }
+
+        public int komponensOsszeg()
+        {
+            return this.r + this.g + this.b;
+        }
+
+        public bool vilagos()
+        {
+            return komponensOsszeg() > 600;
+        }
+
     }
 }
