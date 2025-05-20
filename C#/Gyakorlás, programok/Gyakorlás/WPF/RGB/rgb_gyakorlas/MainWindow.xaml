@@ -29,9 +29,11 @@
         <Button x:Name="vilagosSzamol" Content="Világos számol" HorizontalAlignment="Left" Margin="15,0,0,0" VerticalAlignment="Center" Click="vilagosSzamol_Click" Width="90"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="128,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="20"/>
         <Label Content="4. feladat" HorizontalAlignment="Left" Margin="15,242,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button2" Content="Legsötétebb keresés" HorizontalAlignment="Left" Margin="15,273,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label6" Content="A legsötétebb pont RGB összege:" HorizontalAlignment="Left" Margin="143,270,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button2" Content="Legsötétebb keresés" HorizontalAlignment="Left" Margin="15,273,0,0" VerticalAlignment="Top" Click="button2_Click"/>
+        <Label x:Name="label6" Content="A legsötétebb pont RGB összege:" HorizontalAlignment="Left" Margin="143,265,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="331,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label Content="A legsötétebb pixelek színe:" HorizontalAlignment="Left" Margin="143,283,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="listBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="150,309,500,0"/>
 
     </Grid>
 </Window>

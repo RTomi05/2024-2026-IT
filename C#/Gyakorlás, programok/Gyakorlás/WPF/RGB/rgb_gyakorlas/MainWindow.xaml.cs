@@ -76,5 +76,35 @@ namespace rgb_gyakorlas
             textBlock1.Text = darab.ToString();
         }
 
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Pixel sotet = pixelek[0][0];
+            for (int i = 0; i < pixelek.Count; i++)
+            {
+                for(int k = 0;k < pixelek[i].Count; k++)
+                {
+                    if (pixelek[i][k].komponensOsszeg() < sotet.komponensOsszeg())
+                    {
+                        sotet = pixelek[i][k];
+                    }
+                }
+            }
+
+            textBlock2.Text = sotet.komponensOsszeg().ToString();
+
+            List <Pixel> sotetek = new List<Pixel>();
+            for (int i = 0; i < pixelek.Count; i++)
+            {
+                for (int k = 0; k < pixelek[i].Count; k++)
+                {
+                    if (pixelek[i][k].komponensOsszeg() == sotet.komponensOsszeg())
+                    {
+                        sotetek.Add(pixelek[i][k]);
+                    }
+                }
+            }
+
+            listBox.ItemsSource = sotetek;
+        }
     }
 }

@@ -35,5 +35,10 @@ namespace rgb_gyakorlas
             return komponensOsszeg() > 600;
         }
 
+        public override string ToString()
+        {
+            return this.rgbkod();
+        }
+
     }
 }
