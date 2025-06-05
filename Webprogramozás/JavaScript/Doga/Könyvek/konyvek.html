@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Könyvek</title>
+    <script src="kiadas.js"></script>
+</head>
+<!--betöltésnél-->
+<body onload="elso()">
+
+<h1>3. feladat:</h1>
+<button onclick="harmadik()">Harmadik Feladat</button>
+<div id="irdKi"></div>
+
+<h1>2. feladat:</h1>
+Szerző: <input type="text" name="" id="nev">
+<button onclick="masodik()">Bekérés</button>
+<div id="irdKi2"></div>
+
+<h2>4. feladat (40 ezres):</h2> 
+<button onclick="negyedik()">Negyedik feladat</button> 
+<div id="negyediket"></div>
+
+<h2>6. feladat:</h2>
+<button onclick="hatodik()">Hatodik feladat</button>
+<p>Legalább kétszer, nagyobb példányszámban újra kiadott könyvek:</p>
+<!--
+Bosnyák Viktória: A sirály a király?
+Owens, Delia: Ahol a folyami rákok énekelnek
+-->
+
+<h2>5. feladat:</h2>
+<div id="tablazat"></div>
+<button onclick="otodik()">Táblázat megjelenítése</button>
+
+    <script>
+        const books = [];
+
+        class Konyv{
+            constructor(kiadoEv, negyedEv, nyelv, leiras, kiadott)
+            {
+                this.kiadoEv = kiadoEv;
+                this.negyedEv = negyedEv;
+                this.nyelv = nyelv;
+                this.leiras = leiras;
+                this.kiadott = kiadott;
+            }
+        }
+
+        function elso()
+        { 
+            const sor = bookList.split("\n");
+            //console.log(sor); Eddig jó
+
+            for (let i = 0; i < sor.length; i++)
+                {
+                    let vagas = sor[i].split(";")
+                    books.push(new Konyv(parseInt(vagas[0]), parseInt(vagas[1]), vagas[2], vagas[3], parseInt(vagas[4])));
+                }
+
+            console.log(books); 
+        }
+
+        function harmadik()
+        {
+            let legnagyobbP = 0;
+            let hanyszor = 0;
+
+            for(let i = 0;i < books.length;i++)
+            {
+                if(books[i].kiadott > legnagyobbP)
+                {
+                    legnagyobbP = books[i].kiadott;
+                }
+            }
+            for(let i = 0;i < books.length;i++)
+            {
+                if(books[i].kiadott == legnagyobbP)
+                {   
+                    hanyszor++;
+                }
+            }
+            //console.log(hanyszor);
+            document.getElementById("irdKi").innerHTML = "Legnagyobb példányszám: " + legnagyobbP + " előfordult " + hanyszor + " alkalommal";
+
+        }
+
+        function masodik()
+        {
+            let nev = document.getElementById("nev").value;
+            let kiadott = 0;
+
+            /*
+            for(let i = 0; i < sor.length; i++)
+            {
+            }
+            */
+
+            for(let i = 0; i < books.length; i++)
+            {
+                if(books[i].leiras.includes(nev))
+                {
+                    kiadott++;
+                }
+            }
+            const irdKi = document.getElementById("irdKi2");
+
+            //console.log(books)
+
+            if(kiadott > 0)
+            {
+                irdKi2.innerHTML += kiadott + " " + "könyvkiadás";
+            }
+            else
+            {
+                irdKi2.innerHTML = "Nem adtak ki";
+            }
+        }
+
+        function negyedik()
+        {
+
+            for(let i = 0; i < books.length; i++)
+            {
+                if(books[i].kiadott >= 40000 && books[i].nyelv == "kf")
+                {
+                    document.getElementById("negyediket").innerHTML = books[i].kiadoEv+"/"+books[i].negyedEv+". "+books[i].leiras;
+                }
+            }
+        }
+
+        function hatodik()
+        {
+			let probaKonyv;
+            let probaKiadas;
+            for(let i = 0; i < books.length; i++)
+            {
+                   	probaKonyv = books[i].leiras;
+					probaKiadas = books[i].kiadott;
+					for(let k = 0; k < books.length; k++)
+					{
+						if(books[k].leiras == probaKonyv && books[k].kiadott > probaKiadas)
+				   		{
+							probaKonyv = books[k].leiras;
+							probaKiadas = books[k].kiadott;
+							//console.log("Idáig lefut")
+							for(let j = 0; j < books.length; j++)
+						{
+							if(books[j].leiras == probaKonyv && books[j].kiadott > probaKiadas)
+							{
+								console.log("Idáig lefut");
+								probaKonyv = books[j].leiras;
+								probaKiadas = books[j].kiadott;
+								console.log(probaKonyv);
+								break;
+							}
+						}
+							
+						}
+					}
+				   	
+            }
+			//console.log(probaKonyv)
+        }
+
+		function otodik()
+		{
+			//bemásolt példa
+			let tabla =
+			`<table>
+				<tr><th>Év</th><th>Magyar kiadás</th><th>Magyar példányszám</th><th>Külföldi
+				kiadás</th><th>Külföldi példányszám</th></tr>
+				<tr><td>2020</td><td>45</td><td>834005</td><td>29</td><td>416000</td></tr>
+				<tr><td>2021</td><td>49</td><td>779130</td><td>52</td><td>736900</td></tr>
+				<tr><td>2022</td><td>63</td><td>1115210</td><td>42</td><td>649639</td></tr>
+				<tr><td>2023</td><td>41</td><td>625185</td><td>40</td><td>536000</td></tr>
+			</table>`
+			document.getElementById("tablazat").innerHTML = tabla;
+		}
+    </script>
+    
+</body>
+</html>
