@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listás</title>
+</head>
+<body>
+    <input type="text" id="szöveg" style="width: 250px; height: 40px;">
+    <button id="gomb" onclick="inditsd()" style="margin: 40px; font-size: 30px;">Bekérés</button>
+    <ul id="listaHelye"></ul>
+    <script>
+        function inditsd()
+        {
+            //kérjünk be valamit, tároljuk el listában, jelenítsük meg
+            let dolog = [];
+            dolog.push(document.getElementById("szöveg").value);
+            dolog.reverse();
+
+            for(let i = 0; i < dolog.length; i++)
+            {
+                document.getElementById("listaHelye").innerHTML += "<li>" + dolog[i] + "</li>"
+            }
+        }
+    </script>
+</body>
+</html>
