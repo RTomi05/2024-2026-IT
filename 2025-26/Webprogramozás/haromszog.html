@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>09.03</title>
+    <title>Háromszög</title>
 </head>
 <body>
     <input type="number" id="a">
     <input type="number" id="b">
     <input type="number" id="c">
-
     <button onclick="haromszog()">Klikk</button>
 
     <div id="uzenet"></div>
-
     <script>
-
         function haromszog()
         {
             let a = document.getElementById("a").value;
@@ -24,15 +21,13 @@
 
             if(a + b > c && a + c > b && b+c > a)
             {
-                document.getElementById("uzenet").innerHTML = "Lehet háromszög"
+                document.getElementById("uzenet").innerHTML = "Lehet háromszög."
             }
             else
             {
-                document.getElementById("uzenet").innerHTML = "Nem lehet háromszög"
+                document.getElementById("uzenet").innerHTML = "Nem lehet háromszög."
             }
-
         }
-
     </script>
 </body>
 </html>
