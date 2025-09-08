@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rengel.tamas.22\\source\\repos\\2024-2026-IT\\2025-26\\Asztali\\22szamjegy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F11167E-E658-495A-B150-179700DBF41B}|22szamjegy.csproj|c:\\users\\rengel.tamas.22\\source\\repos\\2024-2026-it\\2025-26\\asztali\\22szamjegy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F11167E-E658-495A-B150-179700DBF41B}|22szamjegy.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\rengel.tamas.22\\source\\repos\\2024-2026-IT\\2025-26\\Asztali\\22szamjegy\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\rengel.tamas.22\\source\\repos\\2024-2026-IT\\2025-26\\Asztali\\22szamjegy\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T07:57:15.161Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
