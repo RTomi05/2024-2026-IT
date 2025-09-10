@@ -6,11 +6,13 @@
     <title>Táblázatos számok</title>
 </head>
 <body>
-        <input type="number" id="szamok" style="margin: 20px;">
-        <button onclick="szamokBeolvasasa()" style="margin-left: 20px;">Szám hozzáadása</button>
+        <input type="number" id="szamok" style="margin: 20px; font-size: 30px;">
+        <button onclick="szamokBeolvasasa()" style="margin-left: 20px; font-size: 20px;">Szám hozzáadása</button>
         <br>
-        <button onclick="atlag()" style="margin-top: 70px;">Átlagszámítás</button>
-        <p id="osszAtlag">A számok átlaga: </p>
+        <button onclick="atlag()" style="margin-top: 70px; margin-left: 50px; font-size: 20px;">Átlagszámítás</button>
+        <br>
+        <p id="osszAtlag" style="font-size: 30px; margin-left: 50px;">A számok átlaga: </p>
+        <div id="tabla"></div>
     <script>
 
         //szám bekérés űrlap elemmel egy tömbbe
@@ -24,8 +26,26 @@
             {
                 szamokTomb.push(parseInt(szam.value));
             }
+            else
+            {
+                alert("Kérem, hogy 1 és 99 közötti számot adjon meg!");
+            }
             console.log(szamokTomb);
+
+            let kivalogatott = [];
+            for(let i = 0; i < 10; i++)
+            {
+                kivalogatott.push(szamokTomb.filter(e => e >= i*10 && x < (i+1)*10));
+            }
+
+            let tabla = document.getElementById("tabla");
         }
+
+        //megjelenítés, egy táblázatban legyenek megjelenítve az elemek
+        //első sorban: 0-9-ig
+        //második sorban: 10-19-ig
+        //harmadik sorban: 20-29-ig
+        //stb.
 
         //számold ki az összes szám átlagát
 
@@ -47,12 +67,11 @@
             };
         }
         
-        //megjelenítés, egy táblázatban legyenek megjelenítve az elemek:
-        //első sorban: 0-9-ig
-        //második sorban: 10-19-ig
-        //harmadik sorban: 20-29-ig
         
-        //minden sor első helyére egy fejléc cellájába kerüljön a sorok átlagát
+
+
+        
+        //minden sor első helyére egy fejléc cellájába kerüljön a sorok átlaga
     </script>
     
 </body>
