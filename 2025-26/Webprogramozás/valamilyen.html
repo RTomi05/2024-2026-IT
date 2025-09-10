@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Táblázatos számok</title>
+</head>
+<body>
+        <input type="number" id="szamok" style="margin: 20px;">
+        <button onclick="szamokBeolvasasa()" style="margin-left: 20px;">Szám hozzáadása</button>
+        <br>
+        <button onclick="atlag()" style="margin-top: 70px;">Átlagszámítás</button>
+        <p id="osszAtlag">A számok átlaga: </p>
+    <script>
+
+        //szám bekérés űrlap elemmel egy tömbbe
+        //a szám maximum kétjegyű pozitív egész szám legyen
+
+        let szamokTomb = [];
+        function szamokBeolvasasa()
+        {
+            let szam = document.getElementById("szamok");
+            if(szam.value > 0 && szam.value < 100)
+            {
+                szamokTomb.push(parseInt(szam.value));
+            }
+            console.log(szamokTomb);
+        }
+
+        //számold ki az összes szám átlagát
+
+        function atlag()
+        {
+            let osszesen = 0;
+            let atlag = 0;
+            for (let i = 0; i < szamokTomb.length; i++) {
+                osszesen += szamokTomb[i];
+            }
+            atlag = osszesen / szamokTomb.length;
+            if (szamokTomb == [])
+            {
+                document.getElementById("osszAtlag").innerHTML = "Nincsenek számok a tömbben!";
+            }
+            else
+            {
+                document.getElementById("osszAtlag").innerHTML = "A számok átlaga: " + atlag;
+            };
+        }
+        
+        //megjelenítés, egy táblázatban legyenek megjelenítve az elemek:
+        //első sorban: 0-9-ig
+        //második sorban: 10-19-ig
+        //harmadik sorban: 20-29-ig
+        
+        //minden sor első helyére egy fejléc cellájába kerüljön a sorok átlagát
+    </script>
+    
+</body>
+</html>
