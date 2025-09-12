@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Mátrix</title>
+    <style>
+        div
+        {
+            border: 2px solid black;
+        }
+        .ledPonty
+        {
+            display: grid;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="matrix"></div>
+    <script>
+        //100 led egy sorban, 16 sor kell
+        const matrix = document.getElementById("matrix");
+        const oszlopokSzama = 100
+
+        for (let i = 0; i < oszlopokSzama; i++)
+        {
+            const led = document.createElement("div");
+            led.className = "ledPonty";
+            matrix.appendChild(led);
+        }
+    </script>
+</body>
+</html>
