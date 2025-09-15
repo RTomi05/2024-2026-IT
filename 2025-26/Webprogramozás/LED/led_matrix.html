@@ -5,29 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LED Mátrix</title>
     <style>
-        div
-        {
-            border: 2px solid black;
-        }
-        .ledPonty
-        {
+        body {
             display: grid;
-
+            justify-content: center;
+            align-items: center;
+            min-height: 900px;
+            margin: 0;
         }
+        #matrix {
+    display: grid;
+    grid-template-columns: repeat(100, 10px);
+    grid-template-rows: repeat(16, 10px);
+    gap: 2px;
+    width: 1200px;
+    max-width: 1200px;
+    height: auto;
+    aspect-ratio: 120 / 16;
+    border: 2px solid black;
+    padding: 10px;
+    background: #222;    
+}
+
+.ledPonty {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    width: 100%;
+    height: 100%;
+    background: #444;
+}
     </style>
 </head>
 <body>
     <div id="matrix"></div>
     <script>
-        //100 led egy sorban, 16 sor kell
+        // 100 oszlop, 16 sor
         const matrix = document.getElementById("matrix");
-        const oszlopokSzama = 100
+        const oszlopokSzama = 100;
+        const sorokSzama = 16;
 
-        for (let i = 0; i < oszlopokSzama; i++)
-        {
-            const led = document.createElement("div");
-            led.className = "ledPonty";
-            matrix.appendChild(led);
+        for (let sor = 0; sor < sorokSzama; sor++) {
+            for (let oszlop = 0; oszlop < oszlopokSzama; oszlop++) {
+                const led = document.createElement("div");
+                led.className = "ledPonty";
+                matrix.appendChild(led);
+            }
         }
     </script>
 </body>
