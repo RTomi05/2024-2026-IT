@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB objektumok</title>
+</head>
+<body>
+    <script>
+
+		szinKeszito();
+        //Tömb készítés 130 elemmel, az elemek objektumok legyenek
+		 //az elemeknek legyen 3 tulajdonsága: R,G,B (0 - 255 közti véletlenszám)
+        //jelenítsük meg 15*15-ös négyzetekben a színeket
+		//keressük meg a legsötétebb (komponenseinek összege a legkisebb) színt (ez legyen a háttérszín)
+		let szinek = [];
+
+		for (let i = 0; i < 130; i++) 
+		{
+			szinKeszito();
+		}
+		function szinKeszito()
+		{
+			const R = Math.floor(Math.random() * 256);
+			const G = Math.floor(Math.random() * 256);
+			const B = Math.floor(Math.random() * 256);
+			//console.log(R + "," + G + "," + B);
+			return R + "," + G + "," + B;
+			szinek.push(R + "," + G + "," + B);
+		}
+		for (let i = 0; i < 130; i++)
+		{
+			szinek.push(szinKeszito());
+			document.write("<div style='width:15px; height:15px; margin:10px; background-color:rgb(" + szinek[i] + ");;'></div>");
+		}
+		//console.log(szinek);
+       
+		let minIndex = 0;
+		let minOsszeg = 765;
+		for (let i = 0; i < szinek.length; i++)
+		{
+			const ertekek = szinek[i].split(",").map(Number);
+			const osszeg = ertekek[0] + ertekek[1] + ertekek[2];
+			if (osszeg < minOsszeg)
+			{
+				minOsszeg = osszeg;
+				minIndex = i;
+				document.body.style.backgroundColor = "rgb(" + szinek[minIndex] + ")";
+			}
+		}
+    </script>
+</body>
+</html>
