@@ -36,8 +36,11 @@
     </style>
 </head>
 <body>
+	<input type="text" id="szoveg" placeholder="Ide írj egy szöveget!" style="font-size: 40px; width: 600px; margin: auto;">
+	<button onclick="rajzol()" style="margin: 20px; font-size: 40px;">Rajzold ki!</button>
     <div id="matrix"></div>
     <script>
+		const sorszam = 10;
         // 100 oszlop, 16 sor
         const matrix = document.getElementById("matrix");
         const oszlopokSzama = 100;
@@ -50,6 +53,64 @@
                 matrix.appendChild(led);
             }
         }
+		function rajzol()
+		{
+			//megadunk egy karaktersorozatot, amit utána a LED falon megjelenítünk
+			document.getElementById("szoveg").value
+			const szoveg = document.getElementById("szoveg").value;
+			const karakterek =
+				[
+					"1000000001",
+					"1000000001",
+					"1000000001",
+					"1111111111",
+					"1000000001",
+					"1000000001",
+					"1000000001",
+				];
+				/*
+				"B": [
+					"11111110",
+					"10000001",
+					"10000001",
+					"11111110",
+					"10000001",
+					"10000001",
+					"10000001",
+					"11111110"
+				],
+				"C": [
+					"00111110",
+					"01000001",
+					"10000000",
+					"10000000",
+					"10000000",
+					"10000000",
+					"01000001",
+					"00111110"
+				],
+				"D": [
+					"11111100",
+					"10000010",
+					"10000001",
+					"10000001",
+					"10000001",
+					"10000001",
+					"10000010",
+					"11111100"
+				],
+				"E": [
+					"11111111",
+					"10000000",
+					"10000000",
+					"11111110",
+					"10000000",
+					"10000000",
+					"10000000",
+					"11111111"
+				],*/
+		};
+	
     </script>
 </body>
 </html>
