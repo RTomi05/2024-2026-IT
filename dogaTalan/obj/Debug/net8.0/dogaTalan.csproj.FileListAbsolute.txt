@@ -1,0 +1,14 @@
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\bin\Debug\net8.0\dogaTalan.exe
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\bin\Debug\net8.0\dogaTalan.deps.json
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\bin\Debug\net8.0\dogaTalan.runtimeconfig.json
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\bin\Debug\net8.0\dogaTalan.dll
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\bin\Debug\net8.0\dogaTalan.pdb
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\dogaTalan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\dogaTalan.AssemblyInfoInputs.cache
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\dogaTalan.AssemblyInfo.cs
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\dogaTalan.csproj.CoreCompileInputs.cache
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\dogaTalan.dll
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\refint\dogaTalan.dll
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\dogaTalan.pdb
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\dogaTalan.genruntimeconfig.cache
+C:\Users\rengel.tamas.22\source\repos\dogaTalan\obj\Debug\net8.0\ref\dogaTalan.dll

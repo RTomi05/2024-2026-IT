@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tantargyi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9defe4f45cab3e9ee971a851f158f88acec41d1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("tantargyi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tantargyi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
