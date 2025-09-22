@@ -15,7 +15,6 @@ namespace oop_gyak
             this.cim = cim;
             this.szerzo = szerzo;
             //valami
-
         }
 
         public override string ToString()
