@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("listak")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79e5ab7a8dc45738e52f1309bdc75d4c502cb201")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36ee19a75153bd0be746a2659309218f089d003b")]
 [assembly: System.Reflection.AssemblyProductAttribute("listak")]
 [assembly: System.Reflection.AssemblyTitleAttribute("listak")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

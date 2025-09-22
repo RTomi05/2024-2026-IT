@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s list\u00E1k\\listak\\",
+  "WorkspaceRootPath": "C:\\Users\\rengel.tamas.22\\source\\repos\\2024-2026-IT\\2024-25\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s list\u00E1k\\listak\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECB27F6B-BE63-43D9-9DFC-793AF13E9642}|listak.csproj|d:\\munkak\u00F6nyvt\u00E1r\\rengel tam\u00E1s\\2024-2025-it\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\gyakorl\u00E1s list\u00E1k\\listak\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECB27F6B-BE63-43D9-9DFC-793AF13E9642}|listak.csproj|c:\\users\\rengel.tamas.22\\source\\repos\\2024-2026-it\\2024-25\\c#\\gyakorl\u00E1s, programok\\gyakorl\u00E1s\\gyakorl\u00E1s list\u00E1k\\listak\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECB27F6B-BE63-43D9-9DFC-793AF13E9642}|listak.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,21 +14,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s list\u00E1k\\listak\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\rengel.tamas.22\\source\\repos\\2024-2026-IT\\2024-25\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s list\u00E1k\\listak\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\munkak\u00F6nyvt\u00E1r\\Rengel Tam\u00E1s\\2024-2025-IT\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s list\u00E1k\\listak\\Program.cs",
+              "ToolTip": "C:\\Users\\rengel.tamas.22\\source\\repos\\2024-2026-IT\\2024-25\\C#\\Gyakorl\u00E1s, programok\\Gyakorl\u00E1s\\gyakorl\u00E1s list\u00E1k\\listak\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCQAAABPAAAA",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCQAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T12:15:49.919Z",
               "EditorCaption": ""
