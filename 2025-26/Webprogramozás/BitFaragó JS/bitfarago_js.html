@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitFaragó</title>
+    <style>
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="ido()">Idő frissítése</button>
+    <div id="idokiiras"></div>
+    <script>
+        // III. Készítsetek egy oldalt, ami betöltéskor megjeleníti az akkori aktuális időt. Legyen az oldalon egy gomb, amit megnyomva az idő frissül.
+        function ido()
+        {
+        const ujIdo = new Date();
+        document.getElementById("idokiiras").innerHTML = ujIdo.toLocaleTimeString();
+        }
+    
+       
+    </script>
+</body>
+</html>
