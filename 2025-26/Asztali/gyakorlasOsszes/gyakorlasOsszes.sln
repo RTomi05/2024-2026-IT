@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+VisualStudioVersion = 17.14.36401.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gyakorlasOsszes", "gyakorlasOsszes\gyakorlasOsszes.csproj", "{213F3191-4DFA-46E0-A2F9-E25D8A086224}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interface_gyakorlas", "interface_gyakorlas\interface_gyakorlas.csproj", "{D64A9142-8A18-4BF2-93EA-87F4C5C18CF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autoOOP", "autoOOP\autoOOP.csproj", "{AB4ECABA-E875-4F9C-9C79-27811F04C4D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D64A9142-8A18-4BF2-93EA-87F4C5C18CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D64A9142-8A18-4BF2-93EA-87F4C5C18CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D64A9142-8A18-4BF2-93EA-87F4C5C18CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB4ECABA-E875-4F9C-9C79-27811F04C4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4ECABA-E875-4F9C-9C79-27811F04C4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4ECABA-E875-4F9C-9C79-27811F04C4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4ECABA-E875-4F9C-9C79-27811F04C4D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
