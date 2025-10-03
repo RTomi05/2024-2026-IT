@@ -20,8 +20,56 @@
         const ujIdo = new Date();
         document.getElementById("idokiiras").innerHTML = ujIdo.toLocaleTimeString();
         }
-    
-       
+        </script>
+
+
+    <button onclick="otElemBekeres()">Öt elem bekérése</button>
+    <div id="otElemHelye"></div>
+    <script>
+        // V. Készítsetek egy programot, amely bekér 5 egész értéket, és egy tömbben tárolja őket.
+        // A program ezután jelenítse meg mindegyik elem négyzetét.
+        function otElemBekeres()
+        {
+            let szamok = [];
+            for (let i = 0; i < 5; i++)
+            {
+                let szam = prompt("Adj meg egy egész számot: ");
+                szamok.push(Number(szam));
+                
+            }
+            document.getElementById("otElemHelye").innerHTML = "A megadott számok: " + szamok + "<br>";
+            /*
+            let a = prompt("Add meg az első elemet!");
+            let b = prompt("Add meg a második elemet!");
+            let c = prompt("Add meg a harmadik elemet!");
+            let d = prompt("Add meg a negyedik elemet!");
+            let e = prompt("Add meg az ötödik elemet!");*/
+        }
+        let osszeg = a+b;
+        d = Math.sqrt(a*a+b*b+c*c);
     </script>
+
+<h1>JavaScript változók használata</h1>
+
+    <button onclick="atvalt()" style="margin: 30px;">Mértékegység átváltás</button>
+    <div id="atvaltott"></div>
+    <br>
+    <script>
+        document.write(a + " + " + b + " = " + osszeg + "<br />")
+        document.write("<h2>"+"Derékszögű háromszög oldalai:"+"</h2>")
+        document.write("Befogók: " + a + ", " + b + " => Átfogó: " + c + "<br/>")
+
+        // VI. Kérjetek be egy távolság értéket centiméterben, és jelenítsétek meg méterre átváltva.
+
+        function atvalt()
+        {
+            let ertekCm = prompt("Adj meg egy távolságot centiméterben: ")
+            let ertekM = ertekCm * 0.01
+            document.getElementById("atvaltott").innerHTML = ertekCm + " cm átváltva méterbe: " + ertekM + " m";
+
+        }
+
+    </script>
+
 </body>
 </html>
