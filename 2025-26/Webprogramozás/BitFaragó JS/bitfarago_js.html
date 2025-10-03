@@ -35,7 +35,6 @@
             {
                 let szam = prompt("Adj meg egy egész számot: ");
                 szamok.push(Number(szam));
-                
             }
             document.getElementById("otElemHelye").innerHTML = "A megadott számok: " + szamok + "<br>";
             /*
@@ -67,6 +66,24 @@
             let ertekM = ertekCm * 0.01
             document.getElementById("atvaltott").innerHTML = ertekCm + " cm átváltva méterbe: " + ertekM + " m";
 
+        }
+
+        </script>
+        <button onclick="legkisebb()">Legkisebb számítás</button>
+        <div id="legkisebbHelye"></div>
+        <script>
+
+        // X. Készítsetek egy programot, amely bekér 5 számot, és kiírja hogy melyik a legkisebb.
+        function legkisebb()
+        {
+            let legkisebbTomb = [];
+            for (let i = 0; i < 5; i++)
+            {
+                let talanLegkisebb = prompt("Adj meg egy egész számot: ");
+                legkisebbTomb.push(Number(talanLegkisebb));
+            }
+            let legkisebb = Math.min(...legkisebbTomb);
+            document.getElementById("legkisebbHelye").innerHTML = "A megadott számok: " + legkisebbTomb + "<br>" + "A legkisebb szám: " + legkisebb;
         }
 
     </script>

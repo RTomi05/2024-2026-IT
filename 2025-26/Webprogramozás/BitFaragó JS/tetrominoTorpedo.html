@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetromínó Torpedó</title>
+</head>
+<body>
+    <h1>Tetronyímó Torpedó</h1>
+    <table id="jatekter"></table>
+    <style>
+        .cella
+        {
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <script>
+        const meret = {
+            "sor": 12,
+            "oszlop": 12
+        };
+
+        const tabla = [];
+
+        function init()
+        {
+            jatekter();
+        }
+
+        function jatekter()
+        {
+            for (let i = 0; i < meret.sor; i++)
+            {
+                let sor = document.createElement("tr");
+                sor.id = "sor" + i;
+                sor.dataset["sor"] = i;
+                //data-sor = "1"
+                tabla[i] = [];
+                for (let k = 0; k < meret.oszlop; k++)
+                {
+                    let cella = document.createElement("td");
+                    cella.id = "cella" + i + "-" + k;
+                    cella.dataset["x"] = k;
+                    cella.dataset["y"] = 1;
+                    cella.onclick = function() {szonda(this);};
+                    cella.classList.add("cella");
+
+                    tabla[i][k] = cella;
+                    sor.appendChild(cella);
+                }
+
+                document.getElementById("jatekter").appendChild(sor);
+            }
+        }
+
+        function szonda(elem)
+        {
+            console.log(elem);
+        }
+    </script>
+</body>
+</html>
