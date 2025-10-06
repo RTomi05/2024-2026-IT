@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autoOOP", "autoOOP\autoOOP.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPgyak2", "OOPgyak2\OOPgyak2.csproj", "{4D63E0CB-3110-41D0-B6B5-ADBC0E9B6FEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP3gyak", "OOP3gyak\OOP3gyak.csproj", "{FC3B63F4-1FDA-4FCB-A374-62A294CD3BD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{4D63E0CB-3110-41D0-B6B5-ADBC0E9B6FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D63E0CB-3110-41D0-B6B5-ADBC0E9B6FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D63E0CB-3110-41D0-B6B5-ADBC0E9B6FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3B63F4-1FDA-4FCB-A374-62A294CD3BD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3B63F4-1FDA-4FCB-A374-62A294CD3BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3B63F4-1FDA-4FCB-A374-62A294CD3BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3B63F4-1FDA-4FCB-A374-62A294CD3BD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
