@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tetromínó Torpedó</title>
-</head>
-<body>
-    <h1>Tetronyímó Torpedó</h1>
-    <table id="jatekter"></table>
-    <style>
+    <title>Tetrominó Torpedó</title>
+     <style>
         .cella
         {
             width: 20px;
@@ -17,7 +13,41 @@
         }
     </style>
 
+</head>
+<body onload="init()">
+    <h1>Tetrominó Torpedó</h1>
+    <table id="jatekter"></table>
+   
     <script>
+        class urhajo
+        {
+            constructor(tipus, szin, forgatas, x, y)
+            {
+                const alakok = [
+                    [{x:0, y:0}, {x:1, y:0}, {x:2, y:0}, {x:3, y:0}],
+                    [{x:0, y:0}, {x:1, y:0}, {x:0, y:1}, {x:1, y:1}],
+                    [{x:0, y:1}, {x:1, y:1}, {x:1, y:0}, {x:2, y:1}],
+                    [{x:0, y:0}, {x:1, y:0}, {x:2, y:0}, {x:2, y:1}],
+                    [{x:0, y:1}, {x:1, y:1}, {x:2, y:1}, {x:2, y:0}],
+                    [{x:0, y:1}, {x:1, y:1}, {x:1, y:0}, {x:2, y:0}],
+                    [{x:0, y:0}, {x:1, y:0}, {x:1, y:1}, {x:2, y:1}]
+                ];
+
+                this.tipus = tipus;
+                this.szin = szin;
+                this.forgatas = forgatas;
+                //koordináták
+                this.x = x;
+                this.y = y;
+
+                this.elemek = alakok[tipus];
+            }
+
+            forgat()
+            {
+                
+            }
+        }
         const meret = {
             "sor": 12,
             "oszlop": 12
@@ -44,7 +74,7 @@
                     let cella = document.createElement("td");
                     cella.id = "cella" + i + "-" + k;
                     cella.dataset["x"] = k;
-                    cella.dataset["y"] = 1;
+                    cella.dataset["y"] = i;
                     cella.onclick = function() {szonda(this);};
                     cella.classList.add("cella");
 
