@@ -1,82 +1,128 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LED Mátrix</title>
     <style>
-        body {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            min-height: 900px;
-            margin: 0;
+        div{
+            border:1px solid black;
         }
-        #matrix {
-    display: grid;
-    grid-template-columns: repeat(100, 10px);
-    grid-template-rows: repeat(16, 10px);
-    gap: 2px;
-    width: 1200px;
-    max-width: 1200px;
-    height: auto;
-    aspect-ratio: 120 / 16;
-    border: 2px solid black;
-    padding: 10px;
-    background: #222;    
-}
 
-.ledPonty {
-    border-radius: 50%;
-    aspect-ratio: 1;
-    width: 100%;
-    height: 100%;
-    background: #444;
-}
-    </style>
+        .egyLED{
+
+            display: inline-block;
+            _float: inline-start;
+            width: auto;
+            height: auto;
+            background-color: grey;
+        }
+        .egySor{
+            _display: inline-block;
+            _float: inline-start;
+            width: auto;
+            height: auto;
+            border: 0px;
+            padding: 0%;
+
+        }
+
+        #matrix
+        {
+            height:auto;
+            width:fit-content;
+            padding: 0;
+            margin: auto;
+			background-color: black;
+        }
+
+        #szoveg
+        {
+            margin-bottom: 50px;
+        }
+
+        </style>
 </head>
 <body>
-	<input type="text" id="szoveg" placeholder="Ide írj egy szöveget!" style="font-size: 40px; width: 600px; margin: auto;">
-	<button onclick="rajzol()" style="margin: 20px; font-size: 40px;">Rajzold ki!</button>
-    <div id="matrix"></div>
-    <script>
-		const sorszam = 10;
-        // 100 oszlop, 16 sor
-        const matrix = document.getElementById("matrix");
-        const oszlopokSzama = 100;
-        const sorokSzama = 16;
+    
+    <input type="text" id="szoveg">
 
-        for (let sor = 0; sor < sorokSzama; sor++) {
-            for (let oszlop = 0; oszlop < oszlopokSzama; oszlop++) {
-                const led = document.createElement("div");
-                led.className = "ledPonty";
-                matrix.appendChild(led);
+    <button onclick="rajzol()">Rajzol</button>
+	<!--<input type="color" id="szin">-->
+    
+    <div id="matrix"></div>
+
+
+    <script>
+
+        const sorok = 16;
+        const oszlopok = 100;
+        const matrix = document.getElementById("matrix");
+        const betukoz = 1;
+
+
+        //LED.innerHTML = "This is a paragraph";
+        
+        let id = 1;
+        for(let k = 0;k < sorok;k++)
+        {
+            const sor = document.createElement("div");
+            sor.className = "egySor";
+            matrix.appendChild(sor);
+            for(let i = 0;i < oszlopok;i++)
+            {
+                const LED = document.createElement("div");
+                LED.className = "egyLED";
+                LED.id = "C-"+id;
+                //LED.innerHTML = "a";
+                LED.style.width = "10px";
+                LED.style.height = "10px";
+                LED.style.backgroundColor = "grey";
+                sor.appendChild(LED);
+                id++;
             }
         }
-		function rajzol()
-		{
-			//megadunk egy karaktersorozatot, amit utána a LED falon megjelenítünk
-			document.getElementById("szoveg").value
-			const szoveg = document.getElementById("szoveg").value;
-			//5x4 a betűk többsége (M nem)!
-			//MAGASSÁGA MINDENKÉPP 5 LEGYEN
-			//Betűkészlet: https://www.dafont.com/matrix-dots.charmap?f=2 -> Matrix Dots
-			const karakterek = [
-				//A
+
+
+
+
+        function  rajzol()
+        {
+
+            const LEDek = document.querySelectorAll(".egyLED");
+
+
+			
+            LEDek.forEach(e => e.style.backgroundColor = "grey")
+
+            //console.log(LEDek)
+
+
+
+
+            let szoveg = document.getElementById("szoveg").value;
+
+
+            let betuk = ["a", "á", "b", "c", "d", "e", "é", "f", "g", "h", "i", "í", "j", "k", "l", "m", "n", "o", "ó", "ö", "ő", "p","q", "r", "s", "t", "u", "ú", "ü", "ű", "v","w","x","y", "z"," ", "!", "?", "#", "/", "=", "<", ">", ".", "%", "+", "-", "|", "\\", ":", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+            console.log(betuk.length)
+
+            let karakterek= [                    
+
+                //A
 				[
-					"0001000",
-					"0010100",
-					"0111110",
-					"1000001",
-				],
-				//Á
-				[
-					"0010",
-					"0000",
 					"0110",
 					"1001",
 					"1111",
 					"1001",
+                    "1001",
+				],
+				//Á
+				[
+					"0001",
+					"0110",
+					"1001",
+					"1111",
 					"1001",
 				],
 				//B
@@ -113,8 +159,8 @@
 				],
 				//É
 				[
-					"1111001",
-					"1000001",
+					"11101",
+					"10000",
 					"11110",
 					"10000",
 					"11110",
@@ -129,11 +175,11 @@
 				],
 				//G
 				[
-					"01111",
-					"10000",
-					"10111",
-					"10011",
-					"01111",
+					"0111",
+					"1000",
+					"1011",
+					"1001",
+					"0111",
 				],
 				//H
 				[
@@ -153,8 +199,8 @@
 				],
 				//Í
 				[
-					"01001",
-					"01001",
+					"001",
+					"001",
 					"010",
 					"010",
 					"010",
@@ -201,7 +247,7 @@
 				],
 				//O
 				[
-					"01100",
+					"01110",
 					"10001",
 					"10001",
 					"10001",
@@ -209,11 +255,12 @@
 				],
 				//Ó
 				[
-					"0111001",
-					"1010101",
-					"10101",
-					"10101",
+					"00001",
 					"01110",
+					"10001",
+					"10001",
+					"01110",
+
 				],
 				//Ö
 				[
@@ -225,8 +272,8 @@
 				],
 				//Ő
 				[
-					"0110110",
-					"00000",
+					"01010",
+					"01010",
 					"01110",
 					"10001",
 					"01110",
@@ -241,11 +288,11 @@
 				],
 				//Q
 				[
-					"0110",
-					"1001",
-					"1001",
-					"1011",
-					"0111",
+					"01110",
+					"10001",
+					"10001",
+					"10010",
+					"01101",
 				],
 				//R
 				[
@@ -257,11 +304,11 @@
 				],
 				//S
 				[
-					"111",
-					"100",
-					"010",
-					"001",
-					"111",
+					"1111",
+					"1000",
+					"0010",
+					"0001",
+					"1111",
 				],
 				//T
 				[
@@ -282,9 +329,7 @@
 				//Ú
 				[
 					"0010",
-					"0000",
-					"1001",
-					"1001",
+					"0010",
 					"1001",
 					"1001",
 					"1111",
@@ -295,19 +340,15 @@
 					"0000",
 					"1001",
 					"1001",
-					"1001",
-					"1001",
 					"1111",
 				],
 				//Ű
 				[
-					"0101",
-					"0000",
-					"1001",
-					"1001",
-					"1001",
-					"1001",
-					"1111",
+					"01010",
+					"01010",
+					"10001",
+					"10001",
+					"11111",
 				],
 				//V
 				[
@@ -349,7 +390,16 @@
 					"1000",
 					"1111",
 				],
+				//" "
+				[
+					"000",
+					"000",
+					"000",
+					"000",
+					"000",
+				],
 
+                
 				//speciális karakterek
 				//!
 				[
@@ -383,6 +433,7 @@
 					"1000",
 					"0000",
 				],
+				
 				//=
 				[
 					"0000",
@@ -407,6 +458,7 @@
 					"01110",
 					"11000"
 				],
+				
 				//.
 				[
 					"0000",
@@ -422,14 +474,7 @@
 					"0100",
 					"1001",
 				],
-				//space
-				[
-					"0000",
-					"0000",
-					"0000",
-					"0000",
-					"0000",
-				],
+				
 				//+
 				[
 					"00100",
@@ -446,6 +491,7 @@
 					"00000",
 					"00000",
 				],
+				
 				//|
 				[
 					"00100",
@@ -461,14 +507,6 @@
 					"0010",
 					"0001",
 				],
-				//0
-				[
-					"11111",
-					"10001",
-					"10001",
-					"10001",
-					"11111",
-				],
 				//:
 				[
 					"00000",
@@ -477,6 +515,15 @@
 					"00100",
 					"00000",
 				],
+				//0
+				[
+					"11111",
+					"10001",
+					"10001",
+					"10001",
+					"11111",
+				],
+				
 				//1
 				[
 					"00100",
@@ -548,11 +595,73 @@
 					"11111",
 					"00011",
 					"11111"
-				],
+				],];
 
-		]
-		};
+            let kiirando = [];
 	
+			for(let i = 0;i < szoveg.length;i++)
+			{
+                for(let j =0; j < betuk.length;j++)
+                {
+                    if(szoveg[i] == betuk[j])
+                    {
+                        kiirando.push(karakterek[j])
+                    }	
+                }
+		
+				
+			}
+
+
+            console.log(kiirando)
+
+            
+
+            let aktualis = 1;
+
+            for(let j = 0;j < kiirando[0].length;j++)
+            { 
+                for(let i = 0;i < kiirando.length;i++)
+                {
+                    for(let k =0;k < kiirando[i][j].length;k++)
+                    {
+                        if(kiirando[i][j][k] == 1)
+                        {
+                            document.getElementById("C-"+aktualis).style.backgroundColor = "lime";
+                        }
+                        aktualis++;
+                    }
+                   aktualis+=betukoz; 
+                }
+                aktualis=Math.ceil(aktualis/100)*100+1;
+            }
+
+/*            aktualis = 1;
+        
+           for(let i = 0;i < karakterek.length;i++)
+            { 
+                for(let j = 0;j < karakterek[i].length;j++)
+                {
+                    for(let k =0;k < karakterek[i][j].length;k++)
+                    {
+                        if(karakterek[i][j][k] == 1)
+                        {
+                            document.getElementById("C-"+aktualis).style.backgroundColor = "red";
+                        }
+                        aktualis++;
+                    }
+                    aktualis=Math.ceil(aktualis/100)*100+1;
+                    
+
+                }
+                
+                console.log(aktualis)
+                
+            }
+*/
+        }
+
+
     </script>
 </body>
 </html>
