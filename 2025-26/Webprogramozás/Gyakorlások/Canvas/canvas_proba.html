@@ -4,39 +4,70 @@
 <h1>HTML5 Canvas - Draw a Line</h1>
 
 <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;">
-Sorry, your browser does not support canvas.
+
 </canvas>
 
 <script>
-    function rajzol()
-    {
-        // Create a canvas
+    let lastX = null;
+    let lastY = null;
+
+    function rajzol() {
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
-
         ctx.clearRect(0, 0, 500, 500);
-
-        // Define a new path
         ctx.beginPath();
 
-        // Set a start-point
-        ctx.moveTo(0,0);
-
-        for (let i = 0; i < 150; i++)
-        {
-            let x = Math.floor(Math.random()*500);
-            let y = Math.floor(Math.random()*500);
-            ctx.lineTo(x,y);
+        
+        if (lastX === null || lastY === null) {
+            lastX = Math.floor(Math.random() * 500);
+            lastY = Math.floor(Math.random() * 500);
         }
 
+        
+        let x = Math.floor(Math.random() * 500);
+        let y = Math.floor(Math.random() * 500);
 
-
-
-        // Draw it
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(x, y);
         ctx.stroke();
+
+       
+        lastX = x;
+        lastY = y;
     }
 
-    setInterval(rajzol, 100);
+    let elozo = [250,250];
+
+    function rajzol2() {
+        const R = 20;
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, 500, 500);
+        ctx.beginPath();
+
+        ctx.moveTo(...elozo);
+
+
+        let dx = 1000;
+        let dy = 1000;
+        while(elozo[0]+dx<0
+            || elozo[0]+dx>=500
+            || elozo[1]+dy<0
+            || elozo[1]+dy>=500)
+            {
+                dx = Math.floor(Math.random()*2*R-R);
+                dy = Math.sqrt(R*R-dx*dx) * (Math.random() < 0.5 ? - 1:1);
+
+            //console.log(dx,dy,elozo[0]+dx,elozo[1]+dy);
+            }
+
+            elozo[0] += dx;
+            elozo[1] += dy;
+            ctx.lineTo(...elozo);
+            //Draw it
+            ctx.stroke();
+        }
+    let t3 = setInterval(rajzol2, 130);
 </script>
 
 </body>
