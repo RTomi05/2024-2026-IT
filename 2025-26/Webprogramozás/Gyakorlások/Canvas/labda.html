@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labda</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script>
+        class Labda
+        {
+            constructor(x, y, sugar, vX, vY)
+            {
+                this.x = x;
+                this.y = y;
+                this.sugar = sugar;
+                this.vX = vX;
+                this.vY = vY;
+            }
+
+            rajzol(ctx)
+            {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.sugar, 0, 2 * Math.PI);
+                ctx.stroke();
+            }
+
+            lep(ctx)
+            {
+                this.x += this.vX;
+                this.y += this.vY;
+                //console.log(ctx.canvas.clientWidth);
+                if(ctx.canvas.clientWidth - this.x <= this.sugar || this.x <= this.sugar)
+                    {
+                        this.vX *=-1;
+                    }
+                if(ctx.canvas.clientHeight - this.y <= this.sugar || this.y <= this.sugar)
+                    {
+                        this.vY *=-1;
+                    }
+            }
+        }
+        let c = document.getElementById("canvas");
+        let ctx = c.getContext("2d");
+
+        let l = new Labda(100, 100, 50, 10, 10);
+
+        function pattog()
+        {
+            ctx.clearRect(0, 0, 500, 500);
+            l.rajzol(ctx);
+            l.lep(ctx);
+            requestAnimationFrame(pattog);
+        }
+
+        requestAnimationFrame(pattog);
+    </script>
+    
+</body>
+</html>
