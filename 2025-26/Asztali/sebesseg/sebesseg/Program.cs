@@ -71,6 +71,47 @@
 
             Console.WriteLine($"Az út {varosKm/teljesUtHossz:0.00%} vezet településen belül.");
 
+            Console.WriteLine();
+            Console.WriteLine("5. feladat");
+            Console.Write("Adja meg egy települést nevét! ");
+            //Varos010
+            string varosBe = Console.ReadLine();
+
+            int varosKezdoIndex = 0;
+            int varosVegIndex = 0;
+            for (int i = 0; i < adatLista.Count; i++)
+            {
+                if (adatLista[i].jelzes == varosBe)
+                {
+                    varosKezdoIndex = i;
+                    int kezdoKm = adatLista[i].km;
+                    Console.WriteLine(i);
+                    int tablaDb = 0;
+
+                    while (!adatLista[i].isVarosVege())
+                    {
+                        if(adatLista[i].isKorlatozoTabla())
+                        {
+                            tablaDb++;
+                        }
+                        i++;
+                        
+                    }
+
+                    varosVegIndex = i;
+                    int varosHossz = adatLista[i].km - kezdoKm;
+                    Console.WriteLine($"A sebességkorlátozó táblák száma: {tablaDb}");
+                    Console.WriteLine($"Az út hossza a településen belül: {varosHossz} méter");
+                    break;
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("6. feladat");
+            for (int i = varosVegIndex+1; i < adatLista.Count; i++)
+            {
+                
+            }
         }
     }
 }

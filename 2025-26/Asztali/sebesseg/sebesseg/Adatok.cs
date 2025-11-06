@@ -30,6 +30,24 @@ namespace sebesseg
             return jelzes.Length >= 4;
         }
 
+        public bool isKorlatozoTabla()
+        {
+            try
+            {
+                int sebesseg = int.Parse(jelzes);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool isVarosVege()
+        {
+            return jelzes == "]";
+        }
+
         public int sebessegHatar()
         {
             try
