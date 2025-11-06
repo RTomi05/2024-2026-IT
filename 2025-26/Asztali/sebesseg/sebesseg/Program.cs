@@ -108,9 +108,14 @@
 
             Console.WriteLine();
             Console.WriteLine("6. feladat");
+            int kovetkezoVarosIndex = -1;
             for (int i = varosVegIndex+1; i < adatLista.Count; i++)
             {
-                
+                if (adatLista[i].isTelepules())
+                {
+                    kovetkezoVarosIndex = i;
+                    break;
+                }
             }
         }
     }
