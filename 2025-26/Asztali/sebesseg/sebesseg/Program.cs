@@ -1,4 +1,6 @@
-﻿namespace sebesseg
+﻿using System.Security.Cryptography;
+
+namespace sebesseg
 {
     internal class Program
     {
@@ -116,6 +118,43 @@
                     kovetkezoVarosIndex = i;
                     break;
                 }
+            }
+            int kovetkezoVarosTavolsag = teljesUtHossz;
+            if(kovetkezoVarosIndex > -1)
+            {
+                kovetkezoVarosTavolsag = adatLista[kovetkezoVarosIndex].km - adatLista[varosVegIndex].km;
+            }
+            //Console.WriteLine(kovetkezoVarosTavolsag);
+
+            int elozoVarosVege = -1;
+            int elozoVarosEleje = -1;
+            for (int i = varosKezdoIndex-1; i >= 0; i--)
+            {
+                if (adatLista[i].isVarosVege())
+                {
+                    elozoVarosVege = i;
+                    //break;
+                }
+                if(adatLista[i].isTelepules())
+                {
+                    elozoVarosEleje = i;
+                    break;
+                }
+            }
+            int elozoVarosTavolsag = teljesUtHossz;
+            if (elozoVarosVege > -1)
+            {
+                elozoVarosTavolsag = adatLista[varosKezdoIndex].km - adatLista[elozoVarosVege].km ;
+            }
+            //Console.WriteLine(adatLista[elozoVarosEleje].jelzes);
+
+            if(elozoVarosTavolsag >= kovetkezoVarosTavolsag)
+            {
+                Console.WriteLine($"A legközelebbi település: {adatLista[elozoVarosEleje].jelzes}");
+            }
+            else
+            {
+                Console.WriteLine($"A legközelebbi település: {adatLista[kovetkezoVarosIndex].jelzes}");
             }
         }
     }
