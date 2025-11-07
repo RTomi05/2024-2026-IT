@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labda</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script>
+        class Labda
+        {
+            constructor(x, y, sugar, vX, vY)
+            {
+                this.x = x;
+                this.y = y;
+                this.sugar = sugar;
+                this.vX = vX;
+                this.vY = vY;
+            }
+
+            rajzol(ctx)
+            {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.sugar, 0, 2 * Math.PI);
+                ctx.stroke();
+            }
+
+            lep(ctx)
+            {
+                this.x += this.vX;
+                this.y += this.vY;
+                let utkozesVolt = false;
+				if(ctx.canvas.clientWidth - this.x <= this.sugar || this.x <= this.sugar)
+				{
+					this.vX*=-1;
+					utkozesVolt = true;
+				}
+				if(ctx.canvas.clientHeight - this.y <= this.sugar || this.y <= this.sugar)
+				{
+					this.vY*=-1;
+					utkozesVolt = true
+				}
+
+				if(utkozesVolt)
+				{
+					this.x += this.vX;
+					this.y += this.vY;
+				}
+            }
+
+            utkozes(masik)
+                {
+                    if(masik instanceof fal)
+                {
+                    this.#falnakUtkozes(masik);
+                }
+                else if(masik instanceof labda)
+                {
+                    this.#labdanakUtkozes(masik);
+                }
+                }
+                //console.log(masik instanceof fal);
+
+            #falnakUtkozes()
+            {
+                //console.log("Jó!")
+            }
+            #labdanakUtkozes()
+                {
+                    return false;
+                }
+        }
+
+        class fal
+        {
+            constructor(x, y, width, height)
+            {
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
+            }
+            rajzol(ctx)
+            {
+                ctx.beginPath(ctx);
+                ctx.rect(this.x, this.y, this.width, this.height);
+                ctx.fillStyle = "red"
+                ctx.fill();
+                ctx.stroke();
+            }
+        }
+        const labdaDarab = 120;
+        let c = document.getElementById("canvas");
+        let ctx = c.getContext("2d");
+        
+        const fal1 = new fal(100,100,20,200);
+        
+        let l = new Labda(100, 100, 50, 10, 10);
+
+        const labdak = [];
+
+		for(let i = 0;i < labdaDarab;i++)
+		{
+			let r = Math.floor(Math.random()*20)+10;
+			let x = Math.floor(Math.random()*c.clientWidth-4*r)+2*r
+			let y = Math.floor(Math.random()*c.clientHeight-4*r)+2*r
+			let vX = Math.random()*160+1
+			let vY = Math.random()*160+1
+			labdak.push(new Labda(x,y,r,vX,vY))
+		}
+
+        function pattog()
+        {
+            ctx.clearRect(0,0,ctx.canvas.clientWidth,ctx.canvas.clientHeight);
+            fal1.rajzol(ctx);
+
+			labdak.forEach(l =>
+            {
+                l.utkozes(fal1);
+			    l.rajzol(ctx);
+			    l.lep(ctx);
+            }
+            )
+			requestAnimationFrame(pattog);
+        }
+        requestAnimationFrame(pattog);
+    </script>
+    
+</body>
+</html>
