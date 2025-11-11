@@ -38,7 +38,12 @@
                 }
             }
 
+            Console.WriteLine(string.Join("\n", adatLista
+                .Where(e => e.isTelepules())
+                .Select(e => e.jelzes)));
+            ;
             Console.WriteLine();
+
 
             Console.WriteLine("3.feladat");
             Console.Write("Adja meg a vizsgált szakasz hosszát km-ben! ");
@@ -51,7 +56,13 @@
                 }
             }
 
+            Console.WriteLine(adatLista
+                .Where(e => e.km <= beKm * 1000)
+                .Min(e => e.sebessegHatar()));
+
+
             Console.WriteLine();
+
 
             Console.WriteLine("4. feladat");
             int varosKezdet = 0;
@@ -69,7 +80,19 @@
                 }
             }
 
+
+            Console.WriteLine("{0:0.00%}",adatLista
+                 .Where(e => e.isTelepules() || e.isVarosVege())
+                 .Select(e => e.km)
+                 .Chunk(2)
+                 .Select(e => e[1] - e[0])
+                 .Sum() / (double)teljesUtHossz
+                 );
+
+
             Console.WriteLine($"Az út {varosKm/teljesUtHossz:0.00%} vezet településen belül.");
+
+
 
             Console.WriteLine();
             Console.WriteLine("5. feladat");
