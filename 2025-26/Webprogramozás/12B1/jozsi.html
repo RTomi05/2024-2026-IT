@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            font-size: 40px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="betolt()" style="font-size: 60px; margin: 85px;" >Jóska</button>
+    <div id="ide"></div>
+
+    <script>
+        function betolt()
+        {
+            //console.log("Jó, de még nem ska");
+            fetch("joska.json")
+                .then(x => x.json())
+                .then(json => 
+                    {
+                        //console.log(json);
+                        //console.log(json.nev);
+                        document.getElementById("ide").innerHTML = "<div><b>Név:</b> " + json.nev + "</div>";
+                        document.getElementById("ide").innerHTML += "<div><b>Életkor:</b> " + json.eletkor + "</div>";
+                        document.getElementById("ide").innerHTML += "<div><b>Végzettségek:</b> <ul>" + "<li>" + json.vegzettsegek.join("</li><li>") + "</li></ul></div>";
+                    }
+                )
+        }
+    </script>
+</body>
+</html>
