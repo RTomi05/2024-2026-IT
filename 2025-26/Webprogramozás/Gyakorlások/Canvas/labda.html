@@ -55,22 +55,65 @@
                 {
                     this.#falnakUtkozes(masik);
                 }
-                else if(masik instanceof labda)
+                else if(masik instanceof Labda)
                 {
                     this.#labdanakUtkozes(masik);
                 }
                 }
                 //console.log(masik instanceof fal);
 
-            #falnakUtkozes()
+            #falnakUtkozes(masik)
             {
-                //console.log("Jó!")
-            }
-            #labdanakUtkozes()
+                let utkozesVolt = false;
+
+                const xs = masik.x;
+                const xe = masik.x + masik.width;
+                const ys = masik.y;
+                const ye = masik.y + masik.height;
+
+                const xs2 = this.x - this.sugar;
+                const xe2 = this.x + this.sugar;
+                const ys2 = this.y - this.sugar;
+                const ye2 = this.y + this.sugar;
+
+                if(
+                    xe >= xs2 &&
+                    xs <= xe2 &&
+                    ye >= ys2 &&
+                    ys <= ye2
+                )
+                {
+                    this.x -= this.vX;
+                    this.y -= this.vY;
+
+                    //melyik irányból volt ütközés
+                    //ha a közepek közti szakasz x koordinátája nagyobb (fekvő háromszög)
+                    if(Math.abs((xs+xe)/2 - this.x)>Math.abs((ys+ye)/2 - this.y))
+                    {
+                        this.vX*=-1;
+                    }
+
+                    //ha a közepek közti szakasz y koordinátája nagyobb (álló háromszög)
+					if(Math.abs((xs+xe)/2 - this.x)<Math.abs((ys+ye)/2 - this.y))
+					{
+						this.vY*=-1;
+					}
+
+					utkozesVolt = true;
+                }
+
+				if(utkozesVolt)
+				{
+					this.x += this.vX;
+					this.y += this.vY;
+				}
+			}
+
+            #labdanakUtkozes(masik)
                 {
                     return false;
                 }
-        }
+		}
 
         class fal
         {
@@ -90,7 +133,7 @@
                 ctx.stroke();
             }
         }
-        const labdaDarab = 120;
+        const labdaDarab = 10;
         let c = document.getElementById("canvas");
         let ctx = c.getContext("2d");
         
@@ -105,8 +148,8 @@
 			let r = Math.floor(Math.random()*20)+10;
 			let x = Math.floor(Math.random()*c.clientWidth-4*r)+2*r
 			let y = Math.floor(Math.random()*c.clientHeight-4*r)+2*r
-			let vX = Math.random()*160+1
-			let vY = Math.random()*160+1
+			let vX = Math.random()*2+1
+			let vY = Math.random()*2+1
 			labdak.push(new Labda(x,y,r,vX,vY))
 		}
 
