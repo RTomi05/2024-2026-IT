@@ -13,6 +13,8 @@ namespace metHU
         public string ido;
         public string szeliranyEsErosseg;
         public int homerseklet;
+        public int ora;
+        public int perc;
 
         public Adatok(string sor)
         {
@@ -40,6 +42,21 @@ namespace metHU
             //string.Join(":", this.ido.ToArray().Chunk(2).Select(x => x[0] + x[1]));
             return this.ido.Substring(0, 2) + ":" + this.ido.Substring(2);
             //return this.ido[0] + this.ido[1] + ":" + this.ido[2] + this.ido[3];
+        }
+
+        public bool szelcsend()
+        {
+            return this.szeliranyEsErosseg == "00000";
+            /*
+            if (this.szeliranyEsErosseg == "00000")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            */
         }
     }
 }

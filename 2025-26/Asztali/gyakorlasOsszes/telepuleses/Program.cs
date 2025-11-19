@@ -22,8 +22,29 @@
             Console.WriteLine();
             Console.WriteLine("3. feladat");
             var legkisebb = adatLista.Where(a => a.homerseklet == adatLista.Min(x => x.homerseklet))
-                .First();
-            Console.WriteLine($"A legalacsonyabb hőmérséklet:{legkisebb.telepules} 23:45-kor: {legkisebb.homerseklet} fok.");
+                .FirstOrDefault(new Adatok("   0"));
+            var legnagyobb = adatLista.Where(a => a.homerseklet == adatLista.Max(x => x.homerseklet))
+                .FirstOrDefault(new Adatok("   0"));
+            //Console.WriteLine($"A legalacsonyabb hőmérséklet: {legkisebb.telepules} {legkisebb.idoString()}-kor: {legkisebb.homerseklet} fok. \r\n");
+            //Console.WriteLine($"A legmagasabb hőmérséklet: {legnagyobb.telepules} {legnagyobb.idoString()}-kor: {legnagyobb.homerseklet} fok. \r\n");
+
+            var rendezett = adatLista.OrderBy(adat => adat.homerseklet);
+            Console.WriteLine("A legalacsonyabb hőmérséklet: {0} {1}-kor: {2} fok. \r\nA legmagasabb hőmérséklet: {3} {4}-kor: {5} fok.",
+                rendezett.First().telepules,
+                rendezett.First().idoString(),
+                rendezett.First().homerseklet,
+                rendezett.Last().telepules,
+                rendezett.Last().idoString(),
+                rendezett.Last().homerseklet
+                );
+
+            Console.WriteLine();
+            Console.WriteLine("4. feladat");
+            var csendesek = string.Join("\n", adatLista.Where(adat => adat.szelcsend()).Select(adat => adat.telepules + " " + adat.idoString()));
+            Console.WriteLine(csendesek);
+
+            Console.WriteLine();
+            Console.WriteLine("5. feladat");
         }
     }
 }
