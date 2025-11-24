@@ -49,8 +49,19 @@
                 .Where(adat => new int[] { 1, 7, 13, 19 }.Contains(adat.ora))
                 .GroupBy(adat => adat.telepules)
                 .Select(adat => new { telepules = adat.Key,
-                                      atlag = adat.Average(x => x.homerseklet)});
+                                      atlag = adat.Count() == 4
+                                      ? Math.Round(adat.Average(x => x.homerseklet)).ToString()
+                                      : "NA"
+                                    })
+                .ToList();
             Console.WriteLine(kozepek);
+
+            var ingadozas = adatLista
+                .GroupBy(adat => adat.telepules)
+                .Select(adat => new { telepules = adat.Key,
+                                      ingadozas = adat.Max(x => x.homerseklet) - adat.Min(x => x.homerseklet)
+                })
+                .ToList();
         }
     }
 }
