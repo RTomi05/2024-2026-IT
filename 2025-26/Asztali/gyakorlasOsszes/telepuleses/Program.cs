@@ -45,6 +45,12 @@
 
             Console.WriteLine();
             Console.WriteLine("5. feladat");
+            var kozepek = adatLista
+                .Where(adat => new int[] { 1, 7, 13, 19 }.Contains(adat.ora))
+                .GroupBy(adat => adat.telepules)
+                .Select(adat => new { telepules = adat.Key,
+                                      atlag = adat.Average(x => x.homerseklet)});
+            Console.WriteLine(kozepek);
         }
     }
 }
