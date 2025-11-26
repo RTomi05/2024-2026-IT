@@ -1,0 +1,5 @@
+1. lépés: Jelenítse meg mind a 10 városból az épp aktuális időre vonatkozó hőmérsékleti adatot
+2. lépés: Városnevek szerint legyen rendezve (ABC)
+3. lépés: Számoljuk ki a napi átlaghőmérsékletet
+4. lépés: Nappali hőmérséklet (7 - 17 óráig) átlagának kiszámítása
+5. lépés: Jelenítse meg melyik városban mikor volt a legnagyobb / legkisebb a hőmérséklet

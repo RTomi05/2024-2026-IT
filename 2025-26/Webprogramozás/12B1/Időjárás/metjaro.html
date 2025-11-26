@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MET járó</title>
+</head>
+<body onload="betolt()">
+    <div id="ide"></div>
+    <script>
+        /*Ha időt akarunk kiiratni:
+        "Jelenlegi idő: " + aktualisIdo;
+        */
+        const aktualisIdo = new Date().getHours() + ":" + new Date().getMinutes();
+        const varosok = [];
+        function betolt()
+        {
+            fetch("METjaro.json")
+            .then(e => e.json())
+            .then(y => 
+                {
+                    y.cities.forEach(y => varosok.push(y.name))
+                    console.log(varosok);
+                })
+            
+            console.log(aktualisIdo);
+        };
+        
+    </script>
+</body>
+</html>
