@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemnegatív számok</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body onload="betolt()">
+    <table id="tablazat"></table>
+    <script>
+        //A számok jelenjenek meg egy táblázatban, tíz oszlop legyen
+        //Csak a páros számokat tartalmazza a tömb
+        //Legyen egy függvény, aminek a paramétere
+
+        let szamok = [];
+        let tablazat = document.getElementById("tablazat");
+
+        function betolt()
+        {
+            fetch('nemnegativ.json')
+            .then(adat => adat.json())
+            .then(y => 
+            {
+                szamok = y.numbers.map(e => parseInt(e))
+                szamok = szamok.filter(
+                    e => 
+                    {
+                        return e % 2 == 0;
+                    }
+                )
+                szamok.forEach(e => 
+                {
+                    let sor = document.createElement("tr")
+					let szamlalo = 0;
+					if(szamlalo == 10)
+					{
+						tablazat.appendChild(sor)
+					}
+					else{
+						sor.innerHTML = "<td>" + e + "</td>";
+					}
+                    
+                    tablazat.appendChild(sor)
+                });
+            }
+            );
+
+        }
+    </script>
+</body>
+</html>
