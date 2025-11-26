@@ -40,7 +40,12 @@ namespace sebesseg
                 }
             }
 
+            Console.WriteLine(string.Join("\n", adatLista
+                .Where(e => e.isTelepules())
+                .Select(e => e.jelzes)));
+            ;
             Console.WriteLine();
+
 
             Console.WriteLine("3.feladat");
             Console.Write("Adja meg a vizsgált szakasz hosszát km-ben! ");
@@ -53,7 +58,13 @@ namespace sebesseg
                 }
             }
 
+            Console.WriteLine(adatLista
+                .Where(e => e.km <= beKm * 1000)
+                .Min(e => e.sebessegHatar()));
+
+
             Console.WriteLine();
+
 
             Console.WriteLine("4. feladat");
             int varosKezdet = 0;
@@ -71,7 +82,19 @@ namespace sebesseg
                 }
             }
 
+
+            Console.WriteLine("{0:0.00%}",adatLista
+                 .Where(e => e.isTelepules() || e.isVarosVege())
+                 .Select(e => e.km)
+                 .Chunk(2)
+                 .Select(e => e[1] - e[0])
+                 .Sum() / (double)teljesUtHossz
+                 );
+
+
             Console.WriteLine($"Az út {varosKm/teljesUtHossz:0.00%} vezet településen belül.");
+
+
 
             Console.WriteLine();
             Console.WriteLine("5. feladat");
@@ -108,10 +131,21 @@ namespace sebesseg
                 }
             }
 
+            //LinQ
+            var vKezdet = adatLista.Where(adat => adat.jelzes == varosBe).First();
+            var vVeg = adatLista.Where(adat => adat.isVarosVege() && adat.km > vKezdet.km).First();
+            var tablak = adatLista
+                    .Where(adat => adat.km > vKezdet.km
+                    && adat.km < vVeg.km
+                    && adat.isKorlatozoTabla())
+                    .Count();
+            Console.WriteLine($"A sebességkorlátozó táblák száma: {tablak}");
+            Console.WriteLine("Az út hossza a településen belül: {0} méter", vVeg.km - vKezdet.km);
+
             Console.WriteLine();
             Console.WriteLine("6. feladat");
             int kovetkezoVarosIndex = -1;
-            for (int i = varosVegIndex+1; i < adatLista.Count; i++)
+            for (int i = varosVegIndex + 1; i < adatLista.Count; i++)
             {
                 if (adatLista[i].isTelepules())
                 {
@@ -119,6 +153,7 @@ namespace sebesseg
                     break;
                 }
             }
+<<<<<<< HEAD
             int kovetkezoVarosTavolsag = teljesUtHossz;
             if(kovetkezoVarosIndex > -1)
             {
@@ -156,6 +191,20 @@ namespace sebesseg
             {
                 Console.WriteLine($"A legközelebbi település: {adatLista[kovetkezoVarosIndex].jelzes}");
             }
+=======
+            int koveketkezoVarosTavolsag = teljesUtHossz;
+            if(kovetkezoVarosIndex > -1)
+            {
+                koveketkezoVarosTavolsag = adatLista[kovetkezoVarosIndex].km - adatLista[varosVegIndex].km;
+            }
+            //Console.WriteLine(kovetkezoVarosTavolsag);
+
+            //valami hiányzik :D
+
+            var kovetkezoV = adatLista.Where(adat => adat.isTelepules() && adat.km > vVeg.km).First();
+            var elozoV = adatLista.Where(adat => adat.isTelepules() && adat.km < vKezdet.km).Last();
+
+>>>>>>> 4081968b37fbfb5e24cfbf364c2472cc583d5055
         }
     }
 }
