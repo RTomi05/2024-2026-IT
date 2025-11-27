@@ -13,6 +13,7 @@ namespace jelados
         public int masodperc;
         public int x;
         public int y;
+        public int egeszIdoMasodpercben;
         public Adat(int ora, int perc, int masodperc, int x, int y)
         {
             eltarol(ora, perc, masodperc, x, y);
@@ -34,6 +35,27 @@ namespace jelados
             this.masodperc = masodperc;
             this.x = x;
             this.y = y;
+
+            this.egeszIdoMasodpercben = this.ora * 3600 + this.perc * 60 + masodperc;
         }
+
+        public string koordinatak()
+        {
+            return $"x={x} y={y}";
+        }
+
+        public int elteltMasodperc(Adat masik)
+        {
+            return Math.Abs(this.egeszIdoMasodpercben - masik.egeszIdoMasodpercben);
+        }
+
+        public string elteltIdo(Adat masik)
+        {
+            int mp = elteltMasodperc(masik);
+            return $"{mp / 3600}:{mp % 3600 / 60}:{mp / 3600 % 60}";
+        }
+
+
+        //static függvények MEGNÉZÉSE
     }
 }
