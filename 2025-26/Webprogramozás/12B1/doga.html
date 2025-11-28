@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <style>
+        table
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+            margin: auto;
+        }
+        tr, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body onload="betolt()">
+    <table id="tablazat"></table>
+
+    <script>
+        //1. feladat
+        /*A playlist.json file tartalmát jelenítsétek meg egy táblázatban, táblázatszerűen. Az nem ér, ha valaki bemásolja az egészet.
+        Fetch API-val kell betölteni, feldolgozni, majd egy html táblázatban megjeleníteni.*/
+        fetch("playlist.json")
+        .then(x => x.json())
+        .then(x => 
+            {
+                console.log(x);
+                let tablazat = document.getElementById("tablazat");
+                console.log(x[0]);
+                let probaSzamlalo = 0;
+                x.forEach(e => 
+                {
+                    
+                    let sor = document.createElement("tr");
+                    sor.innerHTML = "<td>" + e.start + "</td>" + "<td>" + e.artist + "<td>" + e.title + "</td>" + "<td>" + e.length + "</td>";
+                    //mert miért ne :D
+                    if(e.artist == "Majka" || e.artist == "Majka, Curtis & BLR")
+                    {
+                        sor.style.backgroundColor = "yellow";
+                        sor.style.fontWeight = "bold";
+                    }
+                    tablazat.appendChild(sor);
+                    probaSzamlalo++;
+                });
+                console.log(probaSzamlalo);
+            }
+        );
+
+        function betolt()
+    {
+
+    }
+    </script>
+    
+</body>
+</html>
