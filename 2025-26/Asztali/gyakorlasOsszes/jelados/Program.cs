@@ -26,6 +26,12 @@
             Console.WriteLine();
             Console.WriteLine("4. feladat\nIdőtartam: {0}",
                                            adatok[0].elteltMasodperc(adatok.Last()));
+
+            Console.WriteLine();
+            Console.WriteLine("6. feladat");
+            var osszeg = adatok.Skip(1).Select((x, index) => x.tavolsag(adatok[index])).Sum();
+            Console.WriteLine($"Elmozdulás {osszeg:0.000} egység"); 
+
         }
     }
 }
