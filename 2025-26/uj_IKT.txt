@@ -1,0 +1,9 @@
+-Egy feladatban három különálló részt csinál három ember, amiből összeáll egy KEREK EGÉÉÉÉÉÉÉÉSZ
+-weboldal, amelynek három különálló menüje van
+
+1. egyszerű Bootstrap design -> navigáció (nav bar), abban 3 gomb
+2. 	1. gomb -> Űrlap - Pitagyros-tétel (hibakezelés)
+	2. gomb -> Szögfüggvény, háromszög oldalak, szögek megadása, kiszámolása
+	3. gomb -> 1. és 2. fokú függvények ábrázolása grafikonon (canvas)
+
++ sorozatok (első tag megadása, n érték)
