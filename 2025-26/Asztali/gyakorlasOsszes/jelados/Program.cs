@@ -35,6 +35,11 @@
             Console.WriteLine();
             Console.WriteLine("7. feladat");
 
+            var kimaradtak = adatok
+                .Skip(1)
+                .Where((adat,i) => adat.kimaradt(adatok[i]).darab > 0)
+                .Select(adat => adat.ora + " " + adat.perc + " " + adat.masodperc + " " + adat.kimaradt);
+
         }
     }
 }
