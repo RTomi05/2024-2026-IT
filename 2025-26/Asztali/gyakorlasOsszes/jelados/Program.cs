@@ -57,7 +57,15 @@
             Console.WriteLine();
             Console.WriteLine("6. feladat");
             var osszeg = adatok.Skip(1).Select((x, index) => x.tavolsag(adatok[index])).Sum();
-            Console.WriteLine($"Elmozdulás {osszeg:0.000} egység"); 
+            Console.WriteLine($"Elmozdulás {osszeg:0.000} egység");
+
+            Console.WriteLine();
+            Console.WriteLine("7. feladat");
+
+            var kimaradtak = adatok
+                .Skip(1)
+                .Where((adat,i) => adat.kimaradt(adatok[i]).darab > 0)
+                .Select(adat => adat.ora + " " + adat.perc + " " + adat.masodperc + " " + adat.kimaradt);
 
         }
     }

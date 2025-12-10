@@ -61,7 +61,37 @@ namespace jelados
             return Double.Hypot(this.x - masik.x, this.y - masik.y);
         }
 
+        public Elteres kimaradt(Adat masik)
+        {
+            int dX = Math.Abs(masik.x - this.x) / 10;
+            int dY = Math.Abs(masik.y - this.y) / 10;
+            int dT = (this.elteltMasodperc(masik) / 60)/5;
+
+            if (dX > dT || dY > dT)
+            {
+                return new Elteres("koordináta-eltérés", Math.Max(dX, dY));
+            }
+            else if (dX < dT && dY < dT)
+            {
+                return new Elteres("időeltérés", dT);
+            }
+            else
+            {
+                return new Elteres("", 0);
+            }
+        }
 
         //static függvények MEGNÉZÉSE
+    }
+
+    class Elteres
+    {
+        public string tipus;
+        public int darab;
+        public Elteres(string tipus, int darab)
+        {
+            this.tipus = tipus;
+            this.darab = darab;
+        }
     }
 }
