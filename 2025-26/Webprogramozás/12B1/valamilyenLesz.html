@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's</title>
+    <style>
+        div#szoveg {
+            font-size: 230px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20%;
+			color: rgb(239, 174, 54);
+        }
+    </style>
+</head>
+<body onload="csinald()">
+    <div id="szoveg"></div>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        //Weboldal JQueryvel:
+        //1. Szöveg konstans -> McDonald's
+        //2. Betűnként jelenítsük meg (fadeIn), miután az első megjelenik, a második is jelenjen meg, de az első tűnjön el (fadeOut) stb.
+        function csinald()
+        {
+			const meki = "McDonald's";
+            document.getElementById("szoveg").innerHTML = meki;
+			$( "body" ).ready(function() {
+			$( "#szoveg" ).fadeOut( "slow", function() {
+				// Animation complete
+
+			const chars = meki.split('');
+			console.log(chars);
+			let index = 0;
+			let hely = '';
+			function showNextChar() {
+				if (index < chars.length) {
+						hely += chars[index];
+						$('#szoveg').text(hely).fadeIn('slow', function() {
+						setTimeout(function() {
+							$('#szoveg').fadeOut('slow', function() {
+								index++;
+								showNextChar();
+							});
+						}, 1);
+					});
+				}
+			}
+			showNextChar();
+			
+  });
+});
+        }
+    </script>
+</body>
+</html>
