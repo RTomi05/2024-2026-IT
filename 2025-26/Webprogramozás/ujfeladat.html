@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyakorlás</title>
+    <style>
+        .info {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 50px;
+        }
+        #btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <p>Keresztnév : <span id="first">John</span></p>
+        <p>Vezetéknév : <span id="last">Doe</span></p>
+        <p>Nem : <span id="gender">Male</span></p>
+        <p>Email : <span id="email">test@gmail.com</span></p>
+        <p>Fotó : <img id="picture" src=""></p>
+    </div>
+
+        <button id="btn">Csináld!</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        // randomuser.me kép, név, email, betöltése
+        // rákattintva a képre elhalványul
+        // Megint rákattintunk, új adatokat tölt be
+        // Mindezt JQueryvel
+        // Bootstrap középre igazítás
+
+            $(document).ready(function () {
+            $("#btn").click(function () {
+                $.ajax({
+            url: 'https://randomuser.me/api/',
+            dataType: 'json',
+            success: function(data) {
+                console.log(data.results[0]);
+                document.getElementById("first").innerHTML = data.results[0]['name']['first'];
+                document.getElementById("last").innerHTML = data.results[0]['name']['last'];
+                if(data.results[0]['gender'] == 'male')
+            {
+                data.results[0]['gender'] = 'férfi';
+            }
+            else
+            {
+                data.results[0]['gender'] = 'nő';
+            }
+                document.getElementById("gender").innerHTML = data.results[0]['gender'];
+                document.getElementById("email").innerHTML = data.results[0]['email'];
+                document.getElementById("picture").src = data.results[0]['picture']['large'];
+            }
+            });
+            $( "#picture" ).on( "click", function() {
+                $( "#picture" ).fadeIn( "slow", function() {
+                });
+                });
+            });
+
+            $( "#picture" ).on( "click", function() {
+                $( "#picture" ).fadeOut( "slow", function() {
+                    // Animation complete.
+                });
+                });
+            });
+    </script>
+</body>
+</html>
