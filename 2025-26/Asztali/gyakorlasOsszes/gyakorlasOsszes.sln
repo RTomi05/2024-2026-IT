@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jelados", "jelados\jelados.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "godor", "godor\godor.csproj", "{81E614C1-8106-421C-8B27-66C235E36557}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tantargyi", "tantargyi\tantargyi.csproj", "{18619378-0E71-44B0-9C6B-800F5C3C6473}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{81E614C1-8106-421C-8B27-66C235E36557}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81E614C1-8106-421C-8B27-66C235E36557}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81E614C1-8106-421C-8B27-66C235E36557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18619378-0E71-44B0-9C6B-800F5C3C6473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18619378-0E71-44B0-9C6B-800F5C3C6473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18619378-0E71-44B0-9C6B-800F5C3C6473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18619378-0E71-44B0-9C6B-800F5C3C6473}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
