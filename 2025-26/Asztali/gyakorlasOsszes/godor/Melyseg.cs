@@ -9,9 +9,11 @@ namespace godor
     internal class Melyseg
     {
         public int melyseg;
-        public Melyseg(int melyseg)
+        public int meter;
+        public Melyseg(int melyseg, int meter)
         {
             this.melyseg = melyseg;
+            this.meter = meter;
         }
     }
 }

@@ -11,7 +11,12 @@ namespace godor
         public List<Melyseg> melysegek;
         public Godor()
         {
+            melysegek = new List<Melyseg>();
+        }
 
+        public void Add(Melyseg melyseg)
+        {
+            melysegek.Add(melyseg);
         }
     }
 }

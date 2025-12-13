@@ -9,8 +9,9 @@ namespace godor
             string[] sorok = File.ReadAllLines("melyseg-godrok.txt");
             List<Melyseg> melysegek = new List<Melyseg>();
 
-            sorok.ToList()
-                .ForEach(x => melysegek.Add(new Melyseg(int.Parse(x))));
+            sorok
+                .ToList()
+                .ForEach(x => melysegek.Add(new Melyseg(int.Parse(x), melysegek.Count+1)));
 
             Console.WriteLine("1. feladat:");
             Console.WriteLine($"A fájl adatainak száma: {melysegek.Count}");
@@ -36,6 +37,15 @@ namespace godor
 
             Console.WriteLine($"5. feladat \r\nA gödrök száma: {File.ReadAllLines("godrok.txt").Length}");
             //Console.WriteLine(eredmeny);
+
+            List<Godor> godrok = new List<Godor>();
+            melysegek.ForEach(x =>
+            {
+                if (x.melyseg > 0)
+                {
+                    
+                }
+            });
         }
     }
 }
