@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML API</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 20px;
+        }
+        div.container {
+            border: 2px solid black;
+            padding: 20px;
+            width: 1600px;
+        }
+        button{
+            margin: 10px;
+        }
+        input[type="text"] {
+            margin: 5px;
+        }
+        input[type="radio"] {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col-12 bg-primary"></div>
+            <input type="text" id="szamA" placeholder="Első szám">
+            <input type="text" id="szamB" placeholder="Második szám">
+            <input type="radio" id="osszeadas" value="osszeadas" name="muvelet">
+            <label for="osszeadas"><img src="Plus_symbol.svg.png" alt="Összeadás" style="height: 70px; width: 50px;"></label>
+            <input type="radio" id="kivonas" value="kivonas" name="muvelet">
+            <label for="kivonas"><img src="minus-sign-9.png" alt="Kivonás" style="height: 70px; width: 70px;"></label>
+            <input type="radio" id="szorzas" value="szorzas" name="muvelet">
+            <label for="szorzas">Szorzás</label>
+            <input type="radio" id="osztas" value="osztas" name="muvelet">
+            <label for="osztas">Osztás</label>
+            <button id="kuldes" class="btn btn-primary">Küldés</button>
+        </div>
+    </div>
+
+    <div id="eredmeny"></div>
+    <script>
+    /*
+        $.ajax({
+        url: "miniAPI.php",
+        data: {
+            a: 2,
+            b: 3,
+            muvelet: "*"
+        },
+        success: function(result) {
+            $("#eredmeny").html(`<div class="bg-danger d-flex justify-content-center align-items-center" style="width: 200px; height: 200px; font-size: 40px;">${result}</div>`);
+        }
+    });*/
+
+        $("#kuldes").on("click", function() {
+            const a = $("#szamA").val();
+            const b = $("#szamB").val();
+            const muvelet = $("input[name='muvelet']:checked").val();
+            $.get("miniAPI.php", { a: a, b: b, muvelet: muvelet }, function(data) {
+                $("#eredmeny").html(`<div class="bg-danger d-flex justify-content-center align-items-center" style="width: 200px; height: 200px; font-size: 40px;">${data}</div>`);
+            });
+        });
+    </script>
+</body>
+</html>
