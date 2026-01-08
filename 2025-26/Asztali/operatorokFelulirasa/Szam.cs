@@ -67,5 +67,214 @@ namespace operatorokFelulirasa
         {
             return new Szam(szam.szam - 1);
         }
+
+        public static bool operator ==(Szam szam, Szam szam2)
+        {
+            if (szam.szam == szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        
+        public static bool operator ==(Szam szam, int szam2)
+        {
+            if (szam.szam == szam2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator ==(int szam, Szam szam2)
+        {
+            if (szam == szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator !=(Szam szam, Szam szam2)
+        {
+            if (szam.szam != szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator !=(int szam, Szam szam2)
+        {
+            if (szam != szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator !=(Szam szam, int szam2)
+        {
+            if (szam.szam != szam2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator >(Szam szam, Szam szam2)
+        {
+            if (szam.szam > szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator >(int szam, Szam szam2)
+        {
+            if (szam > szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator >(Szam szam, int szam2)
+        {
+            if (szam.szam > szam2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator <(Szam szam, Szam szam2)
+        {
+            if (szam.szam < szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator <(int szam, Szam szam2)
+        {
+            if (szam < szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator <(Szam szam, int szam2)
+        {
+            if (szam.szam < szam2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator >=(Szam szam, Szam szam2)
+        {
+            if (szam.szam >= szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator >=(int szam, Szam szam2)
+        {
+            if (szam >= szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator >=(Szam szam, int szam2)
+        {
+            if (szam.szam >= szam2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        //<=
+        public static bool operator <=(Szam szam, Szam szam2)
+        {
+            if (szam.szam <= szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator <=(int szam, Szam szam2)
+        {
+            if (szam <= szam2.szam)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public static bool operator <=(Szam szam, int szam2)
+        {
+            if (szam.szam >= szam2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

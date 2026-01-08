@@ -24,7 +24,7 @@
             var sz7 = 2.5 + sz2;
             Console.WriteLine(sz7);
 
-            var sz8 = 2 - sz2;
+            var sz8 = 4 - sz2;
             Console.WriteLine(sz8);
         }
     }
