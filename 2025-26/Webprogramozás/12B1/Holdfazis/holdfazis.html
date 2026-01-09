@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>Idő: <span id="ido"></span></div>
+    <div>Holdfázis: <span id="holdfazis"></span>%</div>
+    <div>Változás: <span id="valtozas"></span></div>
+    <div><img src="" alt="Kép"></div>
+
+    <input type="date" id="nap">
+    <input type="time" id="oraPerc">
+    <button onclick="kuldes()">Küldés</button>
+    <script>
+        //4 adat - táblázat
+
+        function kuldes()
+        {
+            $.ajax({
+            url: "http://localhost/12B1/Holdfazis/index.php",
+            data: {
+                nap: $("#nap").val(),
+                ido: $("#ido").val()
+            },
+            success: function( result ) {
+                $("#oraPerc").html(result.ido);
+                $("#holdfazis").html(result.holdfazis);
+                $("#valtozas").html(result.valtozas);
+                $("img").attr("src", result.kep);
+                console.log(result);
+            }
+        });
+        }
+
+        kuldes();
+
+        //2 input, Nap és idő, gomb
+    </script>
+</body>
+</html>
