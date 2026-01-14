@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery feladatos</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Szorzás</h2>
+    <input type="text" id="egyikSzam">
+    <input type="text" id="masikSzam">
+    <div id="szorzat"></div>
+    <button onclick="szorozz()">Szorozz!</button>
+    <h2>Faktoriális</h2>
+    <input type="text" placeholder="Faktoriális szám" style="width: 200px;" id="faktorialisSzam">
+    <button onclick="faktorialis()">Számolj!</button>
+    <div id="faktorialisEredmeny"></div>
+    <h2>Random szám 0-tól</h2>
+    <input type="number" placeholder="Meddig sorsoljon maximum?" style="width: 200px;" id="randomMax">
+    <button onclick="randomSzam()">Sorsolj!</button>
+    <div id="randomhoz"></div>
+    <script>
+        
+
+    function szorozz()
+        {
+            let egyikSzam = parseFloat($("#egyikSzam").val())
+            let masikSzam = parseFloat($("#masikSzam").val())
+
+            $.ajax({
+            url: "https://pepa.hu/api/matekos/szorzat/"+egyikSzam+"/"+masikSzam,
+            data: {
+            
+            },
+            success: function( result ) {
+                $("#szorzat").text(result.eredmeny)
+            },
+            
+            });
+        }
+
+        //faktoriális
+
+        function faktorialis() {
+            let n = parseInt($("#faktorialisSzam").val())
+        $.ajax({
+            url: "https://pepa.hu/api/matekos/fakt/"+n,
+            data: {
+            },
+            success: function( result ) {
+                $("#faktorialisEredmeny").text(result.eredmeny)
+            },
+            
+            });
+        }
+
+        //console.log(faktorialis(5));
+
+
+        //Szám 0 és 100 között.
+        function randomSzam(max)
+        {
+            max = document.getElementById("randomMax").value;
+            return Math.floor(Math.random() * max);
+
+            $.ajax({
+            url: "https://pepa.hu/api/matekos/random/" + max,
+            data: {
+            },
+
+            success: function( result ) {
+                $( "#randomhoz" ).innerHTML(result);
+            }
+            });
+        }
+
+        $("#szorozz").on("click",function(){
+            szorozz();
+        })
+        /*
+        $("#randomSzam").on("click",function(){
+            szorozz();
+        })
+            */
+    
+    </script>
+</body>
+</html>
