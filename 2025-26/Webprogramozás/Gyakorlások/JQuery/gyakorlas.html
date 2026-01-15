@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1>Héron képlet</h1>
+    <input type="number" id="aOldal"><br>
+    <input type="number" id="bOldal"><br>
+    <input type="number" id="cOldal"><br>
+    <div>A háromszög területe: <span id="terulet"></span></div>
+    <button id="heronKuld">Küldés</button>
+    <h1>Szorzat</h1>
+    <input type="number" id="egyikSzam"><br>
+    <input type="number" id="masikSzam"><br>
+    <div>Számok szorzata: <span id="szorzat"></span></div>
+    <button id="szorzatKuld">Küldés</button>
+        
+    <script>
+
+        function heronKuldes()
+        {
+
+            let a = parseFloat($("#aOldal").val())
+            let b = parseFloat($("#bOldal").val())
+            let c = parseFloat($("#cOldal").val())
+
+            $.ajax({
+            url: "https://pepa.hu/api/matekos/haromszog/"+a+"/"+b+"/"+c,
+            data: {
+            
+            },
+            success: function( result ) {
+                if(result.szerkesztheto)
+                {
+                    $("#terulet").text(result.terulet);
+                }
+                else
+                {
+                    $("#terulet").text("Nem szerkeszthető meg a háromszög!");
+                }
+
+            },
+            error: function( result ) {
+                $("#terulet").text(result.responseJSON.error);
+            },
+            
+            });
+        }
+
+
+        function szorzatKuldes()
+        {
+
+            let egyikSzam = parseFloat($("#egyikSzam").val())
+            let masikSzam = parseFloat($("#masikSzam").val())
+
+            $.ajax({
+            url: "https://pepa.hu/api/matekos/szorzat/"+egyikSzam+"/"+masikSzam,
+            data: {
+            
+            },
+            success: function( result ) {
+                $("#szorzat").text(result.eredmeny)
+            },
+            
+            });
+        }
+
+        $("#szorzatKuld").on("click",function(){
+            szorzatKuldes();
+        })
+        $("#heronKuld").on("click",function(){
+            heronKuldes();
+        })
+
+
+    </script>
+</body>
+</html>

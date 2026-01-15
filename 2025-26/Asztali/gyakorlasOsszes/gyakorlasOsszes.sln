@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tantargyi", "tantargyi\tant
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sipalya", "sipalya\sipalya.csproj", "{EB23F413-EE5E-415C-AE01-EE577396E76C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "koordinatas_operatoros", "koordinatas_operatoros\koordinatas_operatoros.csproj", "{7029B091-60E8-4A31-B686-D9F760A39389}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{EB23F413-EE5E-415C-AE01-EE577396E76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB23F413-EE5E-415C-AE01-EE577396E76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB23F413-EE5E-415C-AE01-EE577396E76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7029B091-60E8-4A31-B686-D9F760A39389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7029B091-60E8-4A31-B686-D9F760A39389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7029B091-60E8-4A31-B686-D9F760A39389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7029B091-60E8-4A31-B686-D9F760A39389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
