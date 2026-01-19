@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sipalya", "sipalya\sipalya.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "koordinatas_operatoros", "koordinatas_operatoros\koordinatas_operatoros.csproj", "{7029B091-60E8-4A31-B686-D9F760A39389}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListásGyak", "ListásGyak\ListásGyak.csproj", "{49DA2D02-F87A-4CDE-AE9F-7B236D62D4D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{7029B091-60E8-4A31-B686-D9F760A39389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7029B091-60E8-4A31-B686-D9F760A39389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7029B091-60E8-4A31-B686-D9F760A39389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49DA2D02-F87A-4CDE-AE9F-7B236D62D4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49DA2D02-F87A-4CDE-AE9F-7B236D62D4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49DA2D02-F87A-4CDE-AE9F-7B236D62D4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49DA2D02-F87A-4CDE-AE9F-7B236D62D4D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
