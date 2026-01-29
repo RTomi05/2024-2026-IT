@@ -10,13 +10,48 @@ namespace Romeo_Und_Juliette
 
             Regex rg = new Regex(@"[A-ZÖÜÓŐÚŰÉÁÍ-]{2,} [A-ZÖÜÓŐÚŰÉÁÍ-]{2,}|[A-ZÖÜÓŐÚŰÉÁÍ-]{2,}\b");
             var eredmeny = rg.Matches(forras);
-
             //Console.WriteLine(eredmeny.Count);
 
             foreach (Match match in eredmeny)
             {
                 Console.WriteLine(match.Value);
             }
+            Console.WriteLine();
+
+            //Romeo és Júlia nevek keresése
+
+            Regex rgRomeo = new Regex(@"ROMEO", RegexOptions.IgnoreCase);
+            var eredmeny2 = rgRomeo.Matches(forras);
+
+            Console.Write("Romeo név előfordulása: ");
+            Console.WriteLine(eredmeny2.Count + " db.");
+            Console.WriteLine();
+
+            Regex ragRomeo = new Regex(@"\bRomeo[A-ZÖÜÓŐÚÉÁŰÍ]", RegexOptions.IgnoreCase);
+
+            Regex rgJulia = new Regex(@"JÚLIA", RegexOptions.IgnoreCase);
+            var eredmeny3 = rgJulia.Matches(forras);
+
+            Console.Write("Júlia név előfordulása: ");
+            Console.WriteLine(eredmeny3.Count + " db.");
+            Console.WriteLine();
+
+            Regex ragJulia = new Regex(@"\bJúlia[A-ZÖÜÓŐÚÉÁŰÍ]", RegexOptions.IgnoreCase);
+
+            Regex szam = new Regex(@"[0-9]{4}");
+            var szamok = szam.Matches(forras);
+            Console.WriteLine(szamok.Count);
+            Console.WriteLine();
+
+            //Első ŐR első szavai
+            Regex elsoOr = new Regex(@"ELSŐ ŐR\t\w([A-ZÖÜÓŐÚŰÉÁÍ])+", RegexOptions.IgnoreCase);
+
+            var elsoOrSzavai = elsoOr.Matches(forras);
+            foreach (Match match in elsoOrSzavai)
+            {
+                Console.WriteLine(match);
+            }
+
         }
     }
 }
