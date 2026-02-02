@@ -44,14 +44,17 @@ namespace Romeo_Und_Juliette
             Console.WriteLine();
 
             //Első ŐR első szavai
-            Regex elsoOr = new Regex(@"ELSŐ ŐR\t\w([A-ZÖÜÓŐÚŰÉÁÍ])+", RegexOptions.IgnoreCase);
+            Regex elsoOr = new Regex(@"ELSŐ ŐR\t([A-ZÖÜÓŐÚŰÉÁÍ]+)\s([A-ZÖÜÓŐÚŰÉÁÍ]+)", RegexOptions.IgnoreCase);
 
-            var elsoOrSzavai = elsoOr.Matches(forras);
-            foreach (Match match in elsoOrSzavai)
-            {
-                Console.WriteLine(match);
-            }
+            var elsoOrSzavai = elsoOr.Match(forras);
+            var eredmeny6 = elsoOr.Match(forras);
+            Console.WriteLine(eredmeny6.Groups[2]);
+            Console.WriteLine();
 
+            elsoOr = new Regex(@"ELSŐ ŐR\t(?<elso>[A-ZÖÜÓŐÚŰÉÁÍ]+)\s(?<masodik>[A-ZÖÜÓŐÚŰÉÁÍ]+)", RegexOptions.IgnoreCase);
+            eredmeny6 = elsoOr.Match(forras);
+            Console.WriteLine(eredmeny6.Groups[1]);
+            Console.WriteLine();
         }
     }
 }
