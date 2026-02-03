@@ -53,7 +53,7 @@ namespace Romeo_Und_Juliette
 
             elsoOr = new Regex(@"ELSŐ ŐR\t(?<elso>[A-ZÖÜÓŐÚŰÉÁÍ]+)\s(?<masodik>[A-ZÖÜÓŐÚŰÉÁÍ]+)", RegexOptions.IgnoreCase);
             eredmeny6 = elsoOr.Match(forras);
-            Console.WriteLine(eredmeny6.Groups[1]);
+            Console.WriteLine(eredmeny6.Groups[2]);
             Console.WriteLine();
         }
     }

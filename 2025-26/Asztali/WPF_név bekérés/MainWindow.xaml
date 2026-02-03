@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_valami.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_valami"
+        mc:Ignorable="d"
+        Title="Név bekérés" Height="450" Width="800"
+        Background="AliceBlue">
+    <Grid>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="273,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="321" FontSize="30px"/>
+        <Label x:Name="label1" Content="Kérek egy nevet:" FontSize="30px" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="kuldes" Content="Elküldés" Background="LightGreen" FontSize="30px" HorizontalAlignment="Left" Margin="636,62,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <ListBox x:Name="listbox1" d:ItemsSource="{d:SampleData ItemCount=0}" Margin="327,159,40,75" Height="200"/>
+        <Button x:Name="betoltes" Content="Betöltés" Background="Yellow" FontSize="30px" HorizontalAlignment="Left" Margin="90,237,0,0" VerticalAlignment="Top" Click="betoltes_Click"/>
+        <Button x:Name="torles" Content="Fájl tartalmának törlése" Background="Red" FontSize="20px" HorizontalAlignment="Left" Margin="10,372,0,0" VerticalAlignment="Top" Click="torles_Click"/>
+
+    </Grid>
+</Window>
