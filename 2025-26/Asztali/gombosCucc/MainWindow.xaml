@@ -1,0 +1,14 @@
+﻿<Window x:Class="gombosCucc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gombosCucc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grid">
+        <Button Content="Elküld" FontSize="40px" HorizontalAlignment="Left" Margin="459,72,0,0" VerticalAlignment="Top" Click="Button_Click" IsMouseDirectlyOverChanged="Button_IsMouseDirectlyOverChanged" MouseMove="Button_MouseMove" MouseEnter="Button_MouseEnter"/>
+        <TextBox x:Name="szovegDoboz" HorizontalAlignment="Left" Margin="79,73,0,0" TextWrapping="Wrap" FontSize="40px" Text="" VerticalAlignment="Top" Width="296"/>
+        
+    </Grid>
+</Window>
