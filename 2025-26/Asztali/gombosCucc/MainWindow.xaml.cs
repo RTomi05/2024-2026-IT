@@ -37,22 +37,22 @@ namespace gombosCucc
             cimke.VerticalAlignment = VerticalAlignment.Center;
             cimke.Margin = new Thickness(0,marginErtek,0,0);
             marginErtek += 50;
+            Window win2 = new Window();
+            win2.Show();
         }
 
         private void Button_IsMouseDirectlyOverChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            Background = Brushes.Green;
+            //Background = Brushes.Green;
         }
 
         private void Button_MouseMove(object sender, MouseEventArgs e)
         {
-            Background = Brushes.Red;
+            //Background = Brushes.Red;
         }
-
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
-            Background
-                = Brushes.Green;
+            //Background = Brushes.Green;
         }
     }
 }
