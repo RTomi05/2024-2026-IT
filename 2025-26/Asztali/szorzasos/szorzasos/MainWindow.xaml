@@ -1,0 +1,17 @@
+﻿<Window x:Class="szorzasos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:szorzasos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="elso" FontSize="20px" HorizontalAlignment="Left" Margin="111,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="masodik" FontSize="20px" HorizontalAlignment="Left" Margin="111,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="harmadik" FontSize="20px" HorizontalAlignment="Left" Margin="111,176,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="kiiras" Content="" FontSize="20px" HorizontalAlignment="Left" Margin="341,99,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="kep" Source="/calculator-11549842764j1xauc4kti-removebg-preview.png" HorizontalAlignment="Left" Height="221" Margin="68,210,0,0" VerticalAlignment="Top" Width="206" GotFocus="kep_GotFocus" MouseLeftButtonUp="kep_MouseLeftButtonUp" IsMouseDirectlyOverChanged="kep_IsMouseDirectlyOverChanged"/>
+
+    </Grid>
+</Window>
