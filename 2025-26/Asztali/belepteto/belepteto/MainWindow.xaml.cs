@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace belepteto
 {
@@ -19,6 +20,16 @@ namespace belepteto
         public MainWindow()
         {
             InitializeComponent();
+
+            betoltes();
+        }
+
+        public List<Adat> adatok = new List<Adat>();
+
+        void betoltes()
+        {
+            string[] sorok = File.ReadAllLines("bedat.txt");
+
         }
     }
 }
