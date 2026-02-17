@@ -24,12 +24,15 @@ namespace belepteto
             betoltes();
         }
 
-        public List<Adat> adatok = new List<Adat>();
+        List<Adat> adatok = new List<Adat>();
 
         void betoltes()
         {
             string[] sorok = File.ReadAllLines("bedat.txt");
-
+            foreach (string egySor in sorok)
+            {
+                adatok.Add(new Adat(egySor));
+            }
         }
     }
 }

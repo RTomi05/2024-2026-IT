@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:belepteto"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Beléptető rendszer" Height="450" Width="800">
     <Grid>
+        <Label Content="2. feladat" HorizontalAlignment="Left" Margin="32,23,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
