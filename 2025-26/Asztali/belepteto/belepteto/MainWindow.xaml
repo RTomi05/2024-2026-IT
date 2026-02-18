@@ -8,6 +8,18 @@
         Title="Beléptető rendszer" Height="450" Width="800">
     <Grid>
         <Label Content="2. feladat" HorizontalAlignment="Left" Margin="32,23,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="elsoGomb" GroupName="elsoCsoport" Content="Az első belépés" HorizontalAlignment="Left" Margin="61,54,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton x:Name="masodikGomb" GroupName="elsoCsoport" Content="Az utolsó kilépés" HorizontalAlignment="Left" Margin="61,74,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <Label Content="Időpont:" HorizontalAlignment="Left" Margin="57,94,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="idopontSzoveg" HorizontalAlignment="Left" Margin="120,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TabControl>
+            <TabItem Header="2. feladat">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
 
     </Grid>
 </Window>

@@ -34,5 +34,23 @@ namespace belepteto
                 adatok.Add(new Adat(egySor));
             }
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            RadioButton rb = sender as RadioButton;
+            if (rb.Name == "elsoGomb")
+            {
+                idopontSzoveg.Text = adatok.First().ido;
+            }
+            else if(rb.Name == "masodikGomb")
+            {
+                idopontSzoveg.Text = adatok.Last().ido;
+            }
+        }
+
+        private void masodikGomb_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
