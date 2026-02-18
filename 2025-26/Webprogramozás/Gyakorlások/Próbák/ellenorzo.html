@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellenőrző</title>
+    <style>
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        p {
+            margin: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="beker" placeholder="Írj valamit...">
+    <button onclick="fuggveny()">Ellenőrzés</button>
+    <p id="eredmeny"></p>
+
+    <script>
+        function fuggveny()
+        {
+            //hf.: bekért szöveg kiírása 09 óra 03 perc 13 másodperc formátumban (matchAll használatával)
+            //09:03:13
+            //időpont megadása, időpont-e (ellenőrzés)
+            //var minta = /^([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/;
+            var minta = /^\D*([01]\d|2[0-3]):([0-5]\d):([0-5]\d)\D*$/;
+            if(minta.test(document.getElementById("beker").value))
+            {
+                document.getElementById("eredmeny").innerText = "Helyes időpont formátum!";
+            }
+            else
+            {
+                document.getElementById("eredmeny").innerText = "Hibás időpont formátum!";
+            }
+        }
+    </script>
+</body>
+</html>
