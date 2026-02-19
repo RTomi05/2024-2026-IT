@@ -7,17 +7,30 @@
         mc:Ignorable="d"
         Title="Beléptető rendszer" Height="450" Width="800">
     <Grid>
-        <Label Content="2. feladat" HorizontalAlignment="Left" Margin="32,23,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="elsoGomb" GroupName="elsoCsoport" Content="Az első belépés" HorizontalAlignment="Left" Margin="61,54,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton x:Name="masodikGomb" GroupName="elsoCsoport" Content="Az utolsó kilépés" HorizontalAlignment="Left" Margin="61,74,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <Label Content="Időpont:" HorizontalAlignment="Left" Margin="57,94,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="idopontSzoveg" HorizontalAlignment="Left" Margin="120,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
         <TabControl>
             <TabItem Header="2. feladat">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background = "MediumAquamarine">
+                    <Label Content="2. feladat" HorizontalAlignment="Left" Margin="32,23,0,0" VerticalAlignment="Top"/>
+                    <RadioButton x:Name="elsoGomb" GroupName="elsoCsoport" Content="Az első belépés" HorizontalAlignment="Left" Margin="61,54,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                    <RadioButton x:Name="masodikGomb" GroupName="elsoCsoport" Content="Az utolsó kilépés" HorizontalAlignment="Left" Margin="61,74,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                    <Label Content="Időpont:" HorizontalAlignment="Left" Margin="57,94,0,0" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="idopontSzoveg" HorizontalAlignment="Left" Margin="120,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+                </Grid>
             </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem Header="3. feladat">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="384*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="textbox" HorizontalAlignment="Left" Margin="162,34,0,0" TextWrapping="Wrap" FontSize="30px" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                    <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="162,113,0,0" TextWrapping="Wrap" FontSize="30px" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                    <Label Grid.Column="1" Content="Innentől:" HorizontalAlignment="Left" FontSize="30px" Margin="11,30,0,0" VerticalAlignment="Top"/>
+                    <Label Grid.Column="1" Content="Idáig:" HorizontalAlignment="Left" FontSize="30px" Margin="11,108,0,0" VerticalAlignment="Top"/>
+                    <Button Grid.Column="1" Content="Keresés" FontSize="30px" HorizontalAlignment="Left" Margin="11,191,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+                    <Button Grid.Column="1" Content="Mentés" FontSize="30px" HorizontalAlignment="Left" Margin="180,191,0,0" VerticalAlignment="Top"/>
+                    <ListBox Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="410,0,0,0"/>
+                </Grid>
             </TabItem>
         </TabControl>
 

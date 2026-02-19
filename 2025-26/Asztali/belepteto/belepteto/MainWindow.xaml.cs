@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace belepteto
 {
@@ -51,6 +52,23 @@ namespace belepteto
         private void masodikGomb_Checked(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string innen = textbox.Text;
+            string eddig = textbox1.Text;
+            Regex idoMinta = new Regex(@"^([01]\d|2\d):[0-5]\d$");
+            if(idoMinta.IsMatch(innen))
+            {
+                textbox.Foreground = Brushes.Black;
+            }
+            else if(!idoMinta.IsMatch(innen))
+            {
+                textbox.Foreground = Brushes.Red;
+                textbox.Focus();
+
+            }
         }
     }
 }
