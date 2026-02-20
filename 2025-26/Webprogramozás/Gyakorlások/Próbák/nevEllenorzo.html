@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            padding: 10px;
+            font-size: 30px;
+        }
+        button{
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <input oninput="nevEllenorzo()" type="text" id="nev"></input>
+    <button onclick="kiiro()">Ellenőrzés</button>
+    <script>
+        //Magyar név bekérése (betűk, szóköz, kötőjel)
+        //gépelés közben helyes-e
+        //helyes-e a név -> fehér háttér, sötétzöld a betű
+        //helytelen -> piros háttér, fehér betű
+        //gomb, amire kattintva kiírja az amerikai megfelelőjét (pl. "Szabó János" -> "Janos Szabo")
+        //weboldalban jelenik meg a válasz
+        function nevEllenorzo() {
+            const nevInput = document.getElementById('nev');
+            const nev = nevInput.value;
+            const regex = /^([a-záúóéíöüőű\s-]+)\s([a-záúóéíöüőű\s-]+)$/i;
+            if (regex.test(nev))
+            {
+                nevInput.style.backgroundColor = 'white';
+                nevInput.style.color = 'darkgreen';
+                //console.log('Helyes név');
+            }
+            else
+            {
+                nevInput.style.backgroundColor = 'red';
+                nevInput.style.color = 'white';
+                //console.log('Helytelen név');
+            }
+        }
+
+        function kiiro()
+        {
+            const nev = document.getElementById('nev').value;
+            
+
+        }
+    </script>
+</body>
+</html>
