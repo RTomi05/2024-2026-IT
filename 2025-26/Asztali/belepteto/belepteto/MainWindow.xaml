@@ -1,38 +1,81 @@
-﻿<Window x:Class="belepteto.MainWindow"
+﻿<Window x:Class="belepteto_erettsegi_feladat.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:belepteto"
         mc:Ignorable="d"
-        Title="Beléptető rendszer" Height="450" Width="800">
+        Title="Beléptető" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <TabItem Header="2. feladat">
-                <Grid Background = "MediumAquamarine">
-                    <Label Content="2. feladat" HorizontalAlignment="Left" Margin="32,23,0,0" VerticalAlignment="Top"/>
-                    <RadioButton x:Name="elsoGomb" GroupName="elsoCsoport" Content="Az első belépés" HorizontalAlignment="Left" Margin="61,54,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-                    <RadioButton x:Name="masodikGomb" GroupName="elsoCsoport" Content="Az utolsó kilépés" HorizontalAlignment="Left" Margin="61,74,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-                    <Label Content="Időpont:" HorizontalAlignment="Left" Margin="57,94,0,0" VerticalAlignment="Top"/>
-                    <TextBlock x:Name="idopontSzoveg" HorizontalAlignment="Left" Margin="120,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <TabItem Header="2.feladat">
+                <Grid Background="#FFFFFFFF">
+                    <Label Content="2. feladat" HorizontalAlignment="Left" Margin="47,10,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+                    <Label x:Name="felirat1" Content="Időpont:" HorizontalAlignment="Left" Height="36" Margin="47,130,0,0" VerticalAlignment="Top" Width="62" FontSize="14"/>
+                    <TextBlock x:Name="kiir2" HorizontalAlignment="Left" Height="20" Margin="114,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92" FontSize="14"/>
+                    <RadioButton Name="Elso" Content="Az első belépés" HorizontalAlignment="Left" Margin="47,55,0,0" VerticalAlignment="Top" Checked="Elso_Checked" Width="116"/>
+                    <RadioButton Name="Utolso" Content="Az utolsó kilépés" HorizontalAlignment="Left" Margin="47,75,0,0" VerticalAlignment="Top" Checked="Elso_Checked" Height="16" Width="116"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="3. feladat">
-                <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="13*"/>
-                        <ColumnDefinition Width="384*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBox x:Name="textbox" HorizontalAlignment="Left" Margin="162,34,0,0" TextWrapping="Wrap" FontSize="30px" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                    <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="162,113,0,0" TextWrapping="Wrap" FontSize="30px" Text="" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                    <Label Grid.Column="1" Content="Innentől:" HorizontalAlignment="Left" FontSize="30px" Margin="11,30,0,0" VerticalAlignment="Top"/>
-                    <Label Grid.Column="1" Content="Idáig:" HorizontalAlignment="Left" FontSize="30px" Margin="11,108,0,0" VerticalAlignment="Top"/>
-                    <Button Grid.Column="1" Content="Keresés" FontSize="30px" HorizontalAlignment="Left" Margin="11,191,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-                    <Button Grid.Column="1" Content="Mentés" FontSize="30px" HorizontalAlignment="Left" Margin="180,191,0,0" VerticalAlignment="Top"/>
-                    <ListBox Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="410,0,0,0"/>
+            <TabItem Header="3.feladat">
+                <Grid Background="#FFFFFFFF">
+                    <Label Content="Megadott időpontok közötti belépők" HorizontalAlignment="Right" Margin="0,10,350,0" VerticalAlignment="Top" FontSize="20" Width="434"/>
+                    <TextBox x:Name="Innen" HorizontalAlignment="Left" Height="27" Margin="82,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="18"/>
+                    <Label Content="Innentől:" HorizontalAlignment="Left" Height="25" Margin="10,67,0,0" VerticalAlignment="Top" Width="67" FontSize="14"/>
+                    <Label Content="Idáig:" HorizontalAlignment="Left" Height="33" Margin="10,108,0,0" VerticalAlignment="Top" Width="60" FontSize="14"/>
+                    <TextBox x:Name="Idaig" HorizontalAlignment="Left" Height="26" Margin="82,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="18"/>
+                    <Button x:Name="kereses" Content="Keresés" HorizontalAlignment="Left" Height="69" Margin="266,67,0,0" VerticalAlignment="Top" Width="51" Click="kereses_Click"/>
+                    <Button x:Name="fajlbaIr" Content="Fájlba mentés" HorizontalAlignment="Left" Height="69" Margin="346,67,0,0" VerticalAlignment="Top" Width="83" Click="fajlbaIr_Click"/>
+                    <ListView x:Name="listView" Margin="0,162,0,0" Background="White" BorderBrush="{x:Null}" Foreground="Black">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
                 </Grid>
             </TabItem>
+            <TabItem Header="4.feladat" VerticalAlignment="Top" HorizontalAlignment="Center" >
+                <Grid>
+                    <Label Content="Hányan csinálták ezt:" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" FontSize="18"/>
+                    <ComboBox HorizontalAlignment="Left" Margin="200,32,0,0" VerticalAlignment="Top" Width="155" Height="25" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Background="#FF78CC40" Content="Belépés"/>
+                        <ComboBoxItem Background="#FFE23E3E" Content="Kilépés"/>
+                        <ComboBoxItem Background="#FFECD645" Content="Menza"/>
+                        <ComboBoxItem Background="#FF5ED5DE" Content="Könyvtár"/>
+                    </ComboBox>
+                    <TextBlock x:Name="szama" HorizontalAlignment="Left" Height="34" Margin="200,87,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="93" FontSize="16"/>
+                    <Label Content="Eredmény:" HorizontalAlignment="Left" Height="39" Margin="109,82,0,0" VerticalAlignment="Top" Width="103" FontSize="16"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="5.feladat">
+                <Grid>
+                    <ComboBox x:Name="egyikKivalasztott" HorizontalAlignment="Left" Margin="85,67,0,0" VerticalAlignment="Top" Width="155" Height="25" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Background="#FF78CC40" Content="Belépés"/>
+                        <ComboBoxItem Background="#FFE23E3E" Content="Kilépés"/>
+                        <ComboBoxItem Background="#FFECD645" Content="Menza"/>
+                        <ComboBoxItem Background="#FF5ED5DE" Content="Könyvtár"/>
+                    </ComboBox>
+                    <ComboBox x:Name="masikKivalasztott" HorizontalAlignment="Left" Margin="552,67,0,0" VerticalAlignment="Top" Width="155" Height="25" SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Background="#FF78CC40" Content="Belépés"/>
+                        <ComboBoxItem Background="#FFE23E3E" Content="Kilépés"/>
+                        <ComboBoxItem Background="#FFECD645" Content="Menza"/>
+                        <ComboBoxItem Background="#FF5ED5DE" Content="Könyvtár"/>
+                    </ComboBox>
+                    <Label x:Name="elso" Content="" HorizontalAlignment="Left" Margin="111,155,0,0" VerticalAlignment="Top" FontSize="40px" />
+                    <Label x:Name="masodik" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="579,155,0,0" FontSize="40px"/>
+                    <Label x:Name="relacioJel" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40px" Margin="0,155,0,0"/>
+                </Grid>
+            </TabItem>
+
+
+
+
+
+
         </TabControl>
+
+
 
     </Grid>
 </Window>
