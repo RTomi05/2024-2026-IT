@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace belepteto_erettsegi_feladat
 {
@@ -123,6 +124,58 @@ namespace belepteto_erettsegi_feladat
 
             szama.Text = eredmeny.Count().ToString();
 
+            if (elem.Name == "bal")
+            {
+                elso.Content = eredmeny.Count().ToString();
+            }
+            else
+            {
+                masodik.Content = eredmeny.Count().ToString();
+            }
+            if (elso.Content != "" && masodik.Content != "")
+            {
+                if (Convert.ToInt32(elso.Content) > Convert.ToInt32(masodik.Content))
+                {
+                    relacioJel.Content = ">";
+                }
+                else if (Convert.ToInt32(elso.Content) < Convert.ToInt32(masodik.Content))
+                {
+                    relacioJel.Content = "<";
+                }
+                else
+                {
+                    relacioJel.Content = "=";
+                }
+            }
+        }
+        private void id10t_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Mávos Bazsi megjelent");
+        }
+            DispatcherTimer timer;
+        private void Reset_Click(object sender, RoutedEventArgs e)
+        {
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += suliBelepes;
+            timer.Start();
+
+        }
+
+        int aktualisIdo = 7*60+0;
+        int lepes = 10; //perc
+        void suliBelepes(object sender, EventArgs e)
+        {
+            var bement = adatok.Where(a => a <= aktualisIdo).ToList();
+            szamlalo.Content = bement.Count();
+            diakokBelep.ItemsSource = bement;
+            ora.Content = (aktualisIdo / 60).ToString() + ":" + (aktualisIdo % 60).ToString();
+
+            aktualisIdo += lepes;
+            if(aktualisIdo > 19*60)
+            {
+                aktualisIdo = 7 * 60;
+            }
         }
     }
 

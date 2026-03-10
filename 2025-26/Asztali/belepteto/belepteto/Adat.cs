@@ -59,8 +59,38 @@ namespace belepteto
             return perc(a.ido) == perc(ido);
         }
 
+        public static bool operator <(Adat a, int ido)
+        {
+            return perc(a.ido) < ido;
+        }
 
-        static int perc(string ido)
+        public static bool operator >(Adat a, int ido)
+        {
+            return perc(a.ido) > ido;
+        }
+
+        public static bool operator <=(Adat a, int ido)
+        {
+            return perc(a.ido) <= ido;
+        }
+
+        public static bool operator >=(Adat a, int ido)
+        {
+            return perc(a.ido) >= ido;
+        }
+
+        public static bool operator ==(Adat a, int ido)
+        {
+            return perc(a.ido) == ido;
+        }
+
+        public static bool operator !=(Adat a, int ido)
+        {
+            return perc(a.ido) == ido;
+        }
+
+
+        public static int perc(string ido)
         {
             return (int)TimeSpan.Parse(ido).TotalSeconds;
         }
