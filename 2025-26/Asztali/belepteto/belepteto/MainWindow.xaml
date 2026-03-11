@@ -8,7 +8,7 @@
         Title="Beléptető" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <TabItem Header="2.feladat">
+            <TabItem Header="2. feladat">
                 <Grid Background="#FFFFFFFF">
                     <Label Content="2. feladat" HorizontalAlignment="Left" Margin="47,10,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
                     <Label x:Name="felirat1" Content="Időpont:" HorizontalAlignment="Left" Height="36" Margin="47,130,0,0" VerticalAlignment="Top" Width="62" FontSize="14"/>
@@ -17,7 +17,7 @@
                     <RadioButton Name="Utolso" Content="Az utolsó kilépés" HorizontalAlignment="Left" Margin="47,75,0,0" VerticalAlignment="Top" Checked="Elso_Checked" Height="16" Width="116"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="3.feladat">
+            <TabItem Header="3. feladat">
                 <Grid Background="#FFFFFFFF">
                     <Label Content="Megadott időpontok közötti belépők" HorizontalAlignment="Right" Margin="0,10,350,0" VerticalAlignment="Top" FontSize="20" Width="434"/>
                     <TextBox x:Name="Innen" HorizontalAlignment="Left" Height="27" Margin="82,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="18"/>
@@ -35,7 +35,7 @@
                     </ListView>
                 </Grid>
             </TabItem>
-            <TabItem Header="4.feladat" VerticalAlignment="Top" HorizontalAlignment="Center" >
+            <TabItem Header="4. feladat" VerticalAlignment="Top" HorizontalAlignment="Center" >
                 <Grid>
                     <Label Content="Hányan csinálták ezt:" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" FontSize="18"/>
                     <ComboBox HorizontalAlignment="Left" Margin="200,32,0,0" VerticalAlignment="Top" Width="155" Height="25" SelectionChanged="ComboBox_SelectionChanged">
@@ -48,7 +48,7 @@
                     <Label Content="Eredmény:" HorizontalAlignment="Left" Height="39" Margin="109,82,0,0" VerticalAlignment="Top" Width="103" FontSize="16"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="5.feladat">
+            <TabItem Header="5. feladat">
                 <Grid>
                     <ComboBox x:Name="egyikKivalasztott" HorizontalAlignment="Left" Margin="85,67,0,0" VerticalAlignment="Top" Width="155" Height="25" SelectionChanged="ComboBox_SelectionChanged">
                         <ComboBoxItem Background="#FF78CC40" Content="Belépés"/>
@@ -67,15 +67,6 @@
                     <Label x:Name="relacioJel" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40px" Margin="0,155,0,0"/>
                 </Grid>
             </TabItem>
-
-
-
-
-
-
         </TabControl>
-
-
-
     </Grid>
 </Window>
