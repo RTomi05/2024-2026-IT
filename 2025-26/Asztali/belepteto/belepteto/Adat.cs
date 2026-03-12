@@ -29,6 +29,11 @@ namespace belepteto
             this.esemenyKod = Convert.ToInt32(vag[2]);
         }
 
+        public int percben()
+        {
+            return (int)TimeSpan.Parse(ido).TotalMinutes;
+        }
+
         public static bool operator <(Adat a, string ido)
         {
             return perc(a.ido) < perc(ido);
@@ -92,7 +97,7 @@ namespace belepteto
 
         public static int perc(string ido)
         {
-            return (int)TimeSpan.Parse(ido).TotalSeconds;
+            return (int)TimeSpan.Parse(ido).TotalMinutes;
         }
 
 

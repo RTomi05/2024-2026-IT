@@ -166,9 +166,24 @@ namespace belepteto_erettsegi_feladat
         int lepes = 10; //perc
         void suliBelepes(object sender, EventArgs e)
         {
-            var bement = adatok.Where(a => a <= aktualisIdo).ToList();
-            szamlalo.Content = bement.Count();
-            diakokBelep.ItemsSource = bement;
+            //MessageBox.Show(adatok[0].percben().ToString());
+            var bement = adatok
+                .Where(a => a <= aktualisIdo && a.esemenyKod == 1)
+                .ToList();
+            var kiment = adatok
+                .Where(a => a <= aktualisIdo && a.esemenyKod == 2)
+                .ToList();
+
+            szamlalo.Content = bement.Count() - kiment.Count();
+            var ujLista = bement
+                .Except(kiment)
+                .ToList();
+
+            ujLista.Reverse();
+            ujLista.Slice(0, 10);
+
+            diakokBelep.ItemsSource = ujLista;
+
             ora.Content = (aktualisIdo / 60).ToString() + ":" + (aktualisIdo % 60).ToString();
 
             aktualisIdo += lepes;

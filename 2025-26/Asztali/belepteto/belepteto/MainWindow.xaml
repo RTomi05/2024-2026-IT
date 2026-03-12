@@ -67,8 +67,6 @@
                     <Label x:Name="relacioJel" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40px" Margin="0,155,0,0"/>
                 </Grid>
             </TabItem>
-<<<<<<< HEAD
-=======
             <TabItem HorizontalAlignment="Center" Height="20" Header="6. feladat" VerticalAlignment="Top" Width="83" Margin="0,-1,0,0">
                 <Grid Background="#FFE5E5E5">
                     <Grid.ColumnDefinitions>
@@ -91,7 +89,6 @@
                     <Button x:Name="id10t" Grid.Column="2" Content="id10t" HorizontalAlignment="Left" Margin="532,217,0,0" VerticalAlignment="Top" Height="25" Width="39" FontSize="11" FontWeight="Bold" Background="#4C0A6C79" Click="id10t_Click"/>
                 </Grid>
             </TabItem>
->>>>>>> 4ab3814a0ee03884d1e16c081c7fa0fa76ce97f5
         </TabControl>
     </Grid>
 </Window>
