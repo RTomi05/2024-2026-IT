@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB színek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12">
+                <h1 class="text-center">RGB színek, 2023. 05. 22.</h1>
+            </header>
+            <div class="col-12 container">
+                <div class="row">
+                    <div class="col-8">
+                        <h2 class="text-center">A kép</h2>
+                        <div id="kep"></div>
+                    </div>
+                    <div class="col-4 container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>1. feladat (sablon)</h2>
+                                <div>Szöveg: <span id="f1-eredmeny">eredmény</span></div>
+                                <div class="text-center"><button class="btn btn-info" type="button" onclick="f1()">Keres</button></div>
+                            </div>
+                            <div class="col-12">
+                                <h2>2. feladat (sablon)</h2>
+                                <div>Szöveg: <span id="f1-eredmeny">eredmény</span></div>
+                                <div class="text-center"><button class="btn btn-info" type="button" onclick="f1()">Keres</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="col-12 text-center">
+                Nagyatád, 2026. 03. 16.
+            </footer>
+        </div>
+    </div>
+    <script>
+        const kepAdat = [];
+
+        f1();
+        function f1()
+        {
+            fetch("kep.txt")
+            .then(x => x.text())
+            .then(x => {
+                //console.log(x);
+                const sorok = x.trim().split("\r\n");
+                sorok.forEach(sor => {
+                    kepAdat.push([]);
+                    const adatok = sor.split(" ");
+                    for(let i = 0; i < adatok.length; i+=3)
+                    {
+                        let pixel = {
+                            r: parseInt(adatok[i]),
+                            g: parseInt(adatok[i+1]),
+                            b: parseInt(adatok[i+2]),
+                        }
+
+                        kepAdat[kepAdat.length - 1].push(pixel);
+                    }
+                });
+                console.log(sorok);
+                //console.log(kepAdat);
+            });
+        }
+    </script>
+</body>
+</html>
