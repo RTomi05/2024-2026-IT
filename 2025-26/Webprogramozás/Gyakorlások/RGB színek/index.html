@@ -6,6 +6,16 @@
     <title>RGB színek</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        td{
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -17,7 +27,9 @@
                 <div class="row">
                     <div class="col-8">
                         <h2 class="text-center">A kép</h2>
-                        <div id="kep"></div>
+                        <div id="kep">
+                            <table></table>
+                        </div>
                     </div>
                     <div class="col-4 container">
                         <div class="row">
@@ -28,15 +40,23 @@
                             </div>
                             <div class="col-12">
                                 <h2>2. feladat (sablon)</h2>
-                                <div>Szöveg: <span id="f1-eredmeny">eredmény</span></div>
-                                <div class="text-center"><button class="btn btn-info" type="button" onclick="f1()">Keres</button></div>
+                                <div>
+                                    <label for="sorszam">Sor száma: </label>
+                                    <input type="number" id="sorszam" min="1" max="360" class="form-control"/>
+                                </div>
+                                <div>
+                                    <label for="sorszam">Oszlop száma: </label>
+                                    <input type="number" id="oszlopszam" min="1" max="640" class="form-control"/>
+                                </div>
+                                <div>Eredmény: <span id="f2-eredmeny"></span></div>
+                                <div class="text-center"><button class="btn btn-info" type="button" onclick="f2()">Keres</button></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <footer class="col-12 text-center">
-                Nagyatád, 2026. 03. 16.
+                RTomi05, Nagyatád, 2026. 03. 16.
             </footer>
         </div>
     </div>
@@ -53,6 +73,7 @@
                 const sorok = x.trim().split("\r\n");
                 sorok.forEach(sor => {
                     kepAdat.push([]);
+                    let tablaSor = document.createElement("tr");
                     const adatok = sor.split(" ");
                     for(let i = 0; i < adatok.length; i+=3)
                     {
@@ -60,14 +81,37 @@
                             r: parseInt(adatok[i]),
                             g: parseInt(adatok[i+1]),
                             b: parseInt(adatok[i+2]),
+                            RGB: "RGB("
+                            +adatok[i]
+                            +","
+                            +adatok[i+1]
+                            +","
+                            +adatok[i+2]
+                            +")",
+
                         }
 
+                        let cella = document.createElement("td");
+                        cella.style.backgroundColor = pixel.RGB;
+                        pixel["cella"] = cella;
+                        tablaSor.appendChild(cella);
                         kepAdat[kepAdat.length - 1].push(pixel);
                     }
+
+                    document.querySelector("#kep table").appendChild(tablaSor);
                 });
                 console.log(sorok);
                 //console.log(kepAdat);
             });
+        }
+
+        function f2()
+        {
+            let sor = parseInt(document.getElementById("sorszam").value) ?? 1;
+            let oszlop = parseInt(document.getElementById("oszlopszam").value) ?? 1;
+
+            kepAdat[sor - 1][oszlop - 1].cella.style.backgroundColor = "yellow";
+            document.getElementById("f2-eredmeny").innerHTML = kepAdat[sor - 1][oszlop - 1].RGB;
         }
     </script>
 </body>
