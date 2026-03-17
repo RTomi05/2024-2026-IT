@@ -72,21 +72,22 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="35*"/>
                         <ColumnDefinition Width="158*"/>
-                        <ColumnDefinition Width="601*"/>
+                        <ColumnDefinition Width="76*"/>
+                        <ColumnDefinition Width="525*"/>
                     </Grid.ColumnDefinitions>
-                    <Rectangle Grid.Column="2" HorizontalAlignment="Left" Height="312" Margin="96,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="153"/>
-                    <Label Grid.Column="2" Content="Dász Íz szkúl" HorizontalAlignment="Left" Margin="134,60,0,0" VerticalAlignment="Top"/>
+                    <Rectangle Grid.Column="3" HorizontalAlignment="Left" Height="312" Margin="20,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="153"/>
+                    <Label Grid.Column="3" Content="Dász Íz szkúl" HorizontalAlignment="Left" Margin="58,60,0,0" VerticalAlignment="Top"/>
                     <Label Grid.Column="1" Content="Das ist nicht die Schule (oder előtte)" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="208" Grid.ColumnSpan="2"/>
-                    <ListBox x:Name="diakokBelep" Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="105,152,361,64"/>
-                    <Label x:Name="szamlalo" Grid.Column="2" Content="500" HorizontalAlignment="Left" Margin="141,98,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
-                    <Label x:Name="szamlalo2" Grid.Column="1" Content="500" HorizontalAlignment="Left" Margin="83,155,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
-                    <ListBox Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="47,203,578,13" Grid.ColumnSpan="2"/>
-                    <ListBox Grid.Column="2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="369,147,97,69"/>
-                    <Label x:Name="szamlalo3" Grid.Column="2" Content="500" HorizontalAlignment="Left" Margin="405,101,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
-                    <Label Grid.Column="2" Content="Tschalók" HorizontalAlignment="Left" Margin="409,73,0,0" VerticalAlignment="Top"/>
+                    <ListBox x:Name="diakokBelep" Grid.Column="3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="29,152,361,64"/>
+                    <Label x:Name="szamlalo" Grid.Column="3" Content="500" HorizontalAlignment="Left" Margin="65,98,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
+                    <Label x:Name="kintlevok" Grid.Column="1" Content="500" HorizontalAlignment="Left" Margin="83,155,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
+                    <ListBox x:Name="diakokKilep" Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="47,203,53,13" Grid.ColumnSpan="2"/>
+                    <ListBox Grid.Column="3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="293,147,97,69"/>
+                    <Label x:Name="szamlalo3" Grid.Column="3" Content="500" HorizontalAlignment="Left" Margin="329,101,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
+                    <Label Grid.Column="3" Content="Tschalók" HorizontalAlignment="Left" Margin="333,73,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="ora" Grid.Column="1" Content="07:00" HorizontalAlignment="Left" Margin="47,12,0,0" VerticalAlignment="Top" Height="49" Width="83" FontSize="28" FontWeight="Bold"/>
-                    <Button x:Name="Reset" Grid.Column="2" Content="Reset" HorizontalAlignment="Left" Margin="436,342,0,0" VerticalAlignment="Top" Height="51" Width="135" FontSize="28" FontWeight="Bold" Background="#FFC50000" Click="Reset_Click"/>
-                    <Button x:Name="id10t" Grid.Column="2" Content="id10t" HorizontalAlignment="Left" Margin="532,217,0,0" VerticalAlignment="Top" Height="25" Width="39" FontSize="11" FontWeight="Bold" Background="#4C0A6C79" Click="id10t_Click"/>
+                    <Button x:Name="Reset" Grid.Column="3" Content="Reset" HorizontalAlignment="Left" Margin="360,342,0,0" VerticalAlignment="Top" Height="51" Width="135" FontSize="28" FontWeight="Bold" Background="#FFC50000" Click="Reset_Click"/>
+                    <Button x:Name="id10t" Grid.Column="3" Content="id10t" HorizontalAlignment="Left" Margin="456,217,0,0" VerticalAlignment="Top" Height="25" Width="39" FontSize="11" FontWeight="Bold" Background="#4C0A6C79" Click="id10t_Click"/>
                 </Grid>
             </TabItem>
         </TabControl>

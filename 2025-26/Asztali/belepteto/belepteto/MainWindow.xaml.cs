@@ -175,14 +175,38 @@ namespace belepteto_erettsegi_feladat
                 .ToList();
 
             szamlalo.Content = bement.Count() - kiment.Count();
-            var ujLista = bement
-                .Except(kiment)
+            var ujLista = bement.Except(kiment)
+                .Select(x => x.ido + ": " + x.kod)
                 .ToList();
 
             ujLista.Reverse();
-            ujLista.Slice(0, 10);
+            try
+            {
+                ujLista.Slice(0, 10);
+            }
+            catch (Exception)
+            {
+
+            }
 
             diakokBelep.ItemsSource = ujLista;
+            //kint vannak
+            var ujListaKint = kiment.Except(bement)
+                .Select(x => x.ido + ": " + x.kod)
+                .ToList();
+            kintlevok.Content = ujListaKint;
+
+            ujListaKint.Reverse();
+            try
+            {
+                ujListaKint.Slice(0, 10);
+            }
+            catch (Exception)
+            {
+
+            }
+
+            diakokKilep.ItemsSource = ujListaKint;
 
             ora.Content = (aktualisIdo / 60).ToString() + ":" + (aktualisIdo % 60).ToString();
 
