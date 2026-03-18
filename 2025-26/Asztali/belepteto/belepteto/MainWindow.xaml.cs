@@ -175,9 +175,19 @@ namespace belepteto_erettsegi_feladat
                 .ToList();
 
             szamlalo.Content = bement.Count() - kiment.Count();
-            var ujLista = bement.Except(kiment)
-                .Select(x => x.ido + ": " + x.kod)
-                .ToList();
+            /*    var ujLista = bement.Except(kiment)
+                    .Select(x => x.ido + ": " + x.kod)
+                    .ToList();
+            */
+            List<Adat> ujLista = new List<Adat>();
+            bement.ForEach(e =>
+            {
+                var kimenesek = kiment.Where(x => x.kod == e.kod && x > e.ido).ToList();
+                if (kimenesek.Count == 0)
+                {
+                    ujLista.Add(e);
+                }
+            });
 
             ujLista.Reverse();
             try
@@ -191,10 +201,22 @@ namespace belepteto_erettsegi_feladat
 
             diakokBelep.ItemsSource = ujLista;
             //kint vannak
+            /*
             var ujListaKint = kiment.Except(bement)
                 .Select(x => x.ido + ": " + x.kod)
                 .ToList();
-            kintlevok.Content = ujListaKint;
+            */
+            List<Adat> ujListaKint = new List<Adat>();
+            kiment.ForEach(e =>
+            {
+                var bemenesek = bement.Where(x => x.kod == e.kod && x > e.ido).ToList();
+                if (bemenesek.Count == 0)
+                {
+                    ujListaKint.Add(e);
+                }
+            });
+
+            kintlevok.Content = ujListaKint.Count;
 
             ujListaKint.Reverse();
             try

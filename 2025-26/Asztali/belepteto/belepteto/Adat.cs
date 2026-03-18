@@ -95,11 +95,15 @@ namespace belepteto
         }
 
 
-        public static int perc(string ido)
+        static int perc(string ido)
         {
             return (int)TimeSpan.Parse(ido).TotalMinutes;
         }
 
+        public override string ToString()
+        {
+            return this.ido + " : " + this.kod;
+        }
 
     }
 }
