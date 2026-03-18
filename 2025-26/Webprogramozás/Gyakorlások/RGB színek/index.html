@@ -65,7 +65,7 @@
                 </div>
             </div>
             <footer class="col-12 text-center">
-                RTomi05, Nagyatád, 2026. 03. 16.
+                RTomi05, Nagyatád, 2026. 03. 18.
             </footer>
         </div>
     </div>
@@ -80,7 +80,7 @@
             .then(x => {
                 //console.log(x);
                 const sorok = x.trim().split("\r\n");
-                sorok.forEach(sor => {
+                sorok.forEach((sor, index) => {
                     kepAdat.push([]);
                     let tablaSor = document.createElement("tr");
                     const adatok = sor.split(" ");
@@ -97,6 +97,8 @@
                             +","
                             +adatok[i+2]
                             +")",
+                            x: i/3,
+                            y: index,
 
                         };
 
@@ -142,10 +144,40 @@
             document.getElementById("f4-eredmeny").innerHTML = min;
 
             const sotet = [];
-            kepAdat.flat().forEach(x => {
-                if (x.RGBSum == min) sotet.push(x);
+            kepAdat.flat().forEach(e =>
+                {
+                    if (e.RGBSum == min)
+                    {
+                        sotet.push(e);
+                        console.log(e);
+                        keretKeszit(e);
+                    }
+                }
+            );
+
+            /*
+            let szoveg = `
+            <ol>
+                <li>asdasd</li>
+                <li>asdasd</li>
+                <li>asdasd</li>
+            </ol>`;
+            */
+            let szoveg = "<ol>";
+            sotet.forEach(x => {
+                szoveg += `<li>${x.RGB}</li>`;
             });
-            document.getElementById("f4-lista").innerHTML = sotet.map(x => x.RGB).join(", ");
+            szoveg += "</ol>";
+            document.getElementById("f4-lista").innerHTML = szoveg;
+            
+        }
+
+        function keretKeszit(e)
+        {
+            if(e.x == 0)
+            {
+                
+            };
         }
     </script>
 </body>
