@@ -82,7 +82,7 @@
                     <Label x:Name="szamlalo" Grid.Column="3" Content="500" HorizontalAlignment="Left" Margin="65,98,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
                     <Label x:Name="kintlevok" Grid.Column="1" Content="500" HorizontalAlignment="Left" Margin="83,155,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
                     <ListBox x:Name="diakokKilep" Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="47,203,53,13" Grid.ColumnSpan="2"/>
-                    <ListBox Grid.Column="3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="293,147,97,69"/>
+                    <ListBox x:Name="csalikolok" Grid.Column="3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="293,147,97,69"/>
                     <Label x:Name="szamlalo3" Grid.Column="3" Content="500" HorizontalAlignment="Left" Margin="329,101,0,0" VerticalAlignment="Top" Height="49" Width="62" FontSize="28" FontWeight="Bold"/>
                     <Label Grid.Column="3" Content="Tschalók" HorizontalAlignment="Left" Margin="333,73,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="ora" Grid.Column="1" Content="07:00" HorizontalAlignment="Left" Margin="47,12,0,0" VerticalAlignment="Top" Height="49" Width="83" FontSize="28" FontWeight="Bold"/>

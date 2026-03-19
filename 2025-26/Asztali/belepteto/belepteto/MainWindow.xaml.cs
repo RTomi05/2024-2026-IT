@@ -189,6 +189,13 @@ namespace belepteto_erettsegi_feladat
                 }
             });
 
+            var csalingolok = ujLista.GroupBy(e => e.kod).Select(e => e.Count()).Where(e => e > 1);
+
+            foreach(var item in csalingolok)
+            {
+                item
+            }
+
             ujLista.Reverse();
             try
             {
