@@ -25,8 +25,9 @@
             <TabItem Header="4. feladat">
                 <Grid Background="CadetBlue">
                     <Label Content="Adjon meg egy időpontot:" FontSize="30px" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top"/>
-                    <TextBox HorizontalAlignment="Center" Margin="0,124,0,0" TextWrapping="Wrap" Text="" FontSize="30px" VerticalAlignment="Top" Width="731" IsReadOnly="True" TextChanged="elsokentJarmu_TextChanged" Height="61"/>
-                    <Button FontSize="30px" Content="Lekérés" HorizontalAlignment="Center" Margin="0,226,0,0" VerticalAlignment="Top" Click="ElsokentJarmuGomb_Click"/>
+                    <TextBox TextAlignment="Center" x:Name="oraInput" HorizontalAlignment="Center" Margin="0,100,0,0" TextWrapping="Wrap" Text="" FontSize="30px" VerticalAlignment="Top" Width="730" TextChanged="elsokentJarmu_TextChanged" Height="61"/>
+                    <Button x:Name="idopontLekeres" Content="Lekérés" FontSize="30px" HorizontalAlignment="Center" Margin="0,243,0,0" VerticalAlignment="Top" Click="idopontLekeres_Click_1"/>
+                    <TextBox TextAlignment="Center" x:Name="percInput" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" FontSize="30px" VerticalAlignment="Center" Width="730" TextChanged="elsokentJarmu_TextChanged" Height="61"/>
                 </Grid>
             </TabItem>
         </TabControl>

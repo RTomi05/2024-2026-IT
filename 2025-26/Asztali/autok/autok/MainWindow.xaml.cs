@@ -63,5 +63,28 @@ namespace autok
                 }
             }
         }
+
+        private void idopontLekeres_Click_1(object sender, RoutedEventArgs e)
+        {
+            /*
+             * Kérje be a felhasználótól egy időpont óra és perc értékét,
+             * és adja meg, hogy hány jeladás történt az adott időpontban!
+             * Ha nem történt jeladás, akkor 0-t írjon ki!
+             */
+            int ora = int.Parse(oraInput.Text);
+            int perc = int.Parse(percInput.Text);
+            int jeladasokSzama = 0;
+
+            foreach (var item in adatok)
+            {
+                if (item.ora == ora)
+                {
+                    if (item.perc == int.Parse(percInput.Text))
+                    {
+                        jeladasokSzama++;
+                    }
+                }
+            }
+        }
     }
 }
