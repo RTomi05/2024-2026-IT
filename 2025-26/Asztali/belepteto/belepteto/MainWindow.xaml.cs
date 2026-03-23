@@ -23,9 +23,9 @@ namespace belepteto_erettsegi_feladat
         public MainWindow()
         {
             InitializeComponent();
-
             betoltes();
         }
+
         List<Adat> adatok = new List<Adat>();
         List<string> kesok = new List<string>();
         void betoltes()
@@ -36,9 +36,6 @@ namespace belepteto_erettsegi_feladat
             {
                 adatok.Add(new Adat(sor));
             }
-
-
-
         }
 
         private void Elso_Checked(object sender, RoutedEventArgs e)

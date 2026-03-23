@@ -1,0 +1,35 @@
+﻿<Window x:Class="autok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:autok"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="2. feladat">
+                <Grid Background="Azure">
+                    <Label Content="Legutolsó jeladás:" FontSize="30px" HorizontalAlignment="Left" Margin="51,69,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="utolsoJeladasErtek" HorizontalAlignment="Left" FontSize="30px" Margin="325,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="440" IsReadOnly="True"/>
+                    <Button x:Name="utolsoJeladasLekeres" Content="Lekérés" FontSize="30px" HorizontalAlignment="Left" Margin="333,0,0,0" VerticalAlignment="Center" Click="utolsoJeladasLekeres_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="3. feladat">
+                <Grid Background="CadetBlue">
+                    <Label Content="Elsőként szereplő jármű jelzései:" FontSize="30px" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="elsokentJarmu" HorizontalAlignment="Center" Margin="0,124,0,0" TextWrapping="Wrap" Text="" FontSize="30px" VerticalAlignment="Top" Width="731" IsReadOnly="True" TextChanged="elsokentJarmu_TextChanged" Height="61"/>
+                    <Button x:Name="ElsokentJarmuGomb" FontSize="30px" Content="Lekérés" HorizontalAlignment="Center" Margin="0,226,0,0" VerticalAlignment="Top" Click="ElsokentJarmuGomb_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="4. feladat">
+                <Grid Background="CadetBlue">
+                    <Label Content="Adjon meg egy időpontot:" FontSize="30px" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Center" Margin="0,124,0,0" TextWrapping="Wrap" Text="" FontSize="30px" VerticalAlignment="Top" Width="731" IsReadOnly="True" TextChanged="elsokentJarmu_TextChanged" Height="61"/>
+                    <Button FontSize="30px" Content="Lekérés" HorizontalAlignment="Center" Margin="0,226,0,0" VerticalAlignment="Top" Click="ElsokentJarmuGomb_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
