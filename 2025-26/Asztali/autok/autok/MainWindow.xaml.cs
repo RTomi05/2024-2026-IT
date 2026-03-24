@@ -101,19 +101,50 @@ namespace autok
 
         private void rendszamLekeres_Click(object sender, RoutedEventArgs e)
         {
-            foreach (var item in adatok)
+            string keresettRendszam = rendszamBeir.Text.Trim();
+            var jarmuJelzesei = adatok.Where(a => a.rendszam == keresettRendszam).OrderBy(a => a.ora * 60 + a.perc).ToList();
+
+            if (jarmuJelzesei.Count == 0)
             {
-                if (item.rendszam == rendszamBeir.Text)
+                rendszamJelzesei.Content = "Nincs ilyen rendszámú jármű a listában!";
+                return;
+            }
+
+            double tav = 0.0;
+            int elozoOra = jarmuJelzesei[0].ora;
+            int elozoPerc = jarmuJelzesei[0].perc;
+            rendszamJelzesei.Content += $"{jarmuJelzesei[0].ora}:{jarmuJelzesei[0].perc:00} - {tav:0.0} km\n";
+
+            for (int i = 1; i < jarmuJelzesei.Count; i++)
+            {
+                int aktOra = jarmuJelzesei[i].ora;
+                int aktPerc = jarmuJelzesei[i].perc;
+                int elteltPerc = (aktOra - elozoOra) * 60 + (aktPerc - elozoPerc);
+                double elteltOra = elteltPerc / 60.0;
+                tav += jarmuJelzesei[i - 1].sebesseg * elteltOra;
+                rendszamJelzesei.Content += $"{aktOra}:{aktPerc:00} - {tav:0.0} km\n";
+                elozoOra = aktOra;
+                elozoPerc = aktPerc;
+            }
+        }
+
+        private void fajlLetrehozGomb_Click(object sender, RoutedEventArgs e)
+        {
+            var rendszamok = adatok.GroupBy(a => a.rendszam).Select(g => new
                 {
-                    foreach (var item2 in adatok)
-                    {
-                        if (item.rendszam == item2.rendszam)
-                        {
-                            rendszamJelzesei.Content += $" {item2.sebesseg}, {item2.ora}:{item2.perc} ";
-                        }
-                    }
+                    Rendszam = g.Key,
+                    Elso = g.OrderBy(x => x.ora * 60 + x.perc).First(),
+                    Utolso = g.OrderBy(x => x.ora * 60 + x.perc).Last()
+                });
+
+            using (var sw = new System.IO.StreamWriter("ido.txt", false, Encoding.UTF8))
+            {
+                foreach (var jarmu in rendszamok)
+                {
+                    sw.WriteLine($"{jarmu.Rendszam} {jarmu.Elso.ora}:{jarmu.Elso.perc:00} {jarmu.Utolso.ora}:{jarmu.Utolso.perc:00}");
                 }
             }
+            fajlVisszajelez.Content = "Fájl létrehozva";
         }
     }
 }

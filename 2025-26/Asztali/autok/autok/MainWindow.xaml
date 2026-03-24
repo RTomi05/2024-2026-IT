@@ -10,9 +10,13 @@
         <TabControl>
             <TabItem Header="2. feladat">
                 <Grid Background="Azure">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="335*"/>
+                        <ColumnDefinition Width="459*"/>
+                    </Grid.ColumnDefinitions>
                     <Label Content="Legutolsó jeladás:" FontSize="30px" HorizontalAlignment="Left" Margin="51,69,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="utolsoJeladasErtek" HorizontalAlignment="Left" FontSize="30px" Margin="325,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="440" IsReadOnly="True"/>
-                    <Button x:Name="utolsoJeladasLekeres" Content="Lekérés" FontSize="30px" HorizontalAlignment="Left" Margin="333,0,0,0" VerticalAlignment="Center" Click="utolsoJeladasLekeres_Click"/>
+                    <TextBox x:Name="utolsoJeladasErtek" HorizontalAlignment="Left" FontSize="30px" Margin="325,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="440" IsReadOnly="True" Grid.ColumnSpan="2"/>
+                    <Button x:Name="utolsoJeladasLekeres" Content="Lekérés" FontSize="30px" HorizontalAlignment="Left" Margin="333,0,0,0" VerticalAlignment="Center" Click="utolsoJeladasLekeres_Click" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
             <TabItem Header="3. feladat">
@@ -48,12 +52,15 @@
                     <Label Content="Kérem, adja meg a rendszámot:" FontSize="30px" HorizontalAlignment="Left" Margin="26,54,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="rendszamBeir" HorizontalAlignment="Left" Margin="500,58,0,0" FontSize="30px" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
                     <Button x:Name="rendszamLekeres" Content="Lekérés" FontSize="30px" HorizontalAlignment="Left" Margin="554,134,0,0" VerticalAlignment="Top" Click="rendszamLekeres_Click"/>
-                    <Label x:Name="rendszamJelzesei" Content="Ide jönnek az adatok: " HorizontalAlignment="Left" Margin="127,199,0,0" VerticalAlignment="Top"/>
-
+                    <Label x:Name="rendszamJelzesei" Content="" HorizontalAlignment="Left" Margin="127,199,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="7. feladat">
+                <Grid Background="Yellow">
+                    <Button x:Name="fajlLetrehozGomb" Content="JAJ!" FontSize="90px" Background="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Width="240" Click="fajlLetrehozGomb_Click"/>
+                    <Label x:Name="fajlVisszajelez" Content="" FontSize="30px" FontStyle="Oblique"  HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
         </TabControl>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="-238,198,0,0" VerticalAlignment="Top"/>
-
     </Grid>
 </Window>
