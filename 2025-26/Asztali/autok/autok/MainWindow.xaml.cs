@@ -35,10 +35,6 @@ namespace autok
 
         private void utolsoJeladasLekeres_Click(object sender, RoutedEventArgs e)
         {
-            /*
-         * Állapítsa meg, hogy milyen időpontban történt a legutolsó jeladás, és írja a képernyőre
-           az időpontot, valamint az utoljára jelet adó autó rendszámát!
-         */
             AutoAdat utolso = adatok.Last();
             utolsoJeladasErtek.Text = $" {utolso.rendszam}, {utolso.ora} : {utolso.perc}";
         }
@@ -49,11 +45,6 @@ namespace autok
 
         private void ElsokentJarmuGomb_Click(object sender, RoutedEventArgs e)
         {
-            /*
-             * Írja ki a bemeneti állományban elsőként szereplő jármű rendszámát, valamint azt, hogy
-               milyen időpontokban adott jelzést! Az időpontokat óra:perc formátumban, szóközzel
-               elválasztva, egy sorban jelenítse meg!
-             */
             AutoAdat elso = adatok.First();
             foreach (var item in adatok)
             {
@@ -66,11 +57,6 @@ namespace autok
 
         private void idopontLekeres_Click_1(object sender, RoutedEventArgs e)
         {
-            /*
-             * Kérje be a felhasználótól egy időpont óra és perc értékét,
-             * és adja meg, hogy hány jeladás történt az adott időpontban!
-             * Ha nem történt jeladás, akkor 0-t írjon ki!
-             */
             int ora = int.Parse(oraInput.Text);
             int perc = int.Parse(percInput.Text);
             int jeladasokSzama = 0;
@@ -82,6 +68,49 @@ namespace autok
                     if (item.perc == int.Parse(percInput.Text))
                     {
                         jeladasokSzama++;
+                        jeladasSzam.Text = jeladasokSzama.ToString();
+                    }
+                }
+            }
+        }
+
+        private void jeladasSzam_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int maxSebesseg = 0;
+            foreach (var item in adatok)
+            {
+                if (item.sebesseg > maxSebesseg)
+                {
+                    maxSebesseg = item.sebesseg;
+                }
+            }
+            maxSebessegErtek.Content = maxSebesseg.ToString() + " km/h";
+            foreach (var item in adatok)
+            {
+                if (maxSebesseg == item.sebesseg)
+                {
+                    legnagyobbalMent.Text += " " + item.rendszam;
+                }
+            }
+        }
+
+        private void rendszamLekeres_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var item in adatok)
+            {
+                if (item.rendszam == rendszamBeir.Text)
+                {
+                    foreach (var item2 in adatok)
+                    {
+                        if (item.rendszam == item2.rendszam)
+                        {
+                            rendszamJelzesei.Content += $" {item2.sebesseg}, {item2.ora}:{item2.perc} ";
+                        }
                     }
                 }
             }
