@@ -174,11 +174,18 @@
 
         function keretKeszit(e)
         {
-            if(e.x == 0)
-            {
-                
-            };
-        }
+        console.log("képpont:" + e.x, e.y);
+            if(kepAdat[e.y-1] != undefined && kepAdat[e.y-1][e.x-1] != undefined) kepAdat[e.y-1][e.x-1].cella.backgroundColor = "yellow";
+            if(kepAdat[e.y-1] != undefined && kepAdat[e.y-1][e.x-1] != undefined) kepAdat[e.y-1][e.x-1].cella.backgroundColor = "yellow";
+            if(kepAdat[e.y-1] != undefined && kepAdat[e.y-1][e.x-1] != undefined) kepAdat[e.y-1][e.x-1].cella.backgroundColor = "yellow";
+            if(kepAdat[e.y] != undefined && kepAdat[e.y][e.x-1] != undefined) kepAdat[e.y][e.x-1].cella.backgroundColor = "yellow";
+            if(kepAdat[e.y] != undefined && kepAdat[e.y][e.x-1] != undefined) kepAdat[e.y][e.x-1].cella.backgroundColor = "yellow";
+            if(kepAdat[e.y] != undefined && kepAdat[e.y][e.x-1] != undefined) kepAdat[e.y][e.x-1].cella.backgroundColor = "yellow";
+            if(kepAdat[e.y+1] != undefined && kepAdat[e.y+1][e.x-1] != undefined) kepAdat[e.y+1][e.x-1].cella.backgroundColor = "yellow";
+            if(kepAdat[e.y+1] != undefined && kepAdat[e.y+1][e.x-1] != undefined) kepAdat[e.y+1][e.x-1].cella.backgroundColor = "yellow";
+            if(kepAdat[e.y+1] != undefined && kepAdat[e.y+1][e.x-1] != undefined) kepAdat[e.y+1][e.x-1].cella.backgroundColor = "yellow";
+        };
+        
     </script>
 </body>
 </html>

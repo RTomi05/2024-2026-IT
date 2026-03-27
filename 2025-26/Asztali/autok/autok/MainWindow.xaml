@@ -27,7 +27,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="4. feladat">
-                <Grid Background="CadetBlue">
+                <Grid Background="Aqua">
                     <Label Content="Adjon meg egy időpontot:" FontSize="30px" HorizontalAlignment="Left" Margin="49,10,0,0" VerticalAlignment="Top"/>
                     <TextBox TextAlignment="Center" x:Name="oraInput" HorizontalAlignment="Left" Margin="149,91,0,0" TextWrapping="Wrap" Text="" FontSize="30px" VerticalAlignment="Top" Width="131" TextChanged="elsokentJarmu_TextChanged" Height="61"/>
                     <TextBox TextAlignment="Center" x:Name="percInput" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" FontSize="30px" VerticalAlignment="Top" Width="131" TextChanged="elsokentJarmu_TextChanged" Height="61" Margin="149,191,0,0"/>
@@ -39,7 +39,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="5. feladat">
-                <Grid Background="CadetBlue">
+                <Grid Background="LightCoral">
                     <Label Content="Legnagyobb sebesség:" FontSize="30px" HorizontalAlignment="Left" Margin="23,26,0,0" VerticalAlignment="Top"/>
                     <Label x:Name="maxSebessegErtek" Content="" FontSize="30px" HorizontalAlignment="Left" Margin="338,26,0,0" VerticalAlignment="Top"/>
                     <Button x:Name="legnagyobbSebesseg" Content="Lekérés" FontSize="30px" HorizontalAlignment="Left" Margin="543,32,0,0" VerticalAlignment="Top" Click="Button_Click"/>
@@ -48,15 +48,20 @@
                 </Grid>
             </TabItem>
             <TabItem Header="6. feladat">
-                <Grid Background="CadetBlue">
-                    <Label Content="Kérem, adja meg a rendszámot:" FontSize="30px" HorizontalAlignment="Left" Margin="26,54,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="rendszamBeir" HorizontalAlignment="Left" Margin="500,58,0,0" FontSize="30px" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
-                    <Button x:Name="rendszamLekeres" Content="Lekérés" FontSize="30px" HorizontalAlignment="Left" Margin="554,134,0,0" VerticalAlignment="Top" Click="rendszamLekeres_Click"/>
-                    <Label x:Name="rendszamJelzesei" Content="" HorizontalAlignment="Left" Margin="127,199,0,0" VerticalAlignment="Top"/>
+                <Grid Background="LightSeaGreen">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="327*"/>
+                        <ColumnDefinition Width="467*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Kérem, adja meg a rendszámot:" FontSize="30px" HorizontalAlignment="Left" Margin="26,54,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+                    <TextBox x:Name="rendszamBeir" HorizontalAlignment="Left" Margin="173,58,0,0" FontSize="30px" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212" Grid.Column="1"/>
+                    <Button x:Name="rendszamLekeres" Content="Lekérés" FontSize="30px" HorizontalAlignment="Left" Margin="227,134,0,0" VerticalAlignment="Top" Click="rendszamLekeres_Click" Grid.Column="1"/>
+                    <Label x:Name="rendszamJelzesei" FontSize="15px" Content="" HorizontalAlignment="Left" Margin="229,144,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="168"/>
+                    <Label Content="Megtett út:" FontSize="30px" HorizontalAlignment="Left" Margin="26,134,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
             <TabItem Header="7. feladat">
-                <Grid Background="Yellow">
+                <Grid Background="NavajoWhite">
                     <Button x:Name="fajlLetrehozGomb" Content="JAJ!" FontSize="90px" Background="Red" HorizontalAlignment="Center" VerticalAlignment="Center" Width="240" Click="fajlLetrehozGomb_Click"/>
                     <Label x:Name="fajlVisszajelez" Content="" FontSize="30px" FontStyle="Oblique"  HorizontalAlignment="Center" Margin="0,308,0,0" VerticalAlignment="Top"/>
                 </Grid>
