@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máltai gyerekek</title>
+</head>
+<body onload="betolt()">
+    <h1>Máltai gyerekek</h1>
+    
+    <h2 id="eredmeny"></h2> 
+
+    <script>
+        function betolt() {
+            fetch('nevek.csv')
+                .then(x => x.text())
+                .then(x => {
+                    const sorok = x.split('\n');
+                    const gyerekek = sorok.map(sor => {
+                        const [osztaly, nev, osztalyfonok] = sor.split(';');
+                        return {osztaly: osztaly, nev: nev, osztalyfonok: osztalyfonok};
+                    }).filter(gyerek => gyerek.nev);
+
+                    const leggyakoribb = leggyakoribbCsaladnev(gyerekek);
+                    
+                    document.getElementById('eredmeny').innerText = "A leggyakoribb családnév: " + leggyakoribb;
+                    console.log("A leggyakoribb családnév:", leggyakoribb);
+                })
+                .catch(error => console.error('Hiba a fájl beolvasásakor:', error));
+        }
+
+        function leggyakoribbCsaladnev(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            let maxDarab = 0;
+            let leggyakoribbNev = '';
+
+            // Végigmegyünk a gyerekek tömbjén
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+
+                if (teljesNev) {
+                    // Családnév kinyerése: a név első szava
+                    const csaladnev = teljesNev.trim().split(' ')[0];
+
+                    // Számoljuk az előfordulásokat
+                    nevSzamlalo[csaladnev] = (nevSzamlalo[csaladnev] || 0) + 1;
+
+                    // Frissítjük a leggyakoribbat
+                    if (nevSzamlalo[csaladnev] > maxDarab) {
+                        maxDarab = nevSzamlalo[csaladnev];
+                        leggyakoribbNev = csaladnev;
+                    }
+                }
+            }
+
+            return leggyakoribbNev;
+        }
+    </script>
+</body>
+</html>
