@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Társas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body onload="betolt()">
+    <h1>Társas</h1>
+    <div>
+        <h3>2. feladat</h3>
+        <p>Dobások száma: <span id="f2D"></span></p>
+        <p>Az ösvények száma: <span id="f2O"></span></p>
+        <button onclick="f2()" type="button">GOMB</button>
+    </div>
+
+</body>
+<script>
+
+    let dobasok = [];
+    let osvenyek = [];
+
+    function betolt()
+    {
+        fetch("dobasok.txt")
+        .then(x => x.text())
+        .then(x => {
+            dobasok = x.split(" ").map(e => parseInt(e));
+            console.log(dobasok);
+        })
+
+        fetch("osvenyek.txt")
+        .then(x => x.text())
+        .then(x => {
+            osvenyek = x.split("\r\n");
+            osvenyek.pop();
+            console.log(osvenyek);
+        })
+    }
+
+    function f2()
+    {
+        $("#f2D").html(dobasok.length);
+        $("#f2O").html(osvenyek.length);
+    }
+    function f3()
+    {
+        let maxHossz = Math.max(...osvenyek.map (x => x.length));
+        //console.log(maxHossz);
+    }
+    </script>
+</html>
