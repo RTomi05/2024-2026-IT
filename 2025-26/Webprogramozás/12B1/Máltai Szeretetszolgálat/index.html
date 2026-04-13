@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <h1>Máltai gyerekek</h1>
     
     <h2 id="eredmeny"></h2> 
+    <h2 id="eredmeny2"></h2>
 
     <script>
         function betolt() {
@@ -22,9 +23,12 @@
                     }).filter(gyerek => gyerek.nev);
 
                     const leggyakoribb = leggyakoribbCsaladnev(gyerekek);
-                    
+                    const leggyakoribbUtonev = leggyakoribbUtonev1(gyerekek);
+
                     document.getElementById('eredmeny').innerText = "A leggyakoribb családnév: " + leggyakoribb;
+                    document.getElementById('eredmeny2').innerText = "A leggyakoribb utónév: " + leggyakoribbUtonev;
                     console.log("A leggyakoribb családnév:", leggyakoribb);
+                    console.log("A leggyakoribb utónév:", leggyakoribbUtonev);
                 })
                 .catch(error => console.error('Hiba a fájl beolvasásakor:', error));
         }
@@ -34,25 +38,38 @@
             let maxDarab = 0;
             let leggyakoribbNev = '';
 
-            // Végigmegyünk a gyerekek tömbjén
             for (let i = 0; i < gyerekekAdatai.length; i++) {
                 const teljesNev = gyerekekAdatai[i].nev;
 
                 if (teljesNev) {
-                    // Családnév kinyerése: a név első szava
                     const csaladnev = teljesNev.trim().split(' ')[0];
-
-                    // Számoljuk az előfordulásokat
                     nevSzamlalo[csaladnev] = (nevSzamlalo[csaladnev] || 0) + 1;
-
-                    // Frissítjük a leggyakoribbat
                     if (nevSzamlalo[csaladnev] > maxDarab) {
                         maxDarab = nevSzamlalo[csaladnev];
                         leggyakoribbNev = csaladnev;
                     }
                 }
             }
+            return leggyakoribbNev;
+        }
 
+        function leggyakoribbUtonev1(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            let maxDarab = 0;
+            let leggyakoribbNev = '';
+
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+
+                if (teljesNev) {
+                    const utonev = teljesNev.trim().split(' ')[1];
+                    nevSzamlalo[utonev] = (nevSzamlalo[utonev] || 0) + 1;
+                    if (nevSzamlalo[utonev] > maxDarab) {
+                        maxDarab = nevSzamlalo[utonev];
+                        leggyakoribbNev = utonev;
+                    }
+                }
+            }
             return leggyakoribbNev;
         }
     </script>
