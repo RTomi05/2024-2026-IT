@@ -4,20 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máltai gyerekek</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <style>
-        h1{
-            text-align: center;
-            margin-top: 20px;
-            margin-bottom: 50px;
-        }
-    </style>
 </head>
 <body onload="betolt()">
     <h1>Máltai gyerekek</h1>
     
     <h2 id="eredmeny"></h2> 
+    <h2 id="eredmeny2"></h2>
 
     <script>
         function betolt() {
@@ -31,9 +23,12 @@
                     }).filter(gyerek => gyerek.nev);
 
                     const leggyakoribb = leggyakoribbCsaladnev(gyerekek);
-                    
+                    const leggyakoribbUtonev = leggyakoribbUtonev1(gyerekek);
+
                     document.getElementById('eredmeny').innerText = "A leggyakoribb családnév: " + leggyakoribb;
+                    document.getElementById('eredmeny2').innerText = "A leggyakoribb utónév: " + leggyakoribbUtonev;
                     console.log("A leggyakoribb családnév:", leggyakoribb);
+                    console.log("A leggyakoribb utónév:", leggyakoribbUtonev);
                 })
                 .catch(error => console.error('Hiba a fájl beolvasásakor:', error));
         }
@@ -45,6 +40,7 @@
 
             for (let i = 0; i < gyerekekAdatai.length; i++) {
                 const teljesNev = gyerekekAdatai[i].nev;
+
                 if (teljesNev) {
                     const csaladnev = teljesNev.trim().split(' ')[0];
                     nevSzamlalo[csaladnev] = (nevSzamlalo[csaladnev] || 0) + 1;
@@ -54,7 +50,26 @@
                     }
                 }
             }
+            return leggyakoribbNev;
+        }
 
+        function leggyakoribbUtonev1(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            let maxDarab = 0;
+            let leggyakoribbNev = '';
+
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+
+                if (teljesNev) {
+                    const utonev = teljesNev.trim().split(' ')[1];
+                    nevSzamlalo[utonev] = (nevSzamlalo[utonev] || 0) + 1;
+                    if (nevSzamlalo[utonev] > maxDarab) {
+                        maxDarab = nevSzamlalo[utonev];
+                        leggyakoribbNev = utonev;
+                    }
+                }
+            }
             return leggyakoribbNev;
         }
     </script>
