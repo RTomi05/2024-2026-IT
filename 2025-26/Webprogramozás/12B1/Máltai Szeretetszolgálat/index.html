@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máltai gyerekek</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+    </style>
 </head>
 <body onload="betolt()">
-    <h1>Máltai gyerekek</h1>
-    
-    <h2 id="eredmeny"></h2> 
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="bg-primary text-white p-3">Máltai gyerekek</h1>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <h2 id="eredmenyCsaladnev"></h2>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h2 id="eredmenyUtonev"></h2>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <h2 id="eredmenyMasodikUtonev"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
         function betolt() {
             fetch('nevek.csv')
@@ -21,38 +44,83 @@
                         return {osztaly: osztaly, nev: nev, osztalyfonok: osztalyfonok};
                     }).filter(gyerek => gyerek.nev);
 
-                    const leggyakoribb = leggyakoribbCsaladnev(gyerekek);
+                    let leggyakoribb = leggyakoribbCsaladnev(gyerekek);
                     
-                    document.getElementById('eredmeny').innerText = "A leggyakoribb családnév: " + leggyakoribb;
+                    document.getElementById('eredmenyCsaladnev').innerText = "A leggyakoribb családnév: " + leggyakoribb;
                     console.log("A leggyakoribb családnév:", leggyakoribb);
+
+                    leggyakoribb = leggyakoribbUtonev(gyerekek);
+                    document.getElementById('eredmenyUtonev').innerText = "A leggyakoribb utónév: " + leggyakoribb;
+                    console.log("A leggyakoribb utónév:", leggyakoribb);
+
+                    leggyakoribb = leggyakoribbMasodikUtonev(gyerekek);
+                    document.getElementById('eredmenyMasodikUtonev').innerText = "A leggyakoribb második utónév: " + leggyakoribb;
+                    console.log("A leggyakoribb második utónév:", leggyakoribb);
                 })
-                .catch(error => console.error('Hiba a fájl beolvasásakor:', error));
         }
+
+        //leggyakoribb családnév
 
         function leggyakoribbCsaladnev(gyerekekAdatai) {
             const nevSzamlalo = {};
             let maxDarab = 0;
             let leggyakoribbNev = '';
 
-            // Végigmegyünk a gyerekek tömbjén
             for (let i = 0; i < gyerekekAdatai.length; i++) {
                 const teljesNev = gyerekekAdatai[i].nev;
-
                 if (teljesNev) {
-                    // Családnév kinyerése: a név első szava
                     const csaladnev = teljesNev.trim().split(' ')[0];
-
-                    // Számoljuk az előfordulásokat
                     nevSzamlalo[csaladnev] = (nevSzamlalo[csaladnev] || 0) + 1;
-
-                    // Frissítjük a leggyakoribbat
                     if (nevSzamlalo[csaladnev] > maxDarab) {
                         maxDarab = nevSzamlalo[csaladnev];
                         leggyakoribbNev = csaladnev;
                     }
                 }
             }
+            return leggyakoribbNev;
+        }
 
+        //leggyakoribb utónév
+
+        function leggyakoribbUtonev(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            let maxDarab = 0;
+            let leggyakoribbNev = '';
+
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+                if (teljesNev) {
+                    const utonev = teljesNev.trim().split(' ')[1];
+                    nevSzamlalo[utonev] = (nevSzamlalo[utonev] || 0) + 1;
+                    if (nevSzamlalo[utonev] > maxDarab) {
+                        maxDarab = nevSzamlalo[utonev];
+                        leggyakoribbNev = utonev;
+                    }
+                }
+            }
+            return leggyakoribbNev;
+        }
+
+        //leggyakoribb második utónév
+
+        function leggyakoribbMasodikUtonev(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            let maxDarab = 0;
+            let leggyakoribbNev = '';
+
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+                if (teljesNev) {
+                    const masodikUtonev = teljesNev.trim().split(' ')[2];
+                    if (masodikUtonev){
+                        nevSzamlalo[masodikUtonev] = (nevSzamlalo[masodikUtonev] || 0) + 1;
+                        if (nevSzamlalo[masodikUtonev] > maxDarab) {
+                            maxDarab = nevSzamlalo[masodikUtonev];
+                            leggyakoribbNev = masodikUtonev;
+                        }
+                    }
+                }
+            }
             return leggyakoribbNev;
         }
     </script>
