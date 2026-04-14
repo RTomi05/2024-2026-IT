@@ -15,24 +15,10 @@
     </style>
 </head>
 <body onload="betolt()">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="bg-primary text-white p-3">Máltai gyerekek</h1>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <h2 id="eredmenyCsaladnev"></h2>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <h2 id="eredmenyUtonev"></h2>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <h2 id="eredmenyMasodikUtonev"></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1>Máltai gyerekek</h1>
+    
+    <h2 id="eredmeny"></h2> 
+
     <script>
         function betolt() {
             fetch('nevek.csv')
@@ -44,22 +30,13 @@
                         return {osztaly: osztaly, nev: nev, osztalyfonok: osztalyfonok};
                     }).filter(gyerek => gyerek.nev);
 
-                    let leggyakoribb = leggyakoribbCsaladnev(gyerekek);
+                    const leggyakoribb = leggyakoribbCsaladnev(gyerekek);
                     
-                    document.getElementById('eredmenyCsaladnev').innerText = "A leggyakoribb családnév: " + leggyakoribb;
+                    document.getElementById('eredmeny').innerText = "A leggyakoribb családnév: " + leggyakoribb;
                     console.log("A leggyakoribb családnév:", leggyakoribb);
-
-                    leggyakoribb = leggyakoribbUtonev(gyerekek);
-                    document.getElementById('eredmenyUtonev').innerText = "A leggyakoribb utónév: " + leggyakoribb;
-                    console.log("A leggyakoribb utónév:", leggyakoribb);
-
-                    leggyakoribb = leggyakoribbMasodikUtonev(gyerekek);
-                    document.getElementById('eredmenyMasodikUtonev').innerText = "A leggyakoribb második utónév: " + leggyakoribb;
-                    console.log("A leggyakoribb második utónév:", leggyakoribb);
                 })
+                .catch(error => console.error('Hiba a fájl beolvasásakor:', error));
         }
-
-        //leggyakoribb családnév
 
         function leggyakoribbCsaladnev(gyerekekAdatai) {
             const nevSzamlalo = {};
@@ -77,50 +54,7 @@
                     }
                 }
             }
-            return leggyakoribbNev;
-        }
 
-        //leggyakoribb utónév
-
-        function leggyakoribbUtonev(gyerekekAdatai) {
-            const nevSzamlalo = {};
-            let maxDarab = 0;
-            let leggyakoribbNev = '';
-
-            for (let i = 0; i < gyerekekAdatai.length; i++) {
-                const teljesNev = gyerekekAdatai[i].nev;
-                if (teljesNev) {
-                    const utonev = teljesNev.trim().split(' ')[1];
-                    nevSzamlalo[utonev] = (nevSzamlalo[utonev] || 0) + 1;
-                    if (nevSzamlalo[utonev] > maxDarab) {
-                        maxDarab = nevSzamlalo[utonev];
-                        leggyakoribbNev = utonev;
-                    }
-                }
-            }
-            return leggyakoribbNev;
-        }
-
-        //leggyakoribb második utónév
-
-        function leggyakoribbMasodikUtonev(gyerekekAdatai) {
-            const nevSzamlalo = {};
-            let maxDarab = 0;
-            let leggyakoribbNev = '';
-
-            for (let i = 0; i < gyerekekAdatai.length; i++) {
-                const teljesNev = gyerekekAdatai[i].nev;
-                if (teljesNev) {
-                    const masodikUtonev = teljesNev.trim().split(' ')[2];
-                    if (masodikUtonev){
-                        nevSzamlalo[masodikUtonev] = (nevSzamlalo[masodikUtonev] || 0) + 1;
-                        if (nevSzamlalo[masodikUtonev] > maxDarab) {
-                            maxDarab = nevSzamlalo[masodikUtonev];
-                            leggyakoribbNev = masodikUtonev;
-                        }
-                    }
-                }
-            }
             return leggyakoribbNev;
         }
     </script>

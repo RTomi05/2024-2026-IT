@@ -1,20 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Társas</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<style>
+		.container {
+			margin-top: 20px;
+		}
+		h1{
+			text-align: center;
+			margin-bottom: 20px;
+			padding: 60px;
+		}
+		div.row {
+			margin: 40px;
+			padding-bottom: 30px;
+		}
+		button{
+			margin-bottom: 40px;
+		}
+		p{
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+	</style>
 </head>
 <body onload="betolt()">
     <h1>Társas</h1>
-    <div>
-        <h3>2. feladat</h3>
-        <p>Dobások száma: <span id="f2D"></span></p>
-        <p>Az ösvények száma: <span id="f2O"></span></p>
-        <button onclick="f2()" type="button">GOMB</button>
-    </div>
-
+    <div class="container">
+		<div class="row">
+			<div class="col-4">
+				<h3>2. feladat</h3>
+				<p>Dobások száma: <span id="f2D"></span></p>
+				<p>Az ösvények száma: <span id="f2O"></span></p>
+				<button onclick="f2()" type="button" class="btn btn-primary">GOMB</button>
+			</div>
+			<div class="col-4">
+				<h3>3. feladat</h3>
+				<p>Az egyik leghosszabb a(z) <span id="sorszam"></span>, hossza: <span id="maxHossz"></span></p>
+				<button onclick="f3()" type="button" class="btn btn-primary">GOMB</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<h3>4. feladat</h3>
+				<select name="" id="osvenyek">
+					<option value="" selected>Válassz ösvényt!</option>
+				</select>
+				<button onclick="f4()" type="button" class="btn btn-primary">GOMB</button>
+			</div>
+		</div>
+	</div>
 </body>
 <script>
 
@@ -36,6 +76,7 @@
             osvenyek = x.split("\r\n");
             osvenyek.pop();
             console.log(osvenyek);
+			f4();
         })
     }
 
@@ -46,8 +87,20 @@
     }
     function f3()
     {
-        let maxHossz = Math.max(...osvenyek.map (x => x.length));
-        //console.log(maxHossz);
+        let maxHossz = Math.max(...osvenyek.map(x => x.length));
+        let index = osvenyek.map(x => x.length).indexOf(maxHossz) + 1;
+        console.log("maxhossz: ", maxHossz, " sorszam: ", index);
+		$("#sorszam").html(index + ". ösvény");
+		$("#maxHossz").html(maxHossz);
     }
+	function f4()
+	{
+		let select = document.getElementById("osvenyek");
+		osvenyek.forEach((x, index) => {
+			let option = document.createElement("option");
+			option.innerHTML = (index + 1) + ". ("+x.length+")";
+			select.append(option);
+		})
+	}
     </script>
 </html>
