@@ -1,0 +1,37 @@
+﻿<Window x:Class="vizibicikli.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:vizibicikli"
+        mc:Ignorable="d"
+        Title="VizibicikliKolcsonzo" Height="766" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="5. feladat" HorizontalAlignment="Left" Margin="44,22,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Kölcsönzések száma:" HorizontalAlignment="Left" Margin="44,79,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="f5Eredmeny" Content="" HorizontalAlignment="Left" Margin="193,79,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="6. feladat" HorizontalAlignment="Left" Margin="44,140,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="Nev" HorizontalAlignment="Left" Margin="113,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="16"/>
+        <Button Content="Lekérdez" HorizontalAlignment="Left" Margin="113,255,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Label Content="Név:" HorizontalAlignment="Left" Margin="69,187,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="f6Hiba" Content="" HorizontalAlignment="Left" Margin="111,218,0,0" VerticalAlignment="Top" Width="146" Height="47" Foreground="Red"/>
+        <ListBox x:Name="f6eredmeny" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="262,187,377,342" BorderBrush="{x:Null}" Background="#FFA1C4C8"/>
+        <Label Content="7.feladat" HorizontalAlignment="Left" Margin="410,22,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="Ido" HorizontalAlignment="Left" Margin="506,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Height="25" FontSize="16" KeyUp="Ido_KeyUp"/>
+        <Label Content="Idő:" HorizontalAlignment="Left" Margin="471,89,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="keres" Content="Keres" HorizontalAlignment="Left" Margin="645,92,0,0" VerticalAlignment="Top" Width="39" Click="keres_Click"/>
+        <ListBox x:Name="f7kiir" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="506,147,0,381" HorizontalAlignment="Left" Width="263" BorderBrush="{x:Null}" Background="#FFA1C4C8"/>
+        <Label Content="8. feladat" HorizontalAlignment="Left" Margin="423,335,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="A napi bevétel:" HorizontalAlignment="Left" Margin="428,395,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="f8kiir" Content="" HorizontalAlignment="Left" Margin="521,391,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button Content="Lekérés" HorizontalAlignment="Left" Margin="427,374,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label Content="9. feladat" HorizontalAlignment="Left" Margin="44,430,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <ComboBox x:Name="Jarmuvalaszt" HorizontalAlignment="Left" Margin="86,483,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="Jarmuvalaszt_SelectionChanged"/>
+        <Label Content="Jármű:" HorizontalAlignment="Left" Margin="36,481,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="f9eredmeny" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="36,519,445,16" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        <Label Content="10. feladat:" HorizontalAlignment="Left" Margin="506,483,0,0" VerticalAlignment="Top"/>
+        <Label Content="Statisztika" HorizontalAlignment="Left" Margin="576,483,0,0" VerticalAlignment="Top"/>
+        <Button Content="Készít" HorizontalAlignment="Left" Margin="649,487,0,0" VerticalAlignment="Top" Width="41" Click="Button_Click_2"/>
+        <Label x:Name="f10eredmeny" Content="" HorizontalAlignment="Left" Margin="507,519,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
