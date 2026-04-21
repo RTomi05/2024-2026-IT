@@ -10,8 +10,14 @@
     
     <h2 id="eredmeny"></h2> 
     <h2 id="eredmeny2"></h2>
+    <h2 id="eredmeny3"></h2>
+    <h2 id="eredmeny4"></h2>
+    <div id="eredmeny5"></div>
 
     <script>
+        let csaladnevekAdat = {};
+        let rendezesSzamok = 'asc_nev';
+
         function betolt() {
             fetch('nevek.csv')
                 .then(x => x.text())
@@ -24,11 +30,22 @@
 
                     const leggyakoribb = leggyakoribbCsaladnev(gyerekek);
                     const leggyakoribbUtonev = leggyakoribbUtonev1(gyerekek);
+                    const leggyakoribbElsoUtoNev = leggyakoribbElsőUtonev(gyerekek);
+                    const leggyakoribbMasodikUtoNev = leggyakoribbMasodikUtonev(gyerekek);
+                    csaladnevekAdat = csaladnevekListaja(gyerekek);
+                    rendezesSzamok = 'asc_nev';
 
                     document.getElementById('eredmeny').innerText = "A leggyakoribb családnév: " + leggyakoribb;
                     document.getElementById('eredmeny2').innerText = "A leggyakoribb utónév: " + leggyakoribbUtonev;
-                    console.log("A leggyakoribb családnév:", leggyakoribb);
-                    console.log("A leggyakoribb utónév:", leggyakoribbUtonev);
+                    document.getElementById('eredmeny3').innerText = "A leggyakoribb első utónév: " + leggyakoribbElsoUtoNev;
+                    document.getElementById('eredmeny4').innerText = "A leggyakoribb második utónév: " + leggyakoribbMasodikUtoNev;
+                    csaladnevRendezes();
+
+                    //console.log("A leggyakoribb családnév:", leggyakoribb);
+                    //console.log("A leggyakoribb utónév:", leggyakoribbUtonev);
+                    //console.log("A leggyakoribb első utónév:", leggyakoribbElsoUtoNev);
+                    //console.log("A leggyakoribb második utónév:", leggyakoribbMasodikUtoNev);
+                    //console.log("Családnevek darabszámmal:", csaladnevekAdat);
                 })
                 .catch(error => console.error('Hiba a fájl beolvasásakor:', error));
         }
@@ -71,6 +88,108 @@
                 }
             }
             return leggyakoribbNev;
+        }
+
+        function leggyakoribbElsőUtonev(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            let maxDarab = 0;
+            let leggyakoribbNev = '';
+
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+
+                if (teljesNev) {
+                    const utonev = teljesNev.trim().split(' ')[1];
+                    nevSzamlalo[utonev] = (nevSzamlalo[utonev] || 0) + 1;
+                    if (nevSzamlalo[utonev] > maxDarab) {
+                        maxDarab = nevSzamlalo[utonev];
+                        leggyakoribbNev = utonev;
+                    }
+                }
+            }
+            return leggyakoribbNev;
+        }
+
+        function leggyakoribbMasodikUtonev(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            let maxDarab = 0;
+            let leggyakoribbNev = '';
+
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+
+                if (teljesNev) {
+                    const parts = teljesNev.trim().split(' ');
+                    if (parts.length >= 3) {
+                        const utonev = parts[2];
+                        nevSzamlalo[utonev] = (nevSzamlalo[utonev] || 0) + 1;
+                        if (nevSzamlalo[utonev] > maxDarab) {
+                            maxDarab = nevSzamlalo[utonev];
+                            leggyakoribbNev = utonev;
+                        }
+                    }
+                }
+            }
+            return leggyakoribbNev;
+        }
+
+        function csaladnevekListaja(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+
+                if (teljesNev) {
+                    const csaladnev = teljesNev.trim().split(' ')[0];
+                    nevSzamlalo[csaladnev] = (nevSzamlalo[csaladnev] || 0) + 1;
+                }
+            }
+            return nevSzamlalo;
+        }
+
+        function csaladnevRendezes() {
+            let tomb = Object.keys(csaladnevekAdat).map(nev => ({
+                nev: nev,
+                szam: csaladnevekAdat[nev]
+            }));
+
+            if (rendezesSzamok === 'asc_nev') {
+                tomb.sort((a, b) => a.nev.localeCompare(b.nev));
+            } else if (rendezesSzamok === 'desc_nev') {
+                tomb.sort((a, b) => b.nev.localeCompare(a.nev));
+            } else if (rendezesSzamok === 'asc_szam') {
+                tomb.sort((a, b) => a.szam - b.szam);
+            } else if (rendezesSzamok === 'desc_szam') {
+                tomb.sort((a, b) => b.szam - a.szam);
+            }
+
+            let eredmeny = "<table border='1' style='border-collapse: collapse; margin-top: 20px;'><tr>";
+            eredmeny += "<th style='padding: 8px; text-align: left; cursor: pointer; background-color: #e0e0e0;' onclick='nevRendezes()'>Családnév (ABC) ▲▼</th>";
+            eredmeny += "<th style='padding: 8px; text-align: left; cursor: pointer; background-color: #e0e0e0;' onclick='szamRendezes()'>Darabszám (Szám) ▲▼</th>";
+            eredmeny += "</tr>";
+            
+            for (const elem of tomb) {
+                eredmeny += `<tr><td style='padding: 8px;'>${elem.nev}</td><td style='padding: 8px;'>${elem.szam}</td></tr>`;
+            }
+            eredmeny += "</table>";
+            document.getElementById('eredmeny5').innerHTML = eredmeny;
+        }
+
+        function nevRendezes() {
+            if (rendezesSzamok === 'asc_nev') {
+                rendezesSzamok = 'desc_nev';
+            } else {
+                rendezesSzamok = 'asc_nev';
+            }
+            csaladnevRendezes();
+        }
+
+        function szamRendezes() {
+            if (rendezesSzamok === 'asc_szam') {
+                rendezesSzamok = 'desc_szam';
+            } else {
+                rendezesSzamok = 'asc_szam';
+            }
+            csaladnevRendezes();
         }
     </script>
 </body>
