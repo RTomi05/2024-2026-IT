@@ -32,12 +32,35 @@ namespace fuvar
                 Fuvar f = new Fuvar(sor);
                 fuvarok.Add(f);
             }
+
+            //taxiValaszto
+
+            var taxisok = fuvarok
+                .Select(x => x.azonosito)
+                .Distinct()
+                .OrderBy(e => e)
+                .ToList();
+            taxiValaszto.ItemsSource = taxisok;
+
             //MessageBox.Show("Adatok betöltve!");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             eredmeny3.Content = fuvarok.Count();
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox kuldo = sender as ComboBox;
+            //MessageBox.Show(kuldo.SelectedItem.ToString());
+
+            double penz = 0;
+            penz = fuvarok
+                .Where(x => x.azonosito == (int)kuldo.SelectedItem)
+                .Sum(x => x.viteldij + x.borravalo);
+            eredmeny4Bevetel.Content = penz;
+            eredmeny4Fuvarszam.Content = fuvarok.Where(x => x.azonosito == (int)kuldo.SelectedItem).Count();
         }
     }
 }
