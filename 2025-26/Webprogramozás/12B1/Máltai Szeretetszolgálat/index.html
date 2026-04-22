@@ -12,10 +12,13 @@
     <h2 id="eredmeny2"></h2>
     <h2 id="eredmeny3"></h2>
     <h2 id="eredmeny4"></h2>
+    <h2 id="eredmeny7"></h2>
     <div id="eredmeny5"></div>
+    <div id="eredmeny6"></div>
 
     <script>
         let csaladnevekAdat = {};
+        let utonevekAdat = {};
         let rendezesSzamok = 'asc_nev';
 
         function betolt() {
@@ -33,19 +36,24 @@
                     const leggyakoribbElsoUtoNev = leggyakoribbElsőUtonev(gyerekek);
                     const leggyakoribbMasodikUtoNev = leggyakoribbMasodikUtonev(gyerekek);
                     csaladnevekAdat = csaladnevekListaja(gyerekek);
+                    utonevekAdat = utonevekListaja(gyerekek);
                     rendezesSzamok = 'asc_nev';
 
                     document.getElementById('eredmeny').innerText = "A leggyakoribb családnév: " + leggyakoribb;
                     document.getElementById('eredmeny2').innerText = "A leggyakoribb utónév: " + leggyakoribbUtonev;
                     document.getElementById('eredmeny3').innerText = "A leggyakoribb első utónév: " + leggyakoribbElsoUtoNev;
                     document.getElementById('eredmeny4').innerText = "A leggyakoribb második utónév: " + leggyakoribbMasodikUtoNev;
+                    legritkábbUtonevek(gyerekek);
                     csaladnevRendezes();
+                    utonevRendezes();
 
                     //console.log("A leggyakoribb családnév:", leggyakoribb);
                     //console.log("A leggyakoribb utónév:", leggyakoribbUtonev);
                     //console.log("A leggyakoribb első utónév:", leggyakoribbElsoUtoNev);
                     //console.log("A leggyakoribb második utónév:", leggyakoribbMasodikUtoNev);
                     //console.log("Családnevek darabszámmal:", csaladnevekAdat);
+                    //console.log("Utónevek darabszámmal:", utonevekAdat);
+                    //console.log("A legritkább utónévvel ellátott nevek:", legritkábbak);
                 })
                 .catch(error => console.error('Hiba a fájl beolvasásakor:', error));
         }
@@ -163,8 +171,8 @@
             }
 
             let eredmeny = "<table border='1' style='border-collapse: collapse; margin-top: 20px;'><tr>";
-            eredmeny += "<th style='padding: 8px; text-align: left; cursor: pointer; background-color: #e0e0e0;' onclick='nevRendezes()'>Családnév (ABC) ▲▼</th>";
-            eredmeny += "<th style='padding: 8px; text-align: left; cursor: pointer; background-color: #e0e0e0;' onclick='szamRendezes()'>Darabszám (Szám) ▲▼</th>";
+            eredmeny += "<th style='padding: 8px; text-align: left; cursor: pointer; background-color: #e0e0e0;' onclick='nevRendezes()'>Családnév ▲▼</th>";
+            eredmeny += "<th style='padding: 8px; text-align: left; cursor: pointer; background-color: #e0e0e0;' onclick='szamRendezes()'>Darabszám ▲▼</th>";
             eredmeny += "</tr>";
             
             for (const elem of tomb) {
@@ -174,6 +182,78 @@
             document.getElementById('eredmeny5').innerHTML = eredmeny;
         }
 
+        function utonevekListaja(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+
+                if (teljesNev) {
+                    const utonev = teljesNev.trim().split(' ')[1];
+                    nevSzamlalo[utonev] = (nevSzamlalo[utonev] || 0) + 1;
+                }
+            }
+            return nevSzamlalo;
+        }
+
+        function utonevRendezes()
+        {
+            let tomb = Object.keys(utonevekAdat).map(nev => ({
+                nev: nev,
+                szam: utonevekAdat[nev]
+            }));
+
+            if (rendezesSzamok === 'asc_nev') {
+                tomb.sort((a, b) => a.nev.localeCompare(b.nev));
+            } else if (rendezesSzamok === 'desc_nev') {
+                tomb.sort((a, b) => b.nev.localeCompare(a.nev));
+            } else if (rendezesSzamok === 'asc_szam') {
+                tomb.sort((a, b) => a.szam - b.szam);
+            } else if (rendezesSzamok === 'desc_szam') {
+                tomb.sort((a, b) => b.szam - a.szam);
+            }
+
+            let eredmeny = "<table border='1' style='border-collapse: collapse; margin-top: 20px;'><tr>";
+            eredmeny += "<th style='padding: 8px; text-align: left; cursor: pointer; background-color: #e0e0e0;' onclick='nevRendezes()'>Keresztnév ▲▼</th>";
+            eredmeny += "<th style='padding: 8px; text-align: left; cursor: pointer; background-color: #e0e0e0;' onclick='szamRendezes()'>Darabszám ▲▼</th>";
+            eredmeny += "</tr>";
+            
+            for (const elem of tomb) {
+                eredmeny += `<tr><td style='padding: 8px;'>${elem.nev}</td><td style='padding: 8px;'>${elem.szam}</td></tr>`;
+            }
+            eredmeny += "</table>";
+            document.getElementById('eredmeny6').innerHTML = eredmeny;
+        }
+
+        //a három legritkább utónév
+        function legritkábbUtonevek(gyerekekAdatai) {
+            const nevSzamlalo = {};
+            for (let i = 0; i < gyerekekAdatai.length; i++) {
+                const teljesNev = gyerekekAdatai[i].nev;
+                if (teljesNev) {
+                    const utonev = teljesNev.trim().split(' ')[1];
+                    nevSzamlalo[utonev] = (nevSzamlalo[utonev] || 0) + 1;
+                }
+            }
+            
+            let tomb = Object.keys(nevSzamlalo).map(nev => ({
+                nev: nev,
+                szam: nevSzamlalo[nev]
+            }));
+
+            tomb.sort((a, b) => a.szam - b.szam);
+            const legritkábbak = tomb.slice(0, 94);
+
+            let eredmeny = "<h4>A legritkább utónévvel ellátott nevek:</h4><ul>";
+            for (const elem of legritkábbak) {
+                eredmeny += `<li>${elem.nev} (${elem.szam} fő)</li>`;
+            }
+            eredmeny += "</ul>";
+            document.getElementById('eredmeny7').innerHTML = eredmeny;
+            return legritkábbak;
+        }
+
+
+
         function nevRendezes() {
             if (rendezesSzamok === 'asc_nev') {
                 rendezesSzamok = 'desc_nev';
@@ -181,6 +261,7 @@
                 rendezesSzamok = 'asc_nev';
             }
             csaladnevRendezes();
+            utonevRendezes();
         }
 
         function szamRendezes() {
@@ -190,6 +271,7 @@
                 rendezesSzamok = 'asc_szam';
             }
             csaladnevRendezes();
+            utonevRendezes();
         }
     </script>
 </body>
