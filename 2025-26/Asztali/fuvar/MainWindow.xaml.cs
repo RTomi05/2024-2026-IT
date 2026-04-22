@@ -62,5 +62,42 @@ namespace fuvar
             eredmeny4Bevetel.Content = penz;
             eredmeny4Fuvarszam.Content = fuvarok.Where(x => x.azonosito == (int)kuldo.SelectedItem).Count();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var eredmeny = fuvarok
+                .GroupBy(x => x.fizetesimod)
+                .Select(x => $"{x.Key}: {x.Count()}");
+            eredmeny5.ItemsSource = eredmeny;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            eredmeny6.Content = Math.Round(fuvarok.Sum(x => x.tavolsagKmben),2) + " km";
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Fuvar leghosszabb = fuvarok.First();
+            foreach(Fuvar egyFuvar in fuvarok)
+            {
+                if(egyFuvar.idotartam > leghosszabb.idotartam)
+                {
+                    leghosszabb = egyFuvar;
+                }
+            }
+            
+            leghosszabb = fuvarok.OrderByDescending(x => x.idotartam).First();
+            eredmeny7.Content = $"Fuvar hossza: {leghosszabb.idotartam} másodperc{Environment.NewLine}" +
+                                $"Taxi azonosító: {leghosszabb.azonosito}{Environment.NewLine}" +
+                                $"Megtett távolság: {Math.Round(leghosszabb.tavolsagKmben),2} km{Environment.NewLine}" +
+                                $"Viteldíj: {leghosszabb.viteldij}$";
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            var hibasak = fuvarok.Where(x => x.idotartam > 0 && x.viteldij > 0 && x.tavolsag == 0);
+            eredmeny8.ItemsSource = hibasak;
+        }
     }
 }

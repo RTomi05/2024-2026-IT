@@ -38,5 +38,25 @@ namespace fuvar
             this.borravalo = double.Parse(vag[5]);
             this.fizetesimod = vag[6];
         }
+
+        public double tavolsagKmben
+        {
+           get
+            {
+                return this.tavolsag * 1.6;
+            }
+        }
+
+        public override string ToString()
+        {
+            return
+            this.azonosito + ";" +
+            this.indulas + ";" +
+            this.idotartam + ";" +
+            this.tavolsag + ";" +
+            this.viteldij + ";" +
+            this.borravalo + ";" +
+            this.fizetesimod + ";";
+        }
     }
 }

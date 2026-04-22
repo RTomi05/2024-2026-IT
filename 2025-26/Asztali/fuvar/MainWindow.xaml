@@ -13,12 +13,23 @@
         <Button Content="Keresés" FontSize="20px" HorizontalAlignment="Left" Margin="123,23,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <Label Content="4. feladat" FontSize="20px" HorizontalAlignment="Left" Margin="270,17,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="taxiValaszto" HorizontalAlignment="Left" Margin="387,27,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
-        <Label Content="Bevétel (USD):" FontSize="20px" HorizontalAlignment="Left" Margin="387,59,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="eredmeny4Bevetel" Content="" FontSize="20px" HorizontalAlignment="Left" Margin="539,59,0,0" VerticalAlignment="Top"/>
-        <Label Content="Fuvarszám:" FontSize="20px" HorizontalAlignment="Left" Margin="387,101,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="eredmeny4Fuvarszam" FontSize="20px" Content="" HorizontalAlignment="Left" Margin="539,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="Bevétel (USD):" FontSize="20px" HorizontalAlignment="Left" Margin="270,59,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="eredmeny4Bevetel" Content="" FontSize="20px" HorizontalAlignment="Left" Margin="412,59,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fuvarszám:" FontSize="20px" HorizontalAlignment="Left" Margin="269,101,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="eredmeny4Fuvarszam" FontSize="20px" Content="" HorizontalAlignment="Left" Margin="407,101,0,0" VerticalAlignment="Top"/>
         <Label Content="5. feladat" FontSize="20px" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="118,168,574,33"/>
-        <Button Content="Keresés" FontSize="20px" HorizontalAlignment="Left" Margin="19,217,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="eredmeny5" FontSize="20px" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="123,168,503,80"/>
+        <Button Content="Keresés" FontSize="20px" HorizontalAlignment="Left" Margin="19,217,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Label Content="6. feladat" FontSize="20px" HorizontalAlignment="Left" Margin="556,16,0,0" VerticalAlignment="Top"/>
+        <Label Content="Az összesen megtett út:" FontSize="20px" HorizontalAlignment="Left" Margin="556,59,0,0" VerticalAlignment="Top"/>
+        <Button Content="Kiszámol" FontSize="20px" HorizontalAlignment="Left" Margin="669,20,0,0" VerticalAlignment="Top" Click="Button_Click_2"/>
+        <Label x:Name="eredmeny6" Content="" FontSize="20px" HorizontalAlignment="Left" Margin="656,101,0,0" VerticalAlignment="Top"/>
+        <Label Content="7. feladat" FontSize="20px" HorizontalAlignment="Left" Margin="330,261,0,0" VerticalAlignment="Top"/>
+        <Label Content="A leghosszabb fuvar adatai" FontSize="20px" HorizontalAlignment="Left" Margin="441,261,0,0" VerticalAlignment="Top"/>
+        <Button Content="Keres" FontSize="20px" HorizontalAlignment="Left" Margin="711,264,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
+        <Label x:Name="eredmeny7" Content="" FontSize="15px" HorizontalAlignment="Left" Margin="447,303,0,0" VerticalAlignment="Top"/>
+        <Label Content="8. feladat" FontSize="20px" HorizontalAlignment="Left" Margin="331,318,0,0" VerticalAlignment="Top"/>
+        <Button Content="Generálás" FontSize="20px" HorizontalAlignment="Left" Margin="441,324,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
+        <ListBox x:Name="eredmeny8" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="447,121,144,197"/>
     </Grid>
 </Window>
