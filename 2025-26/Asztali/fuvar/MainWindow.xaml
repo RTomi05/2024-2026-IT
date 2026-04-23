@@ -27,9 +27,9 @@
         <Label Content="7. feladat" FontSize="20px" HorizontalAlignment="Left" Margin="330,261,0,0" VerticalAlignment="Top"/>
         <Label Content="A leghosszabb fuvar adatai" FontSize="20px" HorizontalAlignment="Left" Margin="441,261,0,0" VerticalAlignment="Top"/>
         <Button Content="Keres" FontSize="20px" HorizontalAlignment="Left" Margin="711,264,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
-        <Label x:Name="eredmeny7" Content="" FontSize="15px" HorizontalAlignment="Left" Margin="447,303,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="eredmeny7" Content="" FontSize="15px" HorizontalAlignment="Left" Margin="442,303,0,0" VerticalAlignment="Top"/>
         <Label Content="8. feladat" FontSize="20px" HorizontalAlignment="Left" Margin="331,318,0,0" VerticalAlignment="Top"/>
-        <Button Content="Generálás" FontSize="20px" HorizontalAlignment="Left" Margin="441,324,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
+        <Button Content="Generálás" FontSize="20px" HorizontalAlignment="Left" Margin="326,370,0,0" VerticalAlignment="Top" Click="Button_Click_4"/>
         <ListBox x:Name="eredmeny8" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="447,121,144,197"/>
     </Grid>
 </Window>

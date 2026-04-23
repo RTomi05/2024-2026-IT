@@ -96,8 +96,12 @@ namespace fuvar
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            var hibasak = fuvarok.Where(x => x.idotartam > 0 && x.viteldij > 0 && x.tavolsag == 0);
+            var hibasak = fuvarok
+                .Where(x => x.idotartam > 0 && x.viteldij > 0 && x.tavolsag == 0)
+                .Select(x => x.ToString())
+                .ToList();
             eredmeny8.ItemsSource = hibasak;
+            File.WriteAllLines("hibasak.txt", hibasak);
         }
     }
 }
