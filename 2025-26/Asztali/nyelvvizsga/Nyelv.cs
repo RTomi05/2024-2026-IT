@@ -25,5 +25,10 @@ namespace nyelvvizsga
                 evek[(i+2008).ToString()] = int.Parse(vag[i]);
             }
         }
+
+        public int osszesen()
+        {
+            return evek.Values.Sum();
+        }
     }
 }

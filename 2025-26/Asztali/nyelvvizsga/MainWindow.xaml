@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:nyelvvizsga"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Nyelvvizsga" Height="450" Width="800">
     <Grid>
+        <Label Content="A három legnépszerűbb nyelv:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Button Content="Lekérés" HorizontalAlignment="Left" Margin="73,41,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <ListBox x:Name="eredmenyf2" d:ItemsSource="{d:SampleData ItemCount=3}" Margin="185,11,504,304"/>
 
     </Grid>
 </Window>
