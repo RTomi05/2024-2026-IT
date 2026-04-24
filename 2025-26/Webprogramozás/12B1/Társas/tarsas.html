@@ -96,6 +96,7 @@
             <div class="col-lg-12">
                 <h3 style="text-align: center; margin: 30px; margin-top: -10px;">7. feladat</h3>
                 <div id="palya"></div>
+                <div id="f7"></div>
             </div>
         </div>
     </div>
@@ -257,13 +258,29 @@
 
             palyaKeszit(osveny,true).forEach( e => palya.appendChild(e));
 
-            let jatekosok = document.getElementById("jatekosSzam").value;
+            let jatekosok = Number(document.getElementById("jatekosSzam").value);
 			console.log(dobasok);
-			//let osszegek = new Array(jatekosok).fill(0);
+			let osszegek = new Array(jatekosok).fill(0);
+            console.log(osszegek);
+            let nyertesek = 0;
 			for(let i = 0; i < dobasok.length; i++)
 			{
-				osszegek[i % jatekosok] += dobasok[i];
+                let aktualisJatekosSzama = i % jatekosok
+				osszegek[aktualisJatekosSzama] += dobasok[i];
+                if(osveny.length <= osszegek[aktualisJatekosSzama])
+                {
+                    nyertesek.push(aktualisJatekosSzama);
+                }
+                if(nyertesek.length > 0 && aktualisJatekosSzama + 1 == jatekosok)
+                {
+                    break;
+                }
 			}
+            for(let i = 0; i < osszegek.length; i++)
+            {
+                let div = document.createElement("div");
+                div.innerHTML = i+1;
+            }
         }
 
         function palyaKeszit(osveny,allM = false)
