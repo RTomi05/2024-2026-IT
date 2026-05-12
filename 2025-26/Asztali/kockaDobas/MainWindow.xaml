@@ -1,0 +1,20 @@
+﻿<Window x:Class="kockaDobas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kockaDobas"
+        mc:Ignorable="d"
+        Title="Kocka dobás" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="207" Margin="420,201,0,0" VerticalAlignment="Top" Width="201" Source="/anni.jpg"/>
+        <Image HorizontalAlignment="Left" Height="187" Margin="627,217,0,0" VerticalAlignment="Top" Width="163" Source="/panni.jpg"/>
+        <Label Content="dobások száma:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <TextBox x:Name="dobasSzam" HorizontalAlignment="Left" Margin="109,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <Button x:Name="kezdes" Content="Kezdés" HorizontalAlignment="Left" Margin="245,13,0,0" VerticalAlignment="Top" Foreground="Black" Click="kezdes_Click"/>
+        <Label Content="VS" HorizontalAlignment="Left" Margin="601,273,0,0" VerticalAlignment="Top" Foreground="#FFFB3232" FontWeight="Bold" FontSize="36"/>
+        <StackPanel x:Name="asztal" Height="342" VerticalAlignment="Top" Margin="40,73,0,0" HorizontalAlignment="Left" Width="397"/>
+        <Label x:Name="anni" Content="Anni" HorizontalAlignment="Left" Margin="493,178,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Label x:Name="panni" Content="Panni" HorizontalAlignment="Left" Margin="677,178,0,0" VerticalAlignment="Top" FontSize="22"/>
+    </Grid>
+</Window>
