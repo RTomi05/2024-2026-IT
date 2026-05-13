@@ -10,7 +10,9 @@
         {
             height: 25px;
             width: 25px;
+            box-sizing: content-box;
         }
+
     </style>
     <title>Tesztverseny</title>
 </head>
@@ -30,7 +32,19 @@
                 <input type="text" name="" id="azonosito" value="AB123" class="form-control" placeholder="AB123">
                 <div class="text-center p-3"><button class="btn btn-info" onclick="f3()">Lekérés</button></div>
                 <div id="eredmeny" class="border"></div>
+                <h3>A helyes megoldás:</h3>
+                <div id="helyes" class="border"></div>
             </div>
+            <div class="col-6">
+                <h2 class="text-primary">5. feladat</h2>
+                <label for="azonosito">Adja meg a feladat sorszámát:</label>
+                <input type="number" min="1" max="14" name="" id="feladatSorszam" value="10" class="form-control">
+                <div class="text-center p-3"><button class="btn btn-info" onclick="f5()">Lekérés</button></div>
+                <div id="eredmeny5" class="border">
+                    <p>A feladatra <span></span> fő, a versenyzők <span></span>%-a adott helyes választ.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -73,18 +87,35 @@
             {
                 return;
             }
-            valaszMegjelenit(versenyzoAdat[0].valaszok);
+            document.getElementById("eredmeny").innerHTML = "";
+            document.getElementById("eredmeny").appendChild(valaszMegjelenit(versenyzoAdat[0].valaszok,true));
+            document.getElementById("helyes").innerHTML = "";
+            document.getElementById("helyes").appendChild(valaszMegjelenit(helyesValasz));
         }
 
-        function valaszMegjelenit(valaszok)
+        function valaszMegjelenit(valaszok, javitasKell = false)
         {
+            
+            let gyujto = document.createElement("div");
             console.log(valaszok);
-            valaszok.split("").forEach(e => {
+            valaszok.split("").forEach((e,index) => {
                 let elem = document.createElement("div");
                 elem.classList.add("valaszJelolo");
                 elem.classList.add("d-inline-block");
                 elem.classList.add("text-white");
                 elem.classList.add("text-center");
+                if(javitasKell)
+                {
+                    if(e != helyesValasz[index])
+                    {
+                        /*
+                        elem.classList.add("border")
+                        elem.classList.add("border-danger")
+                        elem.classList.add("border-1")
+                        */
+                       elem.classList.add("bg-danger")
+                    }
+                }
                 switch(e)
                 {
                     case "A":
@@ -94,19 +125,29 @@
                         elem.classList.add("bg-info")
                         break;
                     case "C":
-                        elem.classList.add("bg-secondary")
+                        elem.classList.add("bg-warning")
                         break;
                     case "D":
-                        elem.classList.add("bg-danger")
+                        elem.classList.add("bg-success")
                         break;
                     case "X":
-                        elem.classList.add("bg-warning")
+                        elem.classList.add("bg-secondary")
                         break;                  
                 }
                 elem.innerHTML = e;
-                document.getElementById("eredmeny").appendChild(elem);
+                gyujto.appendChild(elem);
+                
                 
             });
+            return gyujto;
+        }
+
+        function f5()
+        {
+            const feladatSzam = parseInt(document.getElementById("feladatSorszam").value)-1;
+            //console.log(feladatSzam);
+            const szurt = adatok.filter(x => x.valaszok[feladatSzam] == helyesValasz[feladatSzam])
+            console.log(szurt);
         }
     </script>
 </body>
