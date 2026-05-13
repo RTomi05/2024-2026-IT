@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Tesztverseny</title>
+</head>
+<body onload="betolt()">
+    <div class="container">
+        <div class="row">
+            <header class="col-12"><h1 class="text-center">Tesztverseny</h1></header>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-primary">2. feladat</h2>
+                <p>A vetélkedőn <span class="text-success fw-bold" id="f2"></span> versenyző indult.</p>
+            </div>
+            <div class="col-6">
+                <h2 class="text-primary">3. feladat</h2>
+                <label for="azonosito">Adja meg a versenyző azonosítóját:</label><input type="text" name="" id="azonosito" class="form-control" placeholder="AB123">                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let adatok = [];
+        let helyesValasz = "";
+        function betolt()
+        {
+            fetch("valaszok.txt")
+            .then(x => x.text())
+            .then(y => 
+                {
+                    adatok = y.replaceAll("\r", "").trim().split("\n");
+                    helyesValasz = adatok.shift();
+
+                    adatok = adatok.map(x =>
+                    {
+                        const vag = x.split(" ");
+                        return {kod:vag[0],valaszok:vag[1]}
+                    })
+                    console.log(adatok);
+                    f2();
+                }
+            )
+        }
+
+        function f2()
+        {
+            let eredmeny = adatok.length;
+            document.getElementById("f2").innerHTML = eredmeny;
+        }
+    </script>
+</body>
+</html>
