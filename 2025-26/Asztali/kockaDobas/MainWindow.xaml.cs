@@ -48,6 +48,7 @@ namespace kockaDobas
                     if (j < 2)
                     {
                         panel.Children.Add(new Label() { Content = plusz, FontSize = 24, VerticalAlignment = VerticalAlignment.Center });
+                        
                     }
                     else
                     {
