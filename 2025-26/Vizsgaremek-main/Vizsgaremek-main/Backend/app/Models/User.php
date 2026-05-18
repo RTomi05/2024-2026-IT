@@ -1,0 +1,77 @@
+<?php
+
+namespace App\Models;
+
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Attributes\UseFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
+use Database\Factories\UserFactory;
+#[UseFactory(UserFactory::class)]
+class User extends Authenticatable
+{
+    /**  */
+    use HasApiTokens, HasFactory, Notifiable;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var list<string>
+     */
+    protected $fillable = [
+        'nev',
+        'becenev',
+        'email',
+        'password',
+        'tema_id',
+        'kuponok',
+        'termekArKovetes',
+        'brokerArKovetes'
+    ];
+
+    /**
+     * The attributes that should be hidden for serialization.
+     *
+     * @var list<string>
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected $policies = [
+    User::class => UserPolicy::class,
+    ];
+    protected function casts(): array
+    {
+        return [
+            'email_verified_at' => 'datetime',
+            'password' => 'hashed',
+        ];
+    }
+    function kupon()
+    {
+        return $this->hasMany(Kupon::class,'feltolto_kuponos_id');
+    }
+    function vevesLista()
+    {
+        return $this->hasMany(VevesLista::class,'felhasznalo_id');
+    }
+    function csoportok()
+    {
+        return  $this->hasMany(Csoportok::class,'keszito_felhasznalo_id');
+    }
+    function csoportTagsag()
+    {
+        return $this->hasMany(CsoportTagsag::class,'felhasznalo_id');
+    }
+    
+}

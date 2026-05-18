@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class VevesLista extends Model
+{
+    use HasFactory;
+    protected $table = "veves_lista";
+    function user()
+    {
+        return $this->belongsTo(User::class,'felhasznalo_id');
+    }
+    function csoport()
+    {
+        return $this->belongsTo(Csoportok::class,'csoport_id');
+    }
+    function vevesobjektum()
+    {
+        return $this->hasMany(VevesObjektum::class,'veves_lista_id');
+    }
+}

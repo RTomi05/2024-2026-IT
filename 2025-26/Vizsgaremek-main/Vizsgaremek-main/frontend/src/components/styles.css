@@ -1,0 +1,18 @@
+/* Shared component overrides — use global CSS variables from index.css */
+
+/* Detail card layout */
+.detail-card { padding: 0; border-radius: var(--r-lg); }
+.detail-header {
+  background: var(--clr-surface-2);
+  padding: 12px 18px;
+  border-top-left-radius: var(--r-lg);
+  border-top-right-radius: var(--r-lg);
+  border-bottom: 1px solid var(--clr-border);
+}
+.detail-title-section { display: flex; gap: 12px; align-items: center; justify-content: space-between; }
+
+/* Estimate box */
+.estimate-box { background: var(--clr-info-light, #e0f2fe); border-left: 4px solid var(--clr-info, #0ea5e9); }
+
+/* Modal radius */
+.modal-content { border-radius: var(--r-lg); }
