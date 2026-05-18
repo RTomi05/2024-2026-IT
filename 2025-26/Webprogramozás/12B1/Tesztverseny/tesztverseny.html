@@ -42,7 +42,7 @@
                 <div class="text-center p-3"><button class="btn btn-info" onclick="f5()">Lekérés</button></div>
                 <div id="eredmeny5" class="border">
                     <p>A feladatra <span id="f5Fo"></span> fő, a versenyzők <span id="f5Szazalek"></span>%-a adott helyes választ.</p>
-                    <progress id="f5Progress" class="progress-bar" value="0" style="width: 635px;" max="100"></progress>
+                    <progress id="f5Progress" class="progress-bar" value="0" style="width: 400px;" max="100"></progress>
                 </div>
             </div>
             <div class="col-6 mt-2">
@@ -79,13 +79,34 @@
                     adatok = adatok.map(x =>
                     {
                         const vag = x.split(" ");
-                        return {kod:vag[0],valaszok:vag[1]}
+                        return {
+							kod:vag[0],
+							valaszok:vag[1],
+							pontszam(helyesvalaszok)
+							{
+								let pontszam = 0;
+								for(let i = 0; i < this.valaszok.length; i++)
+								{	
+									if(this.valaszok[i] == helyesvalaszok[i])
+									{
+										if(i < 6) {pontszam+=3;}
+										else if(i < 11){pontszam+=4;}
+										else if(i < 14){pontszam+=5;}
+										else{pontszam+=6;}	
+									}
+								}
+								return pontszam;
+							}
+						}
                     })
                     console.log(adatok);
                     f2();
                 }
             )
-            .then(x => x.f6())
+            .then(x =>
+			{
+				f6();
+			})
         }
 
         function f2()
@@ -173,7 +194,28 @@
 
         function f6()
         {
-            console.log("z")
+
+			let rendezett = adatok.toSorted((a,b) => b.pontszam(helyesValasz) - a.pontszam(helyesValasz));
+
+			rendezett.forEach(e =>
+				{
+					let sor = document.createElement("tr");
+					let cellaKod = document.createElement("td");
+					cellaKod.innerHTML = e.kod;
+					let cellaPontszam = document.createElement("td");
+					cellaPontszam.innerHTML = e.pontszam(helyesValasz);
+					let cellaProgress = document.createElement("td");
+					let progress = document.createElement("progress")
+					progress.max = 56;
+					progress.value = e.pontszam(helyesValasz);
+					progress.cellaName = "progress-bar";
+					cellaProgress.appendChild(progress);
+					sor.appendChild(cellaKod);
+					sor.appendChild(cellaPontszam);
+					sor.appendChild(cellaProgress);
+					document.getElementById("f6Tabla").appendChild(sor);
+				}
+			)
         }
     </script>
 </body>
