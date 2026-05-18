@@ -38,11 +38,27 @@
             <div class="col-6">
                 <h2 class="text-primary">5. feladat</h2>
                 <label for="azonosito">Adja meg a feladat sorszámát:</label>
-                <input type="number" min="1" max="14" name="" id="feladatSorszam" value="10" class="form-control">
+                <input type="number" min="1" max="14" name="" id="feladatSorszam" value="12" class="form-control">
                 <div class="text-center p-3"><button class="btn btn-info" onclick="f5()">Lekérés</button></div>
                 <div id="eredmeny5" class="border">
-                    <p>A feladatra <span></span> fő, a versenyzők <span></span>%-a adott helyes választ.</p>
+                    <p>A feladatra <span id="f5Fo"></span> fő, a versenyzők <span id="f5Szazalek"></span>%-a adott helyes választ.</p>
+                    <progress id="f5Progress" class="progress-bar" value="0" style="width: 635px;" max="100"></progress>
                 </div>
+            </div>
+            <div class="col-6 mt-2">
+                <h2 class="text-primary">6. feladat</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Kód</th>
+                            <th scope="col">Pontszám</th>
+                            <th scope="ol"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="f6Tabla">
+
+                    </tbody>
+                </table>
             </div>
 
         </div>
@@ -69,6 +85,7 @@
                     f2();
                 }
             )
+            .then(x => x.f6())
         }
 
         function f2()
@@ -147,7 +164,16 @@
             const feladatSzam = parseInt(document.getElementById("feladatSorszam").value)-1;
             //console.log(feladatSzam);
             const szurt = adatok.filter(x => x.valaszok[feladatSzam] == helyesValasz[feladatSzam])
-            console.log(szurt);
+            //console.log(szurt.length);
+            document.getElementById("f5Fo").innerHTML = szurt.length;
+            console.log(szurt.length / adatok * 100)
+            document.getElementById("f5Szazalek").innerHTML = ((szurt.length / adatok.length) * 100).toFixed(2);
+            document.getElementById("f5Progress").value = szurt.length / adatok.length * 100;
+        }
+
+        function f6()
+        {
+            console.log("z")
         }
     </script>
 </body>
