@@ -1,0 +1,36 @@
+﻿<Window x:Class="varosiAutozas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:varosiAutozas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="1. feladat" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Adja meg az autó azonosítóját:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="azon" HorizontalAlignment="Left" Margin="188,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Küldés" x:Name="kuldes" HorizontalAlignment="Left" Margin="144,83,0,0" VerticalAlignment="Top" Click="kuldes_Click"/>
+        <Label Content="2. feladat" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top"/>
+        <Label Content="Az autó indulási ideje:" HorizontalAlignment="Left" Margin="10,141,0,0" VerticalAlignment="Top"/>
+        <Label Content="Az autó végső sebessége:" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="indulas" HorizontalAlignment="Left" Margin="164,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:Name="vegsebesseg" HorizontalAlignment="Left" Margin="164,172,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button Content="Lekérés" x:Name="f2Lekeres" HorizontalAlignment="Left" Margin="61,206,0,0" VerticalAlignment="Top" Click="f2Lekeres_Click"/>
+        <Label Content="3. feladat" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top"/>
+        <Label Content="Átlépte a sebességhatárt?" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="atlepteE" HorizontalAlignment="Left" Margin="164,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button x:Name="f3Ellenorzes" Content="Ellenőrzés" HorizontalAlignment="Left" Margin="56,306,0,0" VerticalAlignment="Top" Click="f3Ellenorzes_Click"/>
+        <Label Content="4. feladat" HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top"/>
+        <Label Content="Leghosszabb állásidő:" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="f4Kuldes" Content="Küldés" HorizontalAlignment="Left" Margin="56,388,0,0" VerticalAlignment="Top" Click="f4Kuldes_Click"/>
+        <TextBlock x:Name="allasido" HorizontalAlignment="Left" Margin="144,362,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Label Content="5. feladat" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Adjon meg egy időpontot:" HorizontalAlignment="Left" Margin="371,36,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="idopont" HorizontalAlignment="Left" Margin="588,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="A megadott időpontban a sebesség:" HorizontalAlignment="Left" Margin="371,67,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="seb" HorizontalAlignment="Left" Margin="588,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="f5Szamitas" Content="Számítás" HorizontalAlignment="Left" Margin="446,98,0,0" VerticalAlignment="Top" Click="f5Szamitas_Click"/>
+
+    </Grid>
+</Window>
