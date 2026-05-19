@@ -38,10 +38,10 @@ namespace varosiAutozas
         }
         public double gyorsulas()
         {
-            return (sebesseg - elozo.sebesseg) / (veg - kezdes);
+            return (sebesseg - elozo.sebesseg) / (double)(veg - kezdes);
         }
 
-        public double pillanatnyiSebesseg(int idopont)
+        public double pillanatnyiSebesseg(double idopont)
         {
             if(idopont >= kezdes && idopont <= veg)
             {
@@ -52,6 +52,36 @@ namespace varosiAutozas
                 return elozo.sebesseg;
             }    
             return -1;
+        }
+
+        public int elotteElteltIdo()
+        {
+            return kezdes - elozo.veg;
+        }
+
+        public int elteltIdo()
+        {
+            return veg - kezdes;
+        }
+
+        public double elotteMegtettUt()
+        {
+            return elozo.sebesseg * elotteElteltIdo();
+        }
+
+        public double megtettUt()
+        {
+            return (double)(elozo.sebesseg + sebesseg) / 2 * elteltIdo();
+        }
+
+        public double osszUt()
+        {
+            return elotteMegtettUt() + megtettUt();
+        }
+
+        public string ketSor()
+        {
+            return $"{kezdes}\t{elozo.sebesseg}\n{veg}\t{sebesseg}";
         }
     }
 }

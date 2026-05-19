@@ -33,6 +33,7 @@ namespace varosiAutozas
             {
                 gyorsulasok.Add(new Gyorsulas(s,gyorsulasok.LastOrDefault(new Gyorsulas(0,0,0))));
             }
+            fajlbaIras();
         }
 
         private void f2Lekeres_Click(object sender, RoutedEventArgs e)
@@ -82,6 +83,21 @@ namespace varosiAutozas
             {
                 seb.Text = keresett.First().pillanatnyiSebesseg(ido).ToString() + " m/s";
             }
+        }
+
+        private void f6Kuldes_Click(object sender, RoutedEventArgs e)
+        {
+            double megtettUt = 0;
+            gyorsulasok.ForEach(e =>
+            {
+                megtettUt += e.osszUt();
+            });
+            osszUt.Text = $"{megtettUt:0.0} m";
+        }
+
+        public void fajlbaIras()
+        {
+            File.WriteAllLines("V" + azon.Text + ".txt", gyorsulasok.Select(e => e.ketSor()).ToList());
         }
     }
 }

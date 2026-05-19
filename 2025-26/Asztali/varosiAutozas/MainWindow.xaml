@@ -31,6 +31,12 @@
         <Label Content="A megadott időpontban a sebesség:" HorizontalAlignment="Left" Margin="371,67,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="seb" HorizontalAlignment="Left" Margin="588,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="f5Szamitas" Content="Számítás" HorizontalAlignment="Left" Margin="446,98,0,0" VerticalAlignment="Top" Click="f5Szamitas_Click"/>
+        <Label Content="6. feladat" HorizontalAlignment="Left" Margin="371,128,0,0" VerticalAlignment="Top"/>
+        <Label Content="Az autó által öszeesen megtett út:" HorizontalAlignment="Left" Margin="371,154,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="osszUt" HorizontalAlignment="Left" Margin="566,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button x:Name="f6Kuldes" Content="Számolás" HorizontalAlignment="Left" Margin="446,185,0,0" VerticalAlignment="Top" Click="f6Kuldes_Click"/>
+        <Label Content="7. feladat" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top"/>
+        
 
     </Grid>
 </Window>
