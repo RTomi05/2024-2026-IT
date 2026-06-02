@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>MRZ kód</title>
+    <style>
+        button{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header class="col-12"><h1 class="text-center">MRZ Kód</h1></header>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-primary">1. feladat</h2>
+                <label for="fajl">Az állomány neve:</label>
+                <select name="fajl" id="fajl">
+                    <option value="none" selected>Válassz fájlt</option>
+                    <option value="mrz1.txt">MRZ1</option>
+                    <option value="mrz2.txt">MRZ2</option>
+                    <option value="mrz3.txt">MRZ3</option>
+                </select>
+                <button class="btn btn-primary" onclick="betolt()">Betöltés</button>
+                <p id="eredmeny"></p>
+
+
+                <h2 class="text-primary">2. feladat</h2>
+                <button class="btn btn-primary" onclick="f2()">Nem lekérése</button>
+                <p id="nem_eredmeny"></p>
+
+                <h2 class="text-primary">3. feladat</h2>
+                <input type="date" name="aktualisDatum" id="aktualisDatum">
+                <button class="btn btn-primary" onclick="f3()">Küldés</button>
+                <p id="f3_eredmeny"></p>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let adatok = [];
+        function betolt()
+        {
+            fetch(document.getElementById("fajl").value)
+            .then(x => x.text())
+            .then(y => {
+                adatok = y.split("\n");
+                eredmeny.innerText = y;
+
+                console.log(adatok);
+                console.log(adatok.length);
+            });
+            
+        }
+
+        function f2()
+        {
+            let nem = adatok[1].charAt(20);
+            console.log(nem);
+            if(nem == "M")
+            {
+                nem_eredmeny.innerText = "Az okmány tulajdonosa férfi.";
+            }
+            else if(nem == "F")
+            {
+                nem_eredmeny.innerText = "Az okmány tulajdonosa nő.";
+            }
+        }
+
+        function f3()
+        {
+            let aktualisDatum = document.getElementById('aktualisDatum').value;
+            aktualisDatum = aktualisDatum.slice(2).replaceAll('-', '');
+            console.log(aktualisDatum);
+            const lejaratiDatum = adatok.join('').slice(66, 72);
+            
+            console.log(lejaratiDatum);
+        }
+    </script>
+</body>
+</html>
